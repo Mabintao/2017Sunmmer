@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="height: 2000px">
+    <script>
+        function client() {
+            if(document.body.clientWidth || document.body.clientHeight){
+                return {
+                    width:document.body.clientWidth,
+                    height:document.body.clientHeight
+                }
+            }else {
+                return {
+                    width: document.documentElement.clientWidth,
+                    height: document.documentElement.clientHeight
+                }
+            }
+        }
+
+        console.log(client().width);
+        console.log(client().height);
+    </script>
+</body>
+</html>

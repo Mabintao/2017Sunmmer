@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.box{
+    width: 1000px;
+    height: 500px;
+    margin: 50px auto;
+    position: relative;
+    border: 1px solid red;
+}
+
+ul li{
+    position: absolute;
+    width: 800px;
+    height: 500px;
+    top: 100px;
+    left: 100px;
+}
+
+#prev{
+    width: 76px;
+    height: 112px;
+    background: url("../imgs_02/prev_1.png");
+    cursor: pointer;
+    float: left;
+}
+
+#next{
+    width: 76px;
+    height: 112px;
+    background: url("../imgs_02/next.png");
+    cursor: pointer;
+    float: right;
+}

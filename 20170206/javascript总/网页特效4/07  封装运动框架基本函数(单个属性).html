@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            position: absolute;
+            left: 0;
+            top: 50px;
+        }
+    </style>
+</head>
+<body>
+<button id="btn200">200</button>
+<button id="btn400">400</button>
+<div id="box"></div>
+</body>
+</html>
+<script>
+
+    var btn200 = document.getElementById("btn200");
+    var btn400 = document.getElementById("btn400");
+    var box = document.getElementById("box");
+    var timer=null;
+    var speed=0;
+    btn200.onclick = function() {
+       animate(box,"left",500);
+    };
+    btn400.onclick = function() {
+        animate(box,"top",400);
+    };
+
+
+    function animate(obj, attr, iTarget){ // 给谁    什么属性   改为多少
+        clearInterval(obj.timer);
+        obj.timer=setInterval(function(){
+            var current=parseInt(getStyle(obj,attr));  // 得到当前的样式 别忘乐去掉px
+            speed=( iTarget - current ) / 10;
+            speed= speed > 0 ? Math.ceil(speed) : Math.floor(speed);
+
+            obj.style[attr]= current + speed + "px";
+
+            if (current == iTarget)
+            {
+                clearInterval(obj.timer);
+            };
+
+        },30);
+    };
+
+    function getStyle(obj,attr){   //  谁的      那个属性
+        if (obj.currentStyle) // ie 等
+        {
+            return obj.currentStyle[attr];// 返回传递过来的某个属性
+        }
+        else
+        {
+            return window.getComputedStyle(obj,null)[attr];  //其它浏览器
+        };
+    };
+
+</script>

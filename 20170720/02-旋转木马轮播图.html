@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/Css_02.css">
+</head>
+<body>
+<div class="box">
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <div id="prev"></div>
+    <div id="next"></div>
+</div>
+</body>
+<script src="js/my.js"></script>
+<script>
+    var aLi = document.querySelectorAll("ul li");
+    var aBg = new Array("slidepic1.jpg", "slidepic2.jpg", "slidepic9.jpg","slidepic4.jpg", "slidepic5.jpg");
+    var aPoint = new Array(
+        {
+            width:400,
+            height:250,
+            top:20,
+            left:550,
+            opacity:20,
+            zIndex:1
+        }
+        ,{
+            width:500,
+            height:370,
+            top:70,
+            left:500,
+            opacity:50,
+            zIndex:2
+        }
+        ,{
+            width:800,
+            height:500,
+            top:100,
+            left:100,
+            opacity:100,
+            zIndex:3
+        }
+        ,{
+            width:500,
+            height:370,
+            top:70,
+            left:0,
+            opacity:70,
+            zIndex:2
+        }
+        , {
+            width:400,
+            height:250,
+            top:20,
+            left:50,
+            opacity:20,
+            zIndex:1
+        });
+    var oPrev = document.querySelector("#prev");
+    var oNext = document.querySelector("#next");
+    var key = 0;
+    init();
+    function init() {
+        for(var i=0; i<aLi.length; i++){
+            aLi[i].style.background="url('imgs_02/"+aBg[i]+"')";
+            animate(aLi[i],aPoint[i]);
+        }
+    }
+
+    //上一张
+    oPrev.onmousedown=function () {
+        oPrev.style.background="url(imgs_02/prev.png)";
+        /''
+    }
+    oPrev.onmouseup=function () {
+        oPrev.style.background="url(imgs_02/prev_1.png)";
+    }
+
+    //下一张
+    oNext.onmousedown=function () {
+        oNext.style.background="url(imgs_02/next_1.png)";
+    }
+    oNext.onmouseup=function () {
+        oNext.style.background="url(imgs_02/next.png)";
+    }
+
+</script>
+</html>

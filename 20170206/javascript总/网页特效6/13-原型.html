@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>对象求和</title>
+</head>
+<body>
+
+<script>
+    var arr1=new Array(12,5,10,30);
+    var arr2=new Array(12,5,10,30,12,123,45);
+    var arr3=new Array(2,5,3);
+
+/*    function fn1(arr1){
+     var sumb=0;
+     for(var i=0; i<arr1.length; i++)
+     {
+     sumb+= arr1[i]
+     }
+
+     return sumb;
+     }
+
+     alert(fn1(arr1));
+     alert(fn1(arr2));
+     alert(fn1(arr3));*/
+
+    Array.prototype.sum1=function(){
+        var result=0;
+        for(var i=0; i<this.length; i++)
+        {
+            result += this[i];
+        }
+
+        return result;
+    };
+    alert(arr1.sum1());
+    alert(arr2.sum1())
+
+
+</script>
+
+
+</body>
+</html>

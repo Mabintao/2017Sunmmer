@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            margin:20px;
+        }
+    </style>
+    <script>
+        window.onload = function(){}
+       //功能相同的   都是显示某个盒子
+        function fn(widthY,heightH)
+		{
+			var demo = document.getElementById("demo");
+            demo.style.width = widthY;
+			demo.style.height= heightH;
+        }
+
+    </script>
+</head>
+
+<input type="button" value="变宽" onclick="fn('200px')">
+<input type="button" value="变高" onClick="fn('','200px')">
+<input type="button" value="变宽">
+<input type="button" value="变宽">
+<div id="demo">1</div>
+</body>
+</html>

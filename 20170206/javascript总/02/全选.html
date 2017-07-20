@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+#bor{ width:200px; height:200px; border:1px solid #666;background:#666;}
+.dong{display:block;}
+</style>
+</head>
+
+<body>
+<input type="button" value="全选" id="set">
+<input type="button" value="不选" id="set0">
+<input type="button" value="反选" id="setb">
+<input type="checkbox" class="dong" checked="checked"/>
+<input type="checkbox" class="dong"/>
+<input type="checkbox" class="dong"/>
+<input type="checkbox" class="dong"/>
+<input type="checkbox" class="dong"/>
+<input type="checkbox" class="dong"/>
+<input type="checkbox" class="dong"/>
+<input type="checkbox" class="dong"/>
+<input type="checkbox" class="dong"/>
+<input type="checkbox" class="dong"/>
+<input type="checkbox" class="dong"/>
+<input type="checkbox" class="dong"/>
+<input type="checkbox" class="dong"/>
+<input type="checkbox" class="dong"/>
+<input type="checkbox" class="dong"/>
+<input type="checkbox" class="dong"/>
+<input type="checkbox" class="dong"/>
+<input type="checkbox" class="dong"/>
+
+
+
+
+
+
+
+<script>
+window.onload=function (){
+	var odd=document.getElementsByClassName("dong")
+	var set1=document.getElementById("set")
+	
+	set1.onclick=function(){
+		for(var i=0; i<odd.length; i++)
+		{
+			odd[i].checked=true;
+		}
+	}
+	
+	var set01=document.getElementById("set0")
+	set01.onclick=function (){
+			for(i=0; i<odd.length; i++)
+			{
+				odd[i].checked=false;				
+			}
+	}
+	
+	//反选
+	var setb1=document.getElementById("setb")
+	setb1.onclick=function(){
+		for(i=0; i<odd.length; i++)
+		{
+			if(odd[i].checked==true)
+			{
+				odd[i].checked=false;	
+			}
+			else
+			{
+				odd[i].checked=true;
+			}
+		}
+	}
+}
+</script>
+
+</body>
+</html>

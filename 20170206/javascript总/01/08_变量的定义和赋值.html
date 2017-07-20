@@ -1,0 +1,46 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <title>文本特效篇--显示随机文本链接</title>
+    <meta charset="utf-8">
+</head>
+<body bgcolor="#fef4d2" style="text-align: center;" onLoad=Disappear()> 
+    <font color="#ffaafa"><h2>文本特效篇--显示随机文本链接</h2></font>
+    <hr width=300>
+    <br><br>
+    <!-- 案例代码开始 -->
+    <script language="JavaScript">
+        MA = new Array();
+        // [Step1]: 这里可以更改显示的文本
+        MA[0] = "欢迎您的光临";
+        MA[1] = "希望在此有所收获";
+        MA[2] = "请多提宝贵意见";
+
+        MSize = new Array();
+        // [Step2]: 这里可以改变文本的大小
+        MSize[0] = "25px";
+        MSize[1] = "30px";
+        MSize[2] = "35px";
+
+        MColor = new Array();
+        // [Step3]: 这里可以改变文本的色彩
+        MColor[0] = "#000FF0";
+        MColor[1] = "#FF0000";
+        MColor[2] = "#008800";
+
+        var timer;
+        var IMessages = 0;
+
+        function Disappear(){
+            content.innerHTML = "<span style='color:"+MColor[IMessages]+";font-size:"+MSize[IMessages]+";filter: revealTrans(Transition=12, Duration=3)'>"+MA[IMessages]+"</span>";
+            if (IMessages >= MA.length-1) {    IMessages = 0    }     
+            else {   IMessages++      }
+            timer = setTimeout("Disappear()",4000); 
+        }
+    </script>
+
+    <div id="content" style="filter: revealTrans(Transition=12, Duration=2); margin: 0 auto ;text-align: center;  height: 200px; width: 559px"></div>
+
+
+</body>
+</html>

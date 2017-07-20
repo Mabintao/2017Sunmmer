@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#div1{ width: 200px; height: 200px; background: #A7443A; position: absolute; left: 0px; top: 50px;}
+			#div2{width:1px; height: 300px; background: black; position: absolute; left: 300px;}
+		</style>
+		<script>
+			function startMove()
+			{
+				var oDiv=document.getElementById("div1");
+				setInterval(function(){
+					var spped=(300-oDiv.offsetLeft)/10;
+					/*if(spped>0)
+					{
+						spped=Math.ceil(spped);
+					}
+					else
+					{
+						spped=Math.floor(spped);
+					}*/
+					spped=spped>0?Math.ceil(spped):Math.floor(spped)//取整数
+					
+					oDiv.style.left=oDiv.offsetLeft+spped+"px";
+					
+					
+					
+				},30)
+			}
+			
+		</script>
+	</head>
+	<body>
+		<input type="button" value="动起来" onclick="startMove()">
+		<div id="div1"></div>
+		<div id="div2"></div>
+		
+	</body>
+</html>

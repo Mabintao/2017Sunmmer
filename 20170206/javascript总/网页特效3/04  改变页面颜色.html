@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+    </style>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    function client() {
+
+        if(document.body.clientWidth)  //谷歌浏览器
+        {
+
+            return {
+                width: document.body.clientWidth,
+                height: document.body.clientHeight
+            }
+        }
+        else
+        {
+            return { //其它浏览器
+                width: document.documentElement.clientWidth,
+                height: document.documentElement.clientHeight
+            };
+        };
+    };
+
+
+    onreSize();//// 页面一加载先调用函数 一次
+    window.onresize=onreSize; // 不带括号，只要屏幕触发，就调用 reSzie 函数
+    //alert(onreSize)
+
+    function onreSize(){
+        var clientWidth=client().width;
+        if (clientWidth < 480 )
+        {
+            document.body.style.background="red";
+        }
+        else if(clientWidth > 640 )
+        {
+            document.body.style.backgroundColor = "green";
+        }
+        else
+        {
+            document.body.style.backgroundColor = "blue";
+        }
+    };
+
+</script>

@@ -1,0 +1,58 @@
+e<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<ul id="ull">
+			<li class="box hbc">1111</li>
+			<li></li>
+			<li class="box hbc">222</li>
+			<li></li>
+			<li class="box"></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			
+		</ul>
+		
+		
+		<script>
+			function getClass(classname) {
+				//如果浏览器兼容我们就返回
+				if(document.getElementsByClassName)
+				{
+					return document.getElementsByClassName(classname);
+				}
+				else//不兼容的浏览器
+				{
+					var dom=document.getElementsByTagName('*');
+					var arr=[];//用于返回的一个数组
+
+					for(var i=0; i<dom.length; i++)
+					{
+						var textarr=dom[i].className.split(' ');
+						//["box", "abc"]
+						for(var j=0; j<textarr.length; j++)
+						{
+							if (textarr[j]==classname)
+							{
+								arr.push(dom[i]);
+							}
+						}
+					}
+				}
+				return arr;
+			};
+
+			var ull=document.getElementById("ull");
+			var oBox=getClass("hbc");
+			for(var i=0; i<oBox.length; i++)
+			{
+				oBox[i].style.background='pink';
+			}
+
+		</script>
+	</body>
+</html>

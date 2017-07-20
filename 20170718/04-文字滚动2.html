@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .box{
+            width:100%;
+            margin: 150px auto;
+            height:200px;
+            background: rgba(0,0,0,.3);
+            text-align: center;
+        }
+        .box .inner{
+            height:200px;
+            overflow: hidden;
+            position: relative;
+        }
+        ul li{
+            line-height: 200px;
+            font-size: 50px;
+            color: #fff;
+            font-style: italic;
+            font-family: "微软雅黑";
+            font-weight: bold;
+            margin-top: 0px;
+        }
+        ol li{
+            width:7px;
+            height: 7px;
+            background: #000000;
+            float: left;
+            border-radius: 50%;
+            border: 3px transparent solid;
+            margin-right: 10px;
+        }
+        ol li.cur{
+            border: 3px #fff solid;
+        }
+        ol{
+            position: absolute;
+            bottom:15px;
+            width:100px;
+            left:50%;
+            margin-left: -50px;
+        }
+    </style>
+    <script>
+        window.onload=function(){
+            var oBox=document.getElementsByClassName("box")[0];
+            var oUl=oBox.children[0].children[0];
+            var aLi=oUl.children;
+            var timer=null,timer2=null,key=0,iTarget=0;
+
+
+            var oL=document.getElementsByTagName("ol")[0];
+            var btn=oL.children;
+
+
+            oUl.innerHTML += oUl.innerHTML;
+            autoText();
+            next();
+            clearTimer();
+
+            //缓冲运动
+            function buff(){
+               clearInterval(timer2);
+                timer2=setInterval(function(){
+                    speed = (iTarget - oUl.offsetTop) / 10;
+                    speed = speed > 0 ? Math.ceil(speed) : Math.floor(speed);
+                    oUl.style.marginTop= oUl.offsetTop + speed + "px";
+                    if (speed==0)
+                    {
+                        clearInterval(timer2)
+                    }
+                },30)
+            }
+
+            //自动轮播
+            function autoText(){
+                clearInterval(timer);
+                timer=setInterval(function(){
+                   key=++key% aLi.length;
+                   console.log(key);
+
+
+                    //获取目标点
+                    //if (key>=)
+                    if (key>=aLi.length - 1)
+                    {
+                        oUl.style.marginTop="0px";
+                        key=1;
+                    }
+                    iTarget= key * -200;
+
+                    //aLi[key].style.marginTop= -iTarget + "px"
+                    //调用缓冲运动
+                    buff()
+
+
+                    for(var i=0; i<btn.length; i++)
+                    {
+                        btn[i].className="";
+                    }
+                    btn[key%2].className="cur";
+
+                },2000)
+            };
+
+
+           //小原点
+            function next(){
+                for(var i=0; i<btn.length; i++)
+                {
+                    btn[i].index=i;
+                    btn[i].onmouseover=function(){
+                        for(var i=0; i<btn.length; i++)
+                        {
+                            btn[i].className="";
+                        }
+                        this.className="cur";
+
+                        key=this.index;
+                        iTarget=key * -200;
+
+                        buff();
+                    }
+                }
+            }
+
+            //关闭定时器
+            function clearTimer(){
+                oBox.onmouseover=function(){
+                    clearInterval(timer);
+                };
+                oBox.onmouseout=function(){
+                    autoText();
+                }
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <div  class="box">
+        <div class="inner">
+            <ul>
+                <li>技术创造<span class="red">价值</span> 服务成就卓越！</li>
+                <li>为Web服务创造一切可能！</li>
+            </ul>
+            <ol>
+                <li class="cur"></li>
+                <li></li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>

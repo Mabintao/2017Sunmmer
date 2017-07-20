@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="demo">
+
+</div>
+
+<script>
+    var num = 0;
+    var demo = document.getElementById("demo");
+
+    window.onresize=thrott(function(){
+        demo.innerHTML = window.innerWidth || document.documentElement.clientWidth;
+        num++;
+        console.log(num)
+    },500);
+
+    function thrott(fn,dely){
+        var timer=null;
+        return function(){
+            clearTimeout(timer);
+            setTimeout(fn,dely)
+        }
+    }
+
+    
+
+</script>
+
+
+</body>
+</html>

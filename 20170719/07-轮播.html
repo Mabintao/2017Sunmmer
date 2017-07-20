@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0px;
+        list-style: none;
+    }
+    ul{
+        width: 300px;
+        height: 200px;
+        margin: 50px auto;
+        position: relative;
+        overflow: hidden;
+    }
+    ul li{
+        width: 100%;
+        height: 100%;
+        background: #00A8FF;
+        position: absolute;
+        left: 300px;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    ul li:nth-child(2n){
+        background: pink;
+    }
+    span{
+        cursor: pointer;
+    }
+</style>
+<body>
+<div>
+    <ul>
+        <li><img src="images/1(1).jpg" alt=""></li>
+        <li><img src="images/1(2).jpg" alt=""></li>
+        <li><img src="images/1(3).jpg" alt=""></li>
+    </ul>
+    <span id="btn1">上一张</span>
+    <span id="btn2">下一张</span>
+</div>
+<script src="../20170720/js/my.js"></script>
+<script>
+    var oBtn1 = document.querySelector("#btn1");
+    var oBtn2 = document.querySelector("#btn2");
+    var ali = document.querySelectorAll("ul li");
+    var oUl = document.querySelector("ul");
+    ali[0].style.left="0px";
+    var key=0;
+    oBtn1.onclick=function () {
+        if(key!=0){
+            animate(ali[key],{left:oUl.offsetWidth})
+            key--;
+            animate(ali[key],{left:0});
+        }
+    }
+
+    oBtn2.onclick=function () {
+        animate(ali[key],{left:-oUl.offsetWidth});
+        key++;
+        key>=ali.length?key=0:key;
+        animate(ali[key],{left:0});
+        ali[key].style.left = oUl.offsetWidth +"px";
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+		*{
+			margin:0px;
+			padding:0px;
+		}
+		.clock{
+			width:600px;
+			height:600px;
+			background: url("images/clock.jpg") no-repeat;
+			margin:100px auto;
+			position: relative;
+		}
+		.clock div{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0px;
+			left: 0px;
+		}
+		.clock .h{
+			background: url(images/hour.png) center center no-repeat;
+		}
+		.clock .m{
+			background: url(images/minute.png) center center no-repeat;
+		}
+		.clock .s{
+			background: url(images/second.png) center center no-repeat;
+			/* transform: rotate(23deg); */ 
+		}
+    </style>
+</head>
+<body>
+<div class="clock">
+    <div class="h" id="hour"></div>
+    <div class="m" id="minte"></div>
+    <div class="s" id="second"></div>
+</div>
+
+<script>
+	var hour=document.getElementById("hour");
+	var minte=document.getElementById("minte");
+	var second=document.getElementById("second");
+
+	setInterval(function(){
+		var date=new Date();//获取当前的时间
+		var h=date.getHours(); //时
+		var m=date.getMinutes(); //分
+		var s=date.getSeconds(); //秒
+		//console.log(s+m+h)
+
+		second.style.transform="rotate("+s*6+"deg)";
+		minte.style.transform="rotate("+m*6+"deg)";
+		hour.style.transform="rotate("+h*30+"deg)";
+
+	},100)
+
+</script>
+</body>
+</html>

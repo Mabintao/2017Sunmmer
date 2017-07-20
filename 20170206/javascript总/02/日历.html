@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+#box {
+	width: 355px;
+	height: 600px;
+	margin: auto;
+	background: #ccc;
+}
+#box ul{ padding-top:30px; }
+#box li {
+	float: left;
+	list-style: none;
+	width: 80px;
+	height: 80px;
+	text-align: center;
+	line-height: 80px;
+	margin: 5px;
+	background:#333;
+	color:#fff;
+	cursor:pointer;
+	font-size:16px;
+	border:1px solid #333;
+}
+/*#box li:hover{ border:1px solid #333; background-color:#ccc; color:#333;}
+*/#footer{ clear:both; margin-left:40px; padding-top:35px;}
+#box .item{ border:1px solid #333; background-color:#ccc; color:#333;}
+
+#footer h1{ font-size:22px;}
+</style>
+</head>
+
+<body>
+<div id="box">
+  <ul>
+    <li class="item">1月</li>
+    <li>2月</li>
+    <li>3月</li>
+    <li>4月</li>
+    <li>5月</li>
+    <li>6月</li>
+    <li>7月</li>
+    <li>8月</li>
+    <li>9月</li>
+    <li>10月</li>
+    <li>11月</li>
+    <li>12月</li>
+  </ul>
+  <div id="footer">
+    <h1>现在是1月</h1>
+    <p>哈哈俣</p>
+  </div>
+</div>
+
+    <script>
+        var oBox=document.getElementById("box");
+        var aLi=oBox.getElementsByTagName("li");
+        var footer=document.getElementById("footer");
+        var arr=[
+          "要去学前端开发1111111111",
+          "要去学前端开发22222222222222",
+          "要去学前端开发3333333333333",
+          "要去学前端开发4444444444444444",
+          "要去学前端开发55555555555",
+          "要去学前端开发66666666666666",
+          "要去学前端开发77777777777",
+        ]
+
+        //把每一个LI都加一个onmouseover, 在 加className
+        for(var i=0; i<aLi.length; i++){
+          aLi[i].index=i;
+          aLi[i].onmouseover=function(){
+            for(var i=0; i<aLi.length; i++){
+              aLi[i].className="";
+            }
+            this.className="item";
+            footer.innerHTML="<h1>"+"现在是"+(this.index+1)+"月"+"</h1>"+"<p>"+arr[this.index]+"</p>"
+          };
+        };
+    </script>
+
+</body>
+</html>

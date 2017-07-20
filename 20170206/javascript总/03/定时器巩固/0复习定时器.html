@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+	<style>
+		.box{
+			width:100px;
+			height: 100px;
+			margin: 50px auto;
+			background-color: red;
+			position: relative;
+		}
+
+		.box .fldong{
+			width:200px;
+			height:400px;
+			background-color: red;
+			position: absolute;
+			left:-210px;
+			display: none;
+		}
+
+
+	</style>
+
+	<script>
+		window.onload=function(){
+			var oBox=document.getElementById('box');
+			var oFldong=document.getElementById('fldong');
+			var timer;
+
+			oBox.onmouseover=function(){
+				oFldong.style.display='block';
+				clearTimeout(timer)
+			};
+
+			oBox.onmouseout=function () {
+				timer=setTimeout(function () {
+					oFldong.style.display='none';
+				},2000)
+			};
+
+			oFldong.onmouseover=function(){
+				oFldong.style.display='block';
+				clearTimeout(timer)
+			}
+			oFldong.onmouseout=function () {
+				oFldong.style.display='none';
+			}
+
+		};
+
+	</script>
+</head>
+<body>
+	<div class="box" id="box">
+		<div class="fldong" id="fldong">
+
+		</div>
+	</div>
+</body>
+</html>

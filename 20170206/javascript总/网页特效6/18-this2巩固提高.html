@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function Bbb(){
+            var _this = this;
+          this.b=20
+            document.getElementById("btn").onclick=function(){
+                _this.show();
+            }
+        };
+
+        Bbb.prototype.show=function(){
+            alert(this.b);
+        };
+
+        window.onload=function(){
+            new Bbb();
+        };
+
+    </script>
+
+</head>
+<body>
+
+<button id="btn">按钮</button>
+
+
+</body>
+</html>

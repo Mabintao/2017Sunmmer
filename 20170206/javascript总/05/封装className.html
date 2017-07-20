@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<ul id="ull">
+			<li class="box"></li>
+			<li></li>
+			<li class="box"></li>
+			<li></li>
+			<li class="box"></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			
+		</ul>
+		
+		
+		<script>
+			function getClass(classname) {
+				//如果浏览器兼容我们就返回
+				if(document.getElementsByClassName)
+				{
+					return document.getElementsByClassName(classname);
+				}
+				else//不兼容的浏览器
+				{
+					var dom=document.getElementsByTagName('*');
+					var arr=[];
+
+					for (var i=0; i<dom.length; i++)
+					{
+						if (dom[i].className== classname)
+						{
+							arr.push(dom[i]);
+						}
+					}
+				}
+				return arr;
+			}
+
+			var ull=document.getElementById("ull");
+			var oBox=getClass(ull,"box");
+			for(var i=0; i<oBox.length; i++)
+			{
+				oBox[i].style.background='pink';
+			}
+
+		</script>
+	</body>
+</html>

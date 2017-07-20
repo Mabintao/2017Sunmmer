@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        div{
+            width: 100%;
+            height: 60px;
+        }
+        ul{
+            background: #3e98f0;
+            height: 60px;
+            overflow: hidden;
+            position: absolute;
+        }
+        ul li{
+            background: #3e98f0;
+            line-height: 60px;
+            color: #ffffff;
+            padding: 0px 10px;
+            text-align: center;
+            float: left;
+        }
+        ol li{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+        </ul>
+    </div>
+    <script>
+
+
+        var oul = document.querySelector("ul");
+
+        init();
+        function init() {
+            var arr = new Array("推荐","百家","本地","图片","娱乐","社会","军事","互联网","科技","女人","搞笑","生活","国际","国内","体育");
+            for(var i=0; i<arr.length; i++){
+                oul.innerHTML += "<li>"+arr[i]+"</li>";
+            }
+
+            var ali = document.querySelectorAll("li");
+            var result = 0;
+            for(var i=0; i<ali.length; i++){
+                result += ali[i].length;
+            }
+
+            oul.style.width=result + "px";
+        }
+
+        var startX = 0, moveX = 0, endX = 0,left = 0;
+        addEventListener("touchstart",start,false); //注册事件
+        addEventListener("touchmove",move,false); //注册事件
+
+        function start(ev) {
+            var oEvent = ev || window.event;
+            startX = oEvent.targetTouches[0].clientX;
+        }
+
+        function move(ev) {
+            var oEvent = ev || window.event;
+            moveX = oEvent.targetTouches[0].clientX;
+            endX = moveX - startX;
+            left = oul.offsetLeft;
+            if(left>=0 && endX>0){
+                oul.style.left = "0px";
+            }else {
+                oul.style.left = endX + left + "px";
+            }if(left<=document.body.clientWidth-oul.offsetWidth && endX<=0){
+                oul.style.left = document.body.clientWidth-oul.offsetWidth + "px";
+            }
+            startX = moveX;
+        }
+
+
+
+    </script>
+</body>
+</html>

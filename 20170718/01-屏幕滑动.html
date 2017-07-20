@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>屏幕滑动</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+    }
+    body,html,ul {
+        width: 100%;
+        height: 100%;
+    }
+    li{
+        width: 100%;
+        height: 100%;
+    }
+    ol{
+        width: 50px;
+        height: 250px;
+        border: 1px solid #fff;
+        position: fixed;
+        top: 50px;
+    }
+    ol li{
+        height: 50px;
+        cursor: pointer;
+    }
+</style>
+<body>
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+</ul>
+<ol>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+</ol>
+</body>
+<script>
+    var ali = document.querySelectorAll("ul li");
+    var abtn = document.querySelectorAll("ol li");
+    var bgc = new Array("red","green","pink","yellow","#d8ae2d");
+    var iTarget=0,speed=0,timer=null;
+    for(var i=0; i<bgc.length; i++){
+        ali[i].style.background=bgc[i];
+        abtn[i].style.background=bgc[i];
+        abtn[i].index=i;
+        abtn[i].onclick=function () {
+            iTarget = ali[this.index].offsetTop; //目标点
+            console.log(iTarget)
+            buff();
+        }
+    }
+
+    function buff() {
+        clearInterval(timer);
+        timer=setInterval(function () {
+            var scoll = document.body.scrollTop || document.documentElement.scrollTop;
+            //缓冲运动
+            //速度=（目标点-要动的值）/10
+            speed = (iTarget - scoll) / 10;
+            speed = speed>0?Math.ceil(speed):Math.floor(speed);
+            scrollTo(0,speed+scoll);
+            if(speed==0){
+                clearInterval(timer);
+            }
+        },30)
+
+
+    }
+</script>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    function outFun(){
+        var num=0;
+        function inFun(){
+            alert(num);
+        }
+
+        return inFun;
+    }
+
+    console.log(outFun())
+    var demo=outFun();
+    demo();
+</script>
+
+</body>
+</html>

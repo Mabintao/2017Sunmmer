@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>无标题文档</title>
+
+    <script>
+
+        var gg=1;
+        alert(gg); //1
+        var gg1=function(){
+            alert("1231");
+        };
+        gg1=5;
+        gg1(); //... 爆粗
+        var gg=3;
+
+        alert(gg);  //3
+/*
+* gg
+* gg1=function(){alert("1231");
+*
+* */
+        /*
+         * 1)预解析
+         * 找变量、找函数、找参数
+         *
+         * {
+         *  gg=1
+         *
+         };
+
+         {
+                a=...
+         }
+
+         //函数和变量重名，函数会干掉变量
+         * }
+         *
+         *
+         * 2)执行
+         *
+         *
+         *
+         * 3) 表达式
+         *   +-*%= ....
+         *   表达式会改变所有值
+         *
+         * */
+
+        //子函数可以访问父级的局部变量
+
+    </script>
+</head>
+
+<body>
+</body>
+</html>
+
+

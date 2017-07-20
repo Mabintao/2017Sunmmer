@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../20170206/javascript总/网页特效5/03 仿网易轮播图/js/slider.js"></script>
+</head>
+<link rel="stylesheet" href="css/Css_01.css">
+<body>
+<div class="box">
+    <ul>
+        <li><img src="imgs_01/1.jpg" alt=""></li>
+        <li><img src="imgs_01/2.jpg" alt=""></li>
+        <li><img src="imgs_01/3.jpg" alt=""></li>
+        <li><img src="imgs_01/4.jpg" alt=""></li>
+        <li><img src="imgs_01/5.jpg" alt=""></li>
+        <div id="prev"></div>
+        <div id="next"></div>
+    </ul>
+
+    <ol>
+        <li><div class="cur"></div></li>
+        <li><div></div></li>
+        <li><div></div></li>
+        <li><div></div></li>
+        <li><div></div></li>
+    </ol>
+</div>
+</body>
+<script src="js/my.js"></script>
+<script>
+    var oBox = document.querySelector(".box");
+    var aImg = document.querySelectorAll("ul li");
+    var oPrev = document.querySelector("#prev");
+    var oNext = document.querySelector("#next");
+    var aBtn = document.querySelectorAll("ol li div");
+    var key = 0;
+    var timer = null;
+    autoPlay();
+    btnControl();
+
+    oBox.onmouseout=function () {
+        autoPlay();
+    }
+    oBox.onmouseover=function () {
+        clearInterval(timer);
+    }
+
+    //下一张
+    oNext.onclick=function () {
+        animate(aImg[key],{left: -320});
+        key++;
+        key = key>=aImg.length?key=0:key;
+        clear();
+        aBtn[key].className="cur";
+        animate(aImg[key],{left: 0});
+        aImg[key].style.left = "320px";
+    }
+
+    //上一张
+    oPrev.onclick=function () {
+        animate(aImg[key],{left: 320});
+        key--;
+        key = key<=0?key=aImg.length-1:key;
+        clear();
+        aBtn[key].className="cur";
+        animate(aImg[key],{left: 0});
+        aImg[key].style.left = "-320px";
+    }
+
+    //自动轮播
+    function autoPlay() {
+        clearInterval(timer);
+        timer = setInterval(function () {
+            animate(aImg[key],{left: -320});
+            key++;
+            key = key>=aImg.length?key=0:key;
+            clear();
+            aBtn[key].className="cur";
+            animate(aImg[key],{left: 0});
+            aImg[key].style.left = "320px";
+        },1000);
+    }
+
+
+
+    //点击下方按钮跳到哪一张
+    function btnControl() {
+        for(var i=0; i<aBtn.length; i++ ){
+            aBtn[i].index = i;
+            aBtn[i].onclick=function () {
+                if(this.index<key){
+                    animate(aImg[key],{left: 320});
+                    key = this.index;
+                    aImg[key].style.left="-320px";
+                    animate(aImg[key],{left: 0});
+                    clear();
+                    this.className="cur";
+                }else if (this.index>key){
+                    animate(aImg[key],{left: -320});
+                    key = this.index;
+                    aImg[key].style.left="320px";
+                    animate(aImg[key],{left: 0});
+                    clear();
+                    this.className="cur";
+                }
+            }
+        }
+    }
+
+
+    //清除按钮的当前样式
+    function clear() {
+        for(var i=0; i<aBtn.length; i++){
+            aBtn[i].className="";
+        }
+    }
+</script>
+</html>

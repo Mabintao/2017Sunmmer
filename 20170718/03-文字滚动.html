@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        body{
+            background: #ccc;
+        }
+        .box{
+            width:340px;
+            margin: 50px auto;
+            height:150px;
+            background: #fff;
+            overflow: hidden;
+        }
+        .box .inner{
+            position: relative;
+            margin: 20px;
+        }
+        ul{
+            position: absolute;
+            left:0px;
+            top:0px;
+        }
+        ul li{
+            line-height: 32px;
+        }
+    </style>
+</head>
+<body>
+    <div  class="box">
+        <div class="inner">
+            <ul>
+                <li>185****6735     获得了一张300元优惠券</li>
+                <li>155****7563     获得了一张500元优惠券</li>
+                <li>155****7989     获得了一张500元优惠券</li>
+                <li>132****2172     获得了一张500元优惠券</li>
+                <li>185****2951     获得了一张300元优惠券</li>
+                <li>159****9834     获得了一张300元优惠券</li>
+                <li>133****2471     获得了一张1000元优惠券</li>
+                <li>133****2471     获得了一张1000元优惠券</li>
+                <li>133****2471     获得了一张1000元优惠券</li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script>
+    var obox = document.querySelector(".box");
+    var oul = document.querySelector("ul");
+    var timer = null, speed = 1;
+    timer = setInterval(function () {
+        oul.style.top = oul.offsetTop - speed + "px";
+        if(oul.offsetTop <= obox.offsetHeight - oul.offsetHeight ){
+            oul.style.top = 0 +"px";
+        }
+    },50)
+
+</script>
+</html>

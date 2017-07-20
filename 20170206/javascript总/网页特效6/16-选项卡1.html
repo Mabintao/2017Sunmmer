@@ -1,0 +1,91 @@
+<!doctype html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+
+ #div1 div{ width:200px; height:200px; background:#999; display:none;}
+.cur{ background:red;}
+</style>
+
+<script type="text/javascript">
+
+    window.onload=function(){
+        var oTat= new tabSwitch("div1");
+        new tabSwitch("div2");
+    };
+
+    function tabSwitch(id)
+    {
+        var oDiv=document.getElementById(id);
+        this.aBtn=oDiv.getElementsByTagName("input");
+        this.aDiv=oDiv.getElementsByTagName("div");
+
+        var _this=this;
+            console.log(this.aBtn)
+        for(var i=0; i<this.aBtn.length;i++)
+        {
+            this.aBtn[i].index=i;//给按钮加index="0"属性
+            this.aBtn[i].onclick=function(){
+                _this.tab(this)
+            };
+        };
+    };
+    tabSwitch.prototype.tab=function(oBtn)
+    {
+        for(var i=0; i<this.aBtn.length; i++)
+        {
+            this.aBtn[i].className="";
+            this.aDiv[i].style.display="none";//隐藏下面的盒子
+
+        }
+        oBtn.className="cur";
+        this.aDiv[oBtn.index].style.display="block";//给div加了一个"index"属性
+    };
+
+
+
+/*
+
+前提：所有东西都放到onload 里 才能找到对象
+
+过程
+	onload	→	构造函数
+	全局变量	→	属性
+	函数		→	方法
+改错
+	this、事件、闭包、传参
+*/
+	
+	
+</script>
+
+</head>
+
+<body>
+<div id="div1">
+    <input type="button"  value="变宽" class="cur">
+    <input type="button"  value="变高"  >
+    <input type="button"  value="变红" >
+    <input type="button" value="还原" >
+    <div style="display:block;">111</div>
+    <div>222</div>
+    <div>333</div>
+    <div>444</div>
+</div>
+
+<div id="div2">
+    <input type="button"  value="变宽" class="cur">
+    <input type="button"  value="变高"  >
+    <input type="button"  value="变红" >
+    <input type="button" value="还原" >
+    <div style="display:block;">111</div>
+    <div>222</div>
+    <div>333</div>
+    <div>444</div>
+</div>
+	
+
+
+</body>
+</html>

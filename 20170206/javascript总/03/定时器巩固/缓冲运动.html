@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#div1{ width: 200px; height: 250px; position: absolute; left:400px; background: red;}
+			#div2{width: 1px; background: black; height: 500px; position: absolute; left: 100px;}
+			
+			#div3{width: 1px; background: black; height: 500px; position: absolute; left: 300px;}
+		</style>
+	</head>
+	<body>
+		
+		<input type="button" value="到100" onclick="starMover(100)"/>
+		<input type="button" value="到300" onclick="starMover(300)"/>
+		<div id="div1"></div>
+		<div id="div2"></div>
+		<div id="div3"></div>
+		
+		<script>
+			var timer=null;
+			function starMover(iTarget)
+			{
+				var oDiv=document.getElementById("div1");
+				clearInterval(timer);
+				timer=setInterval(function(){
+					//缓冲
+					/*var spped=(iTarget-oDiv.offsetLeft)/5;
+					spped=spped<0?Math.floor(spped):Math.ceil(spped)
+					
+
+					if(oDiv.offsetLeft==iTarget)
+					{
+						clearInterval(timer);
+					}
+					else
+					{
+						oDiv.style.left=oDiv.offsetLeft+spped+"px";						
+					}*/
+					
+					//匀速运动
+					var spped=0;
+					if(oDiv.offsetLeft<iTarget)
+					{
+						spped=7;
+					}
+					else
+					{
+						spped=-7;
+					};
+					
+					if(Math.abs(iTarget-oDiv.offsetLeft)<=7)
+					{
+						clearInterval(timer);
+						oDiv.style.left=iTarget+"px";
+					}
+					else
+					{
+						oDiv.style.left=oDiv.offsetLeft+spped+"px";
+					}
+				},30)
+			}
+			
+		</script>
+	</body>
+</html>

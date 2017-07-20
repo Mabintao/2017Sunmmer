@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background: pink;
+            margin: 50px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+
+</body>
+
+<script>
+    var obox = document.querySelector(".box");
+
+    //ie 获取属性
+    //console.log(obox.currentStyle.width);
+    //谷歌
+    //console.log(getComputedStyle(obox,null).width);
+
+    function setAttr(obj,attr,val) {
+        obj.style[attr]=val;
+    }
+
+    setAttr(obox,'width','200px');
+
+    function getAttr(obj,attr) {
+        if(obj.currentStyle){
+            //ie
+            return obj.currentStyle[attr];
+        }else {
+            //其他浏览器
+            return getComputedStyle(obj,null)[attr];
+        }
+    }
+
+    console.log(getAttr(obox,'width'));
+</script>
+</html>

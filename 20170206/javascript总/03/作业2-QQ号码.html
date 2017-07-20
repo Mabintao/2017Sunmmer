@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+<style>
+	#mp{font-size: 12px; color: red; margin-left: 100px;}
+	
+</style>
+</head>
+
+<body>
+
+请输入QQ号码：<input type="text" id="tex1" placeholder="请输入QQ号码" >
+<input type="button" value="判断" id="btn">
+<p id="mp"></p>
+
+
+<br />
+<br />
+<br />
+1、有没有输入<br />
+2、输入的是不是数字<br />
+3、不能有0在前面<br />
+4、不能是小数<br />
+5、输入的数字必须在5位以上、10位以内<br />
+
+<script>
+window.onload=function()
+{
+	var oTex1=document.getElementById("tex1");
+	var oBtn=document.getElementById("btn");
+	var oMp=document.getElementById("mp");
+	
+	var arr=[];
+	oBtn.onclick=function()
+	{
+		if(oTex1.value=="")
+		{
+			oMp.innerHTML="您还未请输入QQ号";
+		}
+		else if(isNaN(oTex1.value)==true)
+		{
+			oMp.innerHTML="您输入的不是数字";
+		}
+		else if(oTex1.value.charAt(0)==0)//sub
+		{
+			oMp.innerHTML="不能有0在前面";
+		}
+		else if(parseInt(oTex1.value)!=parseFloat(oTex1.value))
+		{
+			oMp.innerHTML="不能有小数啊";
+		}
+		else if(oTex1.value.length>5 && oTex1.value.length<10)
+		{
+			oMp.innerHTML="输入的数字必须在5位以上、10位以内";
+		}
+		else
+		{
+			alert("登陆成功");
+		}
+		oTex1.value="";
+	}
+
+var a=3212311;
+//alert(isNaN(a))判断是否为数字
+
+}	
+</script>
+
+</body>
+</html>

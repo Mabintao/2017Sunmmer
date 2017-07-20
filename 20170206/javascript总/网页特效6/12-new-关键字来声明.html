@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+    function CreatPrson(name,age){
+
+        /*原料 无*/
+
+        this.name = name;
+        this.age = age;
+
+        this.showName=function(){
+            alert("我的名字是"+ name);
+        };
+
+        this.showAge=function(){
+            alert("我的性别就"+ age);
+        };
+
+        /*不用出厂*/
+    };
+
+    var p1= new CreatPrson("游志东",30);
+
+    p1.showName();
+    p1.showAge();
+</script>
+
+</body>
+</html>

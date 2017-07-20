@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div {
+            width: 400px;
+            margin:50px;
+        }
+        #demo {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<span id="demo"></span>
+<div id="test">我要复制的文字我要复制的文字我要复制的文字我要复制的文字我要复制的文字我要复制的文字我要复制的文字我要复制的文字我要复制的文字我要复制的文字我要复制的文字我要复制的文字我要复制的文字我要复制的文字我要复制的文字我要复制的文字我要复制的文字我要复制的文字我要复制的文字我要复制的文字</div>
+<div id="another">
+    我不要的文字 我不要的文字 我不要的文字 我不要的文字 我不要的文字 我不要的文字 我不要的文字 我不要的文字 我不要的文字 我不要的文字 我不要的文字 我不要的文字 我不要的文字 我不要的文字 我不要的文字 我不要的文字 我不要的文字 我不要的文字
+</div>
+</body>
+</html>
+
+<script>
+    function $(id){ return document.getElementById(id); };
+
+    $("test").onmouseup=function(ev){
+        var oEvent= ev || event;
+
+        var x=oEvent.clientX;  //  鼠标的x坐标
+        var y=oEvent.clientY; //  同理
+
+        var text;
+        if(window.getSelection) // 获取我们选中的文字
+        {
+            text=window.getSelection().toString();  // 转换为字符串
+        }
+        else
+        {
+            text=document.selection.createRange().text;  //ie的写法
+        };
+
+        if(text)   // 所有的字符串都为真   "" 是假     所有的数字为真  0  为假
+        {
+            showBox(x,y,text);
+        };
+
+    };
+
+    document.onmousedown=function(ev){
+        var oEvent=ev || event;
+
+        oEvent.cancelBubble=true;
+        $("demo").style.display="none";
+
+    };
+
+    function showBox(mouseX,mouseY,contentText){
+        $("demo").style.display = "block";
+        $("demo").style.left= mouseX + "px";
+        $("demo").style.top= mouseY + "px";
+        $("demo").innerHTML = contentText;
+    };
+
+</script>

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #text{
+            width:150px;
+            height: 150px;
+            background-color: blue;
+        }
+    </style>
+    <script>
+        window.onload=function () {
+            var oBtn1=document.getElementById("btn1");
+            var oBtn2=document.getElementById("btn2");
+            var oBtn3=document.getElementById("btn3");
+            var oBtn4=document.getElementById("btn4");
+            var oText=document.getElementById("text");
+
+            oBtn1.onclick=function(){
+                oText.style.width="200px";
+            }
+            oBtn2.onclick=function(){
+                oText.style.height="200px";
+            }
+            oBtn3.onclick=function(){
+                oText.style.backgroundColor="red";
+            }
+            oBtn4.onclick=function(){
+                alert("你确定还原么")
+                oText.style.backgroundColor="blue";
+                oText.style.width="150px";
+                oText.style.height="150px";
+            }
+
+        }
+    </script>
+</head>
+<body>
+
+<input type="button" value="变宽" id="btn1">
+<input type="button" value="变高" id="btn2">
+<input type="button" value="变红色" id="btn3">
+<input type="button" value="还原" id="btn4">
+<br><br>
+<div id="text"></div>
+
+</body>
+</html>

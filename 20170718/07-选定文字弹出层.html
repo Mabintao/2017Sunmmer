@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        p{
+            width: 300px;
+            height: 300px;
+            background: pink;
+            margin: 50px auto;
+        }
+        .box{
+            background: #000;
+            width: 100px;
+            color: white;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <p>复制文字复制文字复制文字复制文字复制文字复制文字复制文字复制文字复制文字复制文字复制文字复制文字复制文字复制文字复制文字复制文字复制文字复制文字复制文字复制文字复制文字复制文字复制文字复制文字复制文字复制文字复制文字复制文字复制文字复制文字复制文字复制文字复制文字复制文字复制文字复制文字复制文字复制文字复制文字复制文字复制文字复制文字复制文字复制文字复制文字复制文字复制文字复制文字</p>
+    <div class="box"></div>
+</body>
+<script>
+    var p = document.querySelector("p");
+    var oBox = document.querySelector(".box");
+
+    p.onmouseup=function (ev) {
+        var oEvent = ev || window.event;
+
+        var x=oEvent.clientX;  //  鼠标的x坐标
+        var y=oEvent.clientY; //  同理
+        var text;
+        if(window.getSelection) // 获取我们选中的文字
+        {
+            text=window.getSelection().toString();  // 转换为字符串
+        }
+        else
+        {
+            text=document.selection.createRange().text;  //ie的写法
+        };
+
+        if(text)   // 所有的字符串都为真   "" 是假     所有的数字为真  0  为假
+        {
+            showBox(x,y,text);
+        };
+    }
+    document.onmousedown=function(ev){
+        var oEvent=ev || event;
+
+        oEvent.cancelBubble=true;
+        oBox.style.display="none";
+
+    };
+    function showBox(x,y,text) {
+        oBox.style.left=x+"px";
+        oBox.style.top=y+"px";
+        oBox.innerText=text;
+        oBox.style.display="block";
+    }
+</script>
+</html>

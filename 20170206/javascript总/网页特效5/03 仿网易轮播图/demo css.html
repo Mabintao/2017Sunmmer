@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 310px;
+            height: 270px;
+            margin: 50px auto;
+            position: relative;
+            overflow: hidden;
+        }
+        .box .slider{
+            width:310px;
+            height: 220px;
+        }
+        .box .slider .slider-mian{
+            width: 620px;
+            height:220px;
+        }
+        .box .slider .slider-mian .slider-mian-img{
+            position: absolute;
+            left:0;
+            top: 0;
+        }
+        .box .slider-ctrl .slider-prev{
+            position: absolute;
+            left:0px;
+            top: 40%;
+            color: #fff;
+            cursor: pointer;
+        }
+        .box .slider-ctrl .slider-next{
+            position: absolute;
+            right:0px;
+            top: 40%;
+            color: #fff;
+            cursor: pointer;
+        }
+        .box .slider-ctrl{
+            text-align: center;
+        }
+        .box .slider-ctrl .inder{
+            display: inline-block;
+            width:32px;
+            height: 6px;
+            background-color: #cccccc;
+            margin-top: 10px;
+            margin-left: 5px;
+            text-indent: -60px;
+            overflow: hidden;
+            position: relative;
+        }
+        @keyframes a_slidercurrent { from { width:0px; } to { width: 100%; } }
+
+
+
+
+
+        .box .slider-ctrl .inder.cur:before{
+            content: "";
+            display: block;
+
+            height:6px;
+            background-color: red;
+            animation: a_slidercurrent 3s linear;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box" id="js_box">
+    <div class="slider">
+        <div class="slider-mian" id="js_mian">
+            <div class="slider-mian-img"><a href="#"><img src="images/1.jpg"></a></div>
+            <div class="slider-mian-img"><a href="#"><img src="images/2.jpg"></a></div>
+            <div class="slider-mian-img"><a href="#"><img src="images/3.jpg"></a></div>
+            <div class="slider-mian-img"><a href="#"><img src="images/4.jpg"></a></div>
+            <div class="slider-mian-img"><a href="#"><img src="images/5.jpg"></a></div>
+            <div class="slider-mian-img"><a href="#"><img src="images/6.jpg"></a></div>
+        </div>
+    </div>
+    <div class="slider-ctrl" id="slider_ctrl">
+        <span class="slider-prev">上一张</span>
+        <!--<span class="inder cur"></span>
+        <span class="inder"></span>
+        <span class="inder"></span>
+        <span class="inder"></span>
+        <span class="inder"></span>
+        <span class="inder"></span>-->
+        <span class="slider-next">下一张</span>
+    </div>
+</div>
+
+</body>
+</html>
+<script src="../animate.js"></script>
+<script>
+    function $(id){ return document.getElementById(id)};
+
+    var js_box=$("js_box");// 获取最大盒子
+    var js_mian = $("js_mian");  // 滚动图片的父亲
+
+    var imgs=js_mian.children;//获得所有的图片组 需要滚动的部分
+    var slider_ctrl=$("slider_ctrl"); //获得 控制span 的 父盒子
+
+
+
+
+
+
+
+
+    for(var i=0; i<imgs.length; i++)
+    {
+        var span=document.createElement("span");// 创建 span
+        span.className="inder"; // 添加类名
+        span.innerHTML=imgs.length-i; //实现 倒序 的方式插入
+        slider_ctrl.insertBefore(span,slider_ctrl.children[1]);// 再 父亲 倒数第二个盒子的前面插入
+
+        imgs[i].style.left=js_box.clientWidth+"px"; // 其他人 先右移动到 310 的位置   关键代码
+    }
+
+    // 下面的第一个小span  是默认的红色的
+    var aSpan=slider_ctrl.children; // 得到所有的 span
+    aSpan[1].setAttribute("class","inder cur");
+
+    var scrollWidth=js_box.clientWidth;// 得到大盒子的宽度 也就是  后面动画走的距离  620
+
+
+    var num=0;  //  用来 控制播放张数
+    //  刚开始，按道理   第一张图片 留下   其余的人走到 310 的位置上
+    for(var k=0; k<aSpan.length; k++) //   k  是索引号  aSpan[k]    aSpan[0]  第一个span
+    {
+        imgs[0].style.left="0px";
+        aSpan[k].onclick=function(){
+            if (this.className === "slider-prev")  // 判断当前点击的这个按钮是不是 prev
+            {
+                animate(imgs[num],{left:js_box.clientWidth});
+                num--;
+                num < 0 ? num=imgs.length - 1 : num;
+                imgs[num].style.left= -js_box.clientWidth + "px";
+                animate(imgs[num],{left:0});
+
+                spanquery();//小原点切换
+            }
+           else if (this.className === "slider-next")
+            {
+                //alert(2222);
+                animate(imgs[num],{left:-js_box.clientWidth});
+                num++;
+                num > imgs.length-1 ? num = 0 : num;
+                imgs[num].style.left=js_box.clientWidth + "px";
+                animate(imgs[num],{left:0});
+                spanquery();//小原点切换
+
+
+            }
+            else
+            {
+                var that = this.innerHTML - 1; //得到索引号
+
+                if (that > num)  //下一张  右侧按钮
+                {
+                    animate(imgs[num],{left:-js_box.clientWidth});
+                    imgs[that].style.left= js_box.clientWidth +　"px";
+
+                }
+                else if (that < num)
+                {
+                    animate(imgs[num],{left:js_box.clientWidth});
+                    imgs[that].style.left= -js_box.clientWidth +　"px";
+
+                }
+                num = that;
+                animate(imgs[num],{left:0});
+                spanquery();//小原点切换
+
+            }
+        }
+    };
+
+
+    /*  小原点切换 */
+    function spanquery(){
+        for(var i=1; i<aSpan.length-1; i++ )
+        {
+            aSpan[i].className="inder";
+        };
+        aSpan[num+1].className="inder cur";
+    };
+
+
+    /*轮播开始*/
+    var timer=null;
+    var cur=slider_ctrl.getElementsByClassName("cur")[0];
+   timer=setInterval(autoplay,3000);
+    function autoplay(){
+
+        //alert(2222);
+        animate(imgs[num],{left:-js_box.clientWidth});
+        num++;
+        num > imgs.length-1 ? num = 0 : num;
+        imgs[num].style.left=js_box.clientWidth + "px";
+        animate(imgs[num],{left:0});
+        spanquery();//小原点切换
+    }
+
+
+</script>

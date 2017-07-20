@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#ul {width:100px; background:#CCC; border:1px solid black; position:absolute;
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<ul id="ul">
+		<li>1111</li>
+		<li>1111</li>
+		<li>1111</li>
+	</ul>
+
+
+	<script>
+		var oUl=document.getElementById("ul");
+
+		document.oncontextmenu=function(ev){
+			var oEvent= ev || event;
+
+			oUl.style.left=oEvent.clientX + "px";
+			oUl.style.top=oEvent.clientY + "px";
+			oUl.style.display="block"
+
+			return false;
+		}
+
+		document.onclick=function(){
+			oUl.style.display="none";
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function outFun(x){
+
+        return function(y){
+            console.log(x+y)
+        }
+
+    }
+
+    var obj= outFun(4);
+    obj();
+    obj(6);
+</script>
+</body>
+</html>

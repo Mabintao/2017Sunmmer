@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <script>
+       // 只写属性，不写方法  构造函数
+
+        function creatparson(name,age){
+
+            this.name=name;
+            this.age=age;
+
+        }
+
+        creatparson.prototype.showName=function(){
+            alert("我的名字是"+this.name)
+        }
+        creatparson.prototype.showAge=function(){
+            alert("我的年龄是"+ this.age);
+        }
+
+        var p1 =new creatparson("a","b");
+
+        p1.showName();
+        p1.showAge();
+
+
+    </script>
+
+</body>
+</html>

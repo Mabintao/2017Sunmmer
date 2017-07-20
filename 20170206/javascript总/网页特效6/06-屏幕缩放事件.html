@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="demo">
+
+</div>
+
+<script>
+    var demo = document.getElementById("demo");
+    var num=0;
+    window.onresize=function(){
+        num++;
+        console.log(num);
+        demo.innerHTML=window.innerWidth || document.documentElement.clientWidth
+    }
+</script>
+
+
+</body>
+</html>

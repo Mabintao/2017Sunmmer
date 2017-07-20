@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{margin: 0px; padding: 0px;}
+        #box{ width: 800px; height: 200px; margin: auto; margin-top: 15%; position: relative; background:black;
+            overflow: hidden;}
+        #box ul{ position: absolute; left: 0px; top:0px;}
+        #box ul li{ width: 200px; height: 200px; text-align: center; font-size: 22px; float: left; list-style: none; line-height: 200px; color:white;}
+        #box ul li:nth-child(1){ background: #a7443a;}
+        #box ul li:nth-child(2){background: #a7a33a;}
+        #box ul li:nth-child(3){background: #3aa756;}
+        #box ul li:nth-child(4){background: #3a95a7;}
+
+        #box ul li:nth-child(5){ background: #a7443a;}
+        #box ul li:nth-child(6){background: #a7a33a;}
+        #box ul li:nth-child(7){background: #3aa756;}
+        #box ul li:nth-child(8){background: #3a95a7;}
+    </style>
+</head>
+<body>
+<div id="box">
+    <ul>
+        <li>11111</li>
+        <li>2222</li>
+        <li>3333</li>
+        <li>4444</li>
+    </ul>
+</div>
+<script>
+    var oBox=document.getElementById("box");
+    var oUl=oBox.getElementsByTagName("ul")[0];
+    var oLi=oUl.getElementsByTagName("li");
+    var speed=8;
+
+    oUl.innerHTML=oUl.innerHTML+oUl.innerHTML;
+    oUl.style.width=200 * oLi.length+"px";
+    setInterval(function(){
+        oUl.style.left=oUl.offsetLeft-speed+"px";
+        //console.log(oUl.style.left+"px")
+        //console.log(oUl.offsetLeft)
+        if (oUl.offsetLeft <= -800)
+        {
+            oUl.style.left="0px";
+        }
+    },80);
+
+</script>
+</body>
+</html>

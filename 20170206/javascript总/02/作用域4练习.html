@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>无标题文档</title>
+</head>
+
+<body>
+
+<script>
+//    var jj=231;
+    function jj(){
+        alert(jj);
+    }
+    alert(jj); //  fn   fn  654
+    alert(jj); // 654  654 231
+    var jj=654;
+    jj();//   654   654  报错
+/*
+*
+*
+* */
+    /*
+     * 1)预解析
+     * 找变量、找函数、找参数
+     *
+     * {
+     *
+     *    jj=654
+     }
+
+     //函数和变量重名，函数会干掉变量
+     * }
+     *
+     *
+     * 2)执行
+     *
+     *
+     *
+     * 3) 表达式
+     *   +-*%= ....
+     *   表达式会改变所有值
+     *
+     * */
+</script>
+</body>
+</html>

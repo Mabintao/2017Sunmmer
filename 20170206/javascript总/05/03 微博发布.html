@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        ul{
+            }
+        *{margin:0;padding: 0;}
+        .box {
+            margin: 100px auto;
+            width: 600px;
+            height: auto;
+            border:1px solid #333;
+            padding: 30px 0;
+        }
+        textarea {
+            width: 450px;
+            resize: none;  /*防止用户拖动 右下角*/
+        }
+        .box li {
+            width: 450px;
+            line-height: 30px;
+            border-bottom:1px dashed #ccc;
+            margin-left: 80px;
+        }
+        .you{color: red;
+            text-align: right;
+            padding-right: 20px;
+            padding-top: 10px;
+            display: none;
+        }
+         .box li a {
+            float: right;
+        }
+    </style>
+    
+
+</head>
+<body>
+<div class="box" id="box">
+    微博发布: <textarea name="" id="" cols="30" rows="10"></textarea>  <button>发布</button>
+    <div class="you">输入不能为空！</div>
+     <ul>
+        <li>311231<a href ='javascript:;'>删除</a></li>
+    </ul>
+</div>
+
+    <script>
+        var oBox=document.getElementById("box");
+        var oUl=oBox.children[3];
+       
+        oUl.style.background="red";
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+		*{margin: 0px; padding: 0px;}
+			.mask{width: 100%; height: 100%; position: fixed; background: #000000; opacity: 0.6; z-index: 99;}
+			.loginContext{background: url(img/alert.jpg); position: fixed; z-index: 100; width: 941px; height: 498px;}
+		</style>
+	</head>
+	<body style="height: 2000px; background: red;">
+		<div id="login">
+			<div class="mask"></div>
+			<div class="loginContext" id="logc"></div>
+		</div>
+		
+		<script>
+		window.onload=function(){
+			//获取页面可视区的高度和宽度
+			var wHeight=document.documentElement.clientHeight;
+			var wWidth=document.documentElement.clientWidth;
+			
+			//获取登陆框的宽和高
+			var oLogc=document.getElementById("logc");
+			var dHeight=oLogc.offsetHeight;
+			var dWidth=oLogc.offsetWidth;
+			
+			
+			//可视区的宽和高减去弹框 的宽和高/2
+			oLogc.style.left=(wWidth-dWidth)/2+"px"
+			oLogc.style.top=(wHeight-dHeight)/2+"px";
+			
+		}
+		</script>
+	</body>
+</html>

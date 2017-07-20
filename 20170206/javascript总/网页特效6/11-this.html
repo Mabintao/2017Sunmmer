@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function fn1(){
+            alert(this);
+        };
+
+       // fn1();  //   这个的this 指向的是 window
+        function fn2(){
+            alert(this);
+        };
+
+        //new fn2(); // 添加了  new 的函数 this 指向的是 新的对象
+
+
+        function agn(){
+            this.x=10;
+        };
+        var s=new agn();
+        var b=new agn();
+
+        alert(s==b);
+        console.log(s.x);
+
+    </script>
+</body>
+</html>

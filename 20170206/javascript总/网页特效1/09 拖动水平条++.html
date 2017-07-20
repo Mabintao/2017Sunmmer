@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        * {margin:0;padding:0;}
+        .scroll{
+            width:400px;
+            height:10px;
+            background-color: #cccccc;
+            margin: 100px;
+            position: relative;
+        }
+
+        .scroll .bar{
+            width: 10px;
+            height: 32px;
+            background-color: #369;
+            position: absolute;
+            top: -12px;
+            left: 0px;
+            cursor: pointer;
+        }
+        .mask {
+            width: 0;
+            height: 100%;
+            background-color: #369;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="scroll" id="scrollBar">
+    <div class="bar"></div>
+    <div class="mask"></div>
+</div>
+<div id="dome"></div>
+
+</body>
+</html>
+<script>
+    var oScrollBar=document.getElementById("scrollBar");
+    var dome=document.getElementById("dome");
+    var oBar=oScrollBar.children[0];
+    var mask=oScrollBar.children[1];
+
+    oBar.onmousedown=function(ev){
+        var oEvent=ev || event;
+        //距离父级的距离
+        var leftVal=oEvent.clientX - this.offsetLeft;
+        console.log(leftVal)
+        document.onmousemove=function(ev){
+            var oEvent=ev || event;
+            oBar.style.left=oEvent.clientX - leftVal +"px";
+            //onsole.log(oEvent.clientX - leftVal)
+
+            var val = parseInt(oBar.style.left);
+            if(val < 0)
+            {
+                oBar.style.left = 0;
+            } else if(val > 390)
+            {
+                oBar.style.left = "390px";
+            }
+            mask.style.width = oBar.style.left;  // 遮罩盒子的宽度
+
+            //计算百分比
+            dome.innerHTML = parseInt(oBar.offsetLeft / 390 * 100) + "%";
+        };
+
+    }
+
+</script>

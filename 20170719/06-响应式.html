@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    body{
+        width:100%;
+    }
+    ul{
+        width: 100%;
+        position: relative;
+    }
+
+    ul li{
+        width: 16.666666%;
+        height: 200px;
+        background: #CCCCCC;
+        float: left;
+        margin-top: 10px;
+    }
+
+    ul li:nth-child(2n){
+        background: #999;
+    }
+</style>
+<body>
+<div>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+
+<script src="../20170720/js/my.js"></script>
+<script>
+    var aPot = [];
+    var ali = document.querySelectorAll("ul li");
+    getApot();
+    init();
+    //保存每一个li的位置
+    function getApot() {
+        for(var i=0; i<ali.length; i++){
+            aPot[i]={
+                left:ali[i].offsetLeft,
+                top:ali[i].offsetTop
+            }
+        }
+    }
+    //布局转换
+    function init() {
+
+        for(var i=0; i<ali.length; i++){
+            ali[i].style.position="absolute";
+            animate(ali[i],{
+                left:aPot[i].left,
+                top:aPot[i].top
+            })
+        }
+    }
+
+
+
+    //获取宽度
+    window.onresize = function(){
+        var width = document.body.clientWidth;
+        for(var i=0; i<ali.length; i++) {
+            ali[i].style.position = "static";
+            if(width > 900){
+                ali[i].style.width="16.666%";
+            }else if(width > 750 && width <=900){
+                ali[i].style.width="25%";
+            }else if(width >300 && width <=750){
+                ali[i].style.width="33.3333%";
+            }else {
+                ali[i].style.width="50%";
+            }
+
+        }
+
+        getApot();
+        init();
+
+    }
+</script>
+</body>
+</html>

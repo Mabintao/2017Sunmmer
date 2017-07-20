@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="height: 2000px;">
+    <script>
+
+
+        function scroll(){
+            if (document.body.scrollTop || document.body.scrollLeft) //正常浏览器
+            {
+                return {
+                    top:document.body.scrollTop,
+                    left:document.body.scrollLeft
+                }
+            }
+            else
+            {
+                return {
+                    top:document.documentElement.scrollTop,
+                    left:document.documentElement.scrollLeft
+                }
+            }
+        }
+
+
+
+        document.onscroll=function(){
+            console.log(scroll().top)
+        }
+    </script>
+</body>
+</html>
