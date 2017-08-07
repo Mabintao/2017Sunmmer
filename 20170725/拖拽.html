@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    body,div{
+        margin: 0px;
+        padding: 0px;
+    }
+    .box{
+        width: 300px;
+        height: 200px;
+        border: 1px solid #ccc;
+        position: relative;
+    }
+    .topbox{
+        width: 100%;
+        height: 20%;
+        background: #3a95a7;
+        text-align: center;
+        line-height: 40px;
+        color: #fff;
+    }
+    .bottombox{
+        width: 100%;
+        height: 80%;
+        background: pink;
+    }
+</style>
+<body>
+    <div class="box">
+        <div class="topbox">登录</div>
+        <div class="bottombox"></div>
+    </div>
+    <script>
+        var oBox = document.querySelector(".box");
+        var oTop = document.querySelector(".topbox");
+        oTop.onmousedown=function(ev) {
+            var oEvent = ev || event;
+            var x = oEvent.clientX - oBox.offsetLeft;
+            var y = oEvent.clientY - oBox.offsetTop;
+            document.onmousemove=function (ev) {
+                var oEvent = ev || event;
+
+                oBox.style.left =  oEvent.clientX - x +"px";
+                oBox.style.top = oEvent.clientY - y +"px";
+                console.log(oBox.offsetLeft)
+                window.getSelection ? window.getSelection().removeAllRanges() : document.selection.empty(); //清除选择的文字
+            }
+            document.onmouseup=function () {
+                document.onmousemove=null;
+            }
+        }
+
+
+    </script>
+</body>
+</html>

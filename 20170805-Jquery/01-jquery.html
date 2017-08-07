@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style type="text/css">
+	.box{
+		width: 200px;
+		height: 150px;
+		background: red;
+		display: none
+	}
+</style>
+<body>
+	<input type="button" name="" value="显示">
+	<div class="box"></div>
+	<script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
+	<script type="text/javascript">
+		$("input").click(function(){
+			$(".box").toggle(300); 
+		})
+	</script>
+</body>
+</html>

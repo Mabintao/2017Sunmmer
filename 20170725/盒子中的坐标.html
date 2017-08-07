@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body,div{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width:400px;
+            height: 400px;
+            background: #036663;
+            margin: 150px auto;
+        }
+        span{
+            color: #333333;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <span>280×900</span>
+    </div>
+
+    <script>
+        var span = document.querySelector("span");
+        var oBox = document.querySelector(".box");
+        oBox.onmousemove=function (ev) {
+            var oEvent = ev||event;
+            var x = oEvent.clientX - oBox.offsetLeft;
+            var y = oEvent.clientY - oBox.offsetTop;
+            span.innerText= x+"×"+y
+        }
+    </script>
+</body>
+</html>

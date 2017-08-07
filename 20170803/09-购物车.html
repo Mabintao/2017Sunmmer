@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .box{
+            margin: 50px;
+            overflow: hidden;
+
+        }
+        .box .title{
+            overflow: hidden;
+            background: #f4f4f4;
+        }
+        .box .title li{
+            float: left;
+            padding: 15px 0px;
+            width:180px;
+            text-align: center;
+        }
+        .box .content{
+            border-bottom: 1px solid #ccc;
+            overflow: hidden;
+        }
+        .box .content li{
+            float: left;
+            padding: 15px 0px;
+            width:180px;
+            text-align: center;
+        }
+        .box .content li .number{
+            width: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <ul class="title">
+        <li id="checkAll" data-check="全选">
+            <input type="checkbox" class="checkbox">
+            <span >全选</span>
+        </li>
+        <li>商品信息</li>
+        <li>单价</li>
+        <li>数量</li>
+        <li>金额</li>
+        <li>操作</li>
+    </ul>
+    <div class="content-list">
+<!--         <ul class="content">
+            <li><input type="checkbox">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            <li>我是商品名称</li>
+            <li>
+                ￥55.00
+            </li>
+            <li>
+                <input type="button" value="-">
+                <input type="text" class="number" value="0">
+                <input type="button" value="+"></li>
+            <li>
+                ￥110.00
+            </li>
+            <li>
+                删除
+            </li>
+        </ul> -->
+    </div>
+    <div id="sumAll" style="float: right; margin-top: 20px; color: red;">合计:0元</div>
+
+    <script>
+        var data = [
+            {name:"hello",price:"77",number:"3"},
+            {name:"hello1",price:"57",number:"2"},
+            {name:"hello2",price:"97",number:"1"},
+            {name:"hello3",price:"75",number:"9"}
+        ]
+
+        function Cart(data){
+            this.data =data;
+            this.status=[];
+            this.sumAll = 0; 
+            this.content = document.getElementsByClassName("content-list")[0];
+            this.sum = document.getElementById("sum");
+            this.checkbox = document.getElementsByClassName("checkbox");
+            this.sumAllDiv = document.getElementById("sumAll");
+            this.aDel = document.getElementsByClassName('del');
+            this.aNumber = document.getElementsByClassName("number");
+        }
+
+        Cart.prototype={
+
+            //绑定HTML
+            bindHTML:function(data){
+                var str = "";
+                str += '<ul class="content">';
+                str += '<li><input type="checkbox" class="checkbox">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>';
+                str += '<li>'+data.name+'</li>';
+                str += '<li>￥'+data.price+'</li>';
+                str += '<li><input type="button" value="-" class="cut"><input type="text" class="number" value="'+data.number+'"><input type="button" value="+" class="add"></li>'
+                str += '<li>￥'+this.getSum(data.price,data.number)+'</li>'
+                str += '<li class="del">'+'删除'+'</li>'
+                str += '</ul>'
+                return str;
+            },
+            //初始化页面
+            init:function(status){
+                var str = "";
+                for(var i=0; i<this.data.length; i++){
+                    str += this.bindHTML(this.data[i]);
+                }
+                this.content.innerHTML=str;
+
+                if(status){
+                    for(var i=0; i<status.length; i++){
+                        this.checkbox[i+1].checked = status[i];
+                    }
+                }
+
+                this.addNum();  //数量自增
+                this.cutNum();    //数量自减
+                this.switchSelect();  //正选反选
+                this.getAllSum();   //获取总额
+                this.delData();  //删除数据
+                this.changeData();  //修改数据
+            },
+            //数量递增
+            addNum:function(){
+                var that = this;
+                var abtn = document.getElementsByClassName("add");
+                for(var i=0; i<abtn.length; i++){
+                    abtn[i].index = i;  
+                    abtn[i].onclick=function(){
+                        that.data[this.index].number++;
+                        that.init(that.status);
+                    }
+                }
+
+            },
+            //数量递减
+            cutNum:function(){
+                var that = this;
+                var abtn = document.getElementsByClassName("cut");
+                for(var i=0; i<abtn.length; i++){
+                    abtn[i].index = i;
+                    abtn[i].onclick=function(){
+                        that.data[this.index].number--;
+                        if(that.data[this.index].number<0){
+                            that.data[this.index].number = 0;
+                        }
+                        that.init(that.status);
+                    }
+                }
+            },
+            //计算金额
+            getSum:function(price,num){
+                return parseFloat(price) * parseInt(num);
+            },
+            //全选
+            switchSelect:function(){
+                var that = this;
+                 that.sumAll=0;
+                if(that.checkbox[0].checked==true){
+                    for(var i=1; i<that.checkbox.length; i++){
+                        that.checkbox[i].checked = true;
+                        that.status[i-1] = that.checkbox[i-1].checked;
+                        that.sumAll += that.getSum(that.data[i-1].price,that.data[i-1].number);
+                        that.sumAllDiv.innerText="合计:"+that.sumAll+"元";
+                    }
+                }
+                this.checkbox[0].onclick=function(){
+                    that.sumAll=0;
+                   if(that.checkbox[0].checked==true){
+                       for(var i=1; i<that.checkbox.length; i++){
+                           that.checkbox[i].checked = true;
+                           that.status[i-1] = that.checkbox[i-1].checked;
+                           that.sumAll += that.getSum(that.data[i-1].price,that.data[i-1].number);
+                           that.sumAllDiv.innerText="合计:"+that.sumAll+"元";
+                       }
+                   }else {
+                       for(var i=1; i<that.checkbox.length; i++){
+                           that.checkbox[i].checked = false;
+                           that.status[i] = that.checkbox[i].checked;
+                           that.sumAllDiv.innerText="合计:"+that.sumAll+"元";
+                       }
+                   } 
+                }                
+            },
+            //计算总价
+            getAllSum:function(){
+                var that = this;
+                that.sumAll = 0;
+                for(var j=1; j<that.checkbox.length; j++){
+                    that.status[j-1] = that.checkbox[j].checked;
+                    that.checkbox[j].index = j;
+                    if(that.checkbox[j].checked){
+                        that.sumAll += that.getSum(that.data[j-1].price,that.data[j-1].number);
+                    }
+                }
+                that.sumAllDiv.innerText="合计:"+that.sumAll+"元";
+                
+                for(var i=1; i<this.checkbox.length; i++){
+                    this.checkbox[i].onclick=function(){
+                        that.sumAll = 0;
+                        for(var j=1; j<that.checkbox.length; j++){
+                            that.status[j-1] = that.checkbox[j].checked;
+                            that.checkbox[j].index = j;
+                            if(that.checkbox[j].checked){
+                                that.sumAll += that.getSum(that.data[j-1].price,that.data[j-1].number);
+                            }
+                        }
+                        that.sumAllDiv.innerText="合计:"+that.sumAll+"元";
+                    }
+                }
+            },
+            //删除数据
+            delData:function(){
+                var that = this;
+                for(var i=0; i<this.aDel.length; i++){
+                    this.aDel[i].index = i;
+                    this.aDel[i].onclick=function(){
+                        that.data.splice(this.index, 1 );
+                        that.status.splice(this.index, 1)
+                        that.init(that.status);
+                    }
+                }
+            },
+            //修改数据
+            changeData:function(){
+                var that = this;
+                for(var i=0; i<this.aNumber.length; i++){
+                    this.aNumber[i].index = i;
+                    this.aNumber[i].onchange=function(){
+                        console.log(this.value)
+                        if(this.value==null){
+
+                            this.value=0;
+                        }
+                        that.data[this.index].number = this.value;
+                        that.init();
+                    }
+                 
+                }
+            },
+            //事件绑定
+            bindEvent:function(){
+                this.init();
+            }
+        }
+
+        new Cart(data).bindEvent();
+    </script>
+</div>
+</body>
+</html>

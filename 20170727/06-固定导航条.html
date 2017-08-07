@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        div{
+            text-align: center;
+        }
+         img{
+            border: none;
+            vertical-align: middle;
+        }
+        .top img{
+            width: 100%;
+        }
+        .nav img{
+            width: 100%;
+        }
+        .fixed{
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="top"><img src="images/top.png" alt=""></div>
+    <div class="nav"><img src="images/nav.png" alt=""></div>
+    <div class="main"><img src="images/main.png" alt=""></div>
+
+    <script src="../20170728/my.js"></script>
+    <script>
+        var nav = $(".nav");
+        var H = nav.offsetTop;
+        window.onscroll=function () {
+            if(scroll().top>=H){
+                nav.className="nav fixed"
+            }else {
+                nav.className="nav"
+            }
+        }
+    </script>
+</body>
+</html>

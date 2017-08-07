@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .box{
+            width:250px;
+            height: 250px;
+            margin: 50px auto;
+            border: 1px solid red;
+            position: relative;
+        }
+        .box ul li{
+            width:250px;
+            height: 250px;
+            background: #ccc;
+            position: absolute;
+            left:250px;;
+        }
+        .box ul li:nth-child(1){
+            background: #ea7676;
+        }
+        .box ul li:nth-child(2){
+            background: #3be48f;
+        }
+        .box ul li:nth-child(3){
+            background: #3b8be4;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+<a href="javascript:;" onclick="next()">下一张</a>
+
+<script src="my.js"></script>
+<script>
+    var box=document.getElementsByClassName("box")[0];
+    var aLi=box.getElementsByTagName("li");
+    var key=0;
+
+    aLi[0].style.left="0px";
+    //下一张
+    function next() {
+        animate(aLi[key],{left:-box.offsetWidth});
+        key++;
+        key >=aLi.length? key=0 :key;
+        animate(aLi[key],{left:0});
+        aLi[key].style.left= box.offsetWidth + "px";
+    }
+</script>
+
+</body>
+</html>

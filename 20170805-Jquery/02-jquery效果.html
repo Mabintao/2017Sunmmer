@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style type="text/css">
+	.box{
+		width: 200px;
+		height: 150px;
+		background: red;
+		display: none
+	}
+</style>
+<body>
+	<input type="button" name="" value="show">
+	<input type="button" name="" value="hide">
+	<input type="button" name="" value="toggle">
+	<input type="button" name="" value="fadeIn">
+	<input type="button" name="" value="fadeOut">
+	<input type="button" name="" value="fadeToggle">
+	<input type="button" name="" value="slideDown">
+	<input type="button" name="" value="slideUp">
+	<input type="button" name="" value="slideToggle">
+	<input type="button" name="" value="animate">
+	<div class="box"></div>
+	<script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
+	<script type="text/javascript">
+		$("input").eq(0).click(function(){
+			$(".box").show(300); 
+		})
+		$("input").eq(1).click(function(){
+			$(".box").hide(300); 
+		})
+		$("input").eq(2).click(function(){
+			$(".box").toggle(300); 
+		})
+		$("input").eq(3).click(function(){
+			$(".box").fadeIn(300); 
+		})
+		$("input").eq(4).click(function(){
+			$(".box").fadeOut(300); 
+		})
+		$("input").eq(5).click(function(){
+			$(".box").fadeToggle(300); 
+		})
+		$("input").eq(6).click(function(){
+			$(".box").slideDown(300); 
+		})
+		$("input").eq(7).click(function(){
+			$(".box").slideUp(300); 
+		})
+		$("input").eq(8).click(function(){
+			$(".box").slideToggle(300); 
+		})
+		$("input").eq(9).click(function(){
+			$(".box").animate({marginLeft:"300px"},1000,'linear',function(){
+				$(".box").animate({marginLeft:"0px"},800)
+			}); 
+		})
+	</script>
+</body>
+</html>

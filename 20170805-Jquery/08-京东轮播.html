@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style type="text/css">
+	*{padding: 0;margin: 0;list-style: none}
+	img{vertical-align: center;font-size: 0}
+	.box{
+		width: 650px;margin: 100px auto;position: relative;height: 254px
+	}
+	.box ul{width: 100%;height: 254px}
+	.box ul li{
+		width: 100%;position: absolute;
+	}
+	.box ol{position: absolute;left: 50%;bottom: 20px;background: rgba(255,255,255,.3);border-radius:2000px;padding: 5px 10px}
+	.box ol li{
+		width: 10px;height: 10px;background: #fff;border-radius: 50%;
+		float: left; cursor: pointer;
+	}
+	.box ol li.cur{
+		background: red
+	}
+	.box ol li+li{
+		margin-left: 10px
+	}
+	.box .btn{
+		position: absolute;left: 10px;background:  rgba(255,255,255,.3);border-radius:2000px;padding: 5px 10px;
+		top: 45%;color: #fff;cursor: pointer;width: 50px;
+	}
+	.box .next{
+		left: 570px
+	}
+</style>
+<body>
+	<div class="box">
+		<ul>
+			<li><img src="img/01.jpg"></li>
+			<li><img src="img/02.jpg"></li>
+			<li><img src="img/03.jpg"></li>
+			<li><img src="img/04.jpg"></li>
+			<li><img src="img/05.jpg"></li>
+		</ul>
+		<ol>
+
+		</ol>
+		<div class="btn prev">上一张</div>
+		<div class="btn next">下一张</div>
+	</div>
+	<script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
+	<script type="text/javascript">
+		var $box = $(".box")
+		var $aLi = $(".box ul li");
+		var $oOl = $(".box ol")
+		var key=0;
+		var $next = $(".next");
+		var $prev = $(".prev");
+		$aLi.each(function(index,ele){
+			$oOl.append("<li></li>");
+		})
+		$oOl.css({
+			marginLeft:-$oOl.width()/2+"px"
+		});
+		$oOl.find("li").eq(0).addClass("cur");
+		$aLi.eq(0).fadeIn(300).siblings().fadeOut(300);
+		$oOl.find("li").mouseover(function(){
+			var index = $(this).index();
+			key=index;
+			$(this).addClass("cur").siblings().removeClass("cur");
+			$aLi.eq(index).stop().fadeIn(300).siblings().stop().fadeOut(300);
+		})
+		$next.click(nextOne);
+		$prev.click(prevOne);
+		autoPlay();
+		$box.mouseover(function(){
+			clearInterval($box.timer);
+		})
+		$box.mouseout(function(){
+			autoPlay();
+		})
+		function nextOne(){
+			key++;
+			key>=$aLi.length?key=0:key=key;
+			$oOl.find("li").eq(key).addClass("cur").siblings().removeClass("cur");
+			$aLi.eq(key).stop().fadeIn(300).siblings().stop().fadeOut(300);
+		}
+		function prevOne(){
+			key--;
+			key<0?key=$aLi.length-1:key=key;
+			$oOl.find("li").eq(key).addClass("cur").siblings().removeClass("cur");
+			$aLi.eq(key).stop().fadeIn(300).siblings().stop().fadeOut(300);
+		}
+		function autoPlay(){
+			clearInterval($box.timer);
+			$box.timer=setInterval(nextOne,1000)
+		}
+	</script>
+</body>
+</html>

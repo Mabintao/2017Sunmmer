@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //解决"直接继承prototype"存在的缺点，利用一个空对象作为中介
+    function Animal(){}
+    Animal.prototype.species = "动物";
+
+    function Cat(name,color){
+        this.name = name;
+        this.color = color;
+    }
+
+    var F = function(){};
+    F.prototype = Animal.prototype;
+    Cat.prototype = new F();
+    Cat.prototype.constructor = Cat;
+
+    //F是空对象，所以几乎不占内存。这时，修改Cat的prototype对象，就不会影响到Animal的prototype对象。
+
+</script>
+</body>
+</html>

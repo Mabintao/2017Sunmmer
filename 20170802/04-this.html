@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //this指代本对象，若没有对象 则this指向window
+    console.log(this);
+    document.onclick=function () {
+        console.log(this);
+    }
+</script>
+</body>
+</html>

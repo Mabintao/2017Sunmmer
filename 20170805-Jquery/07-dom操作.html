@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="button" name="" value="append">
+	<input type="button" name="" value="appendto">
+	<input type="button" name="" value="prepend">
+	<input type="button" name="" value="prependto">
+	<input type="button" name="" value="before">
+	<input type="button" name="" value="after">
+	<input type="button" name="" value="insertBefore">
+	<input type="button" name="" value="insertAfter">
+	<input type="button" name="" value="wrap">
+	<input type="button" name="" value="unwrap">
+	<input type="button" name="" value="wrapAll">
+	<div class="box">
+
+		<p>11111111</p>
+	</div>
+	<script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
+	<script type="text/javascript">
+		//插入子节点
+		$("input").eq(0).click(function(){
+			$(".box").append("<h1>2222222</h1>"+"<p>5555555</p>")
+		})
+		$("input").eq(1).click(function(){
+			$("<h1>2222222</h1>"+"<p>5555555</p>").appendTo($(".box"))
+		})
+		$("input").eq(2).click(function(){
+			$(".box").prepend("<h1>2222222</h1>"+"<p>5555555</p>")
+		})
+		$("input").eq(3).click(function(){
+			$("<h1>2222222</h1>"+"<p>5555555</p>").prependTo($(".box"))
+		})
+
+		//插入兄弟节点
+		$("input").eq(4).click(function(){
+			$(".box").before("<h1>2222222</h1>"+"<p>5555555</p>")
+		})
+		$("input").eq(5).click(function(){
+			$(".box").after("<h1>2222222</h1>"+"<p>5555555</p>")
+		})
+		$("input").eq(6).click(function(){
+			$("<h1>2222222</h1>"+"<p>5555555</p>").insertBefore($(".box"))
+		})
+		$("input").eq(7).click(function(){
+			$("<h1>2222222</h1>"+"<p>5555555</p>").insertAfter($(".box"))
+		})
+
+		//包裹
+		$("input").eq(8).click(function(){
+			$("p").wrap("<div></div>")
+		})
+		$("input").eq(9).click(function(){
+			$("p").unwrap()
+		})
+		$("input").eq(10).click(function(){
+			$("p").wrapAll()
+		})
+	</script>
+</body>
+</html>

@@ -1,7 +1,556 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d2592313-1bf0-4e1a-a14c-272b56cca563" name="Default" comment="" />
+    <list default="true" id="d2592313-1bf0-4e1a-a14c-272b56cca563" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170720/img/o_s017.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170720/img/o_s018.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170720/img/o_s019.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170720/img/o_s020.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170720/img/o_s021.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170720/img/o_s022.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170720/img/o_s023.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170725/images/img.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170727/images/0001.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170727/images/001.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170727/images/Top.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170727/images/main.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170727/images/nav.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170727/images/top.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170801/images/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170801/images/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170801/images/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170801/images/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170801/images/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170801/images/next.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170801/images/prev.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170801/images/slidepic1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170801/images/slidepic2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170801/images/slidepic3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170801/images/slidepic4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170801/images/slidepic5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170802/images/01.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170802/images/02.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170802/images/03.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170802/images/04.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170802/images/05.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Eastwill/images/17173.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Eastwill/images/171731.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Eastwill/images/baoma.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Eastwill/images/baoma1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Eastwill/images/benchi.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Eastwill/images/bijiben.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Eastwill/images/diannao.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Eastwill/images/dizhi.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Eastwill/images/fenghuang.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Eastwill/images/fenghuang1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Eastwill/images/foot.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Eastwill/images/grid_bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Eastwill/images/ling1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Eastwill/images/ling2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Eastwill/images/ling3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Eastwill/images/ling4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Eastwill/images/ling5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Eastwill/images/ling6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Eastwill/images/ling7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Eastwill/images/ling8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Eastwill/images/ling9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Eastwill/images/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Eastwill/images/pic.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Eastwill/images/pic21.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Eastwill/images/pic3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Eastwill/images/pic4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Eastwill/images/pic_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Eastwill/images/pic_2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Eastwill/images/pic_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Eastwill/images/pic_4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Eastwill/images/pingban.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Eastwill/images/sanjiu.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Eastwill/images/shixi.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Eastwill/images/shouji.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Eastwill/images/sibu.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Eastwill/images/sibu1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Eastwill/images/souhu.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Eastwill/images/souhu1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Eastwill/images/ta.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Eastwill/images/tengxun.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Eastwill/images/tengxun1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Eastwill/images/wi.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Eastwill/images/wio.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Eastwill/images/xinlang.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/试题/马彬涛 七月月考.docx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170720/03-my.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170725/冒泡阻止.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170725/坦克大战.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170725/拖拽.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170725/水平条.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170725/点击跟随鼠标.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170725/焦点图.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170725/盒子中的坐标.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170727/01-放大镜.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170727/02-自定义滚动条.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170727/03-窗口滚动效果.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170727/04-Json.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170727/05-封装scroll函数.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170727/06-固定导航条.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170727/07-返回顶部.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170727/08-全屏滚动.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170727/09-demo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170728/01-封装屏幕宽度.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170728/02-onresize事件.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170728/03-弹出选中文字.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170728/04-瀑布流.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170728/my-js闭包理解.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170728/my.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170729-CSS3/01-Gradients渐变效果.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170729-CSS3/02-2D转换 translate位置移动.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170729-CSS3/03-2D转换 rotate旋转.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170729-CSS3/04-2D转换 scale放大缩小.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170729-CSS3/05-2D转换 skew倾斜.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170729-CSS3/06-3D转换 rotateX.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170729-CSS3/07-3D转换 rotateY.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170729-CSS3/08-过渡 transition.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170731/01-点击跳转导航栏.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170731/02-轮播.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170731/03-动态显示数据.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170731/my.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170801-面向对象/01-封装.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170801-面向对象/02-原形优化（函数）.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170801-面向对象/03-原形优化（构造函数）.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170801-面向对象/04-构造函数弊端.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170801-面向对象/05-原形优化（Prototype模式）.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170801-面向对象/06-isPrototypeOf().html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170801-面向对象/07-hasOwnProperty().html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170801-面向对象/08-in运算符.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170801-面向对象/09-继承（构造函数绑定）.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170801-面向对象/10-继承（prototype模式）.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170801-面向对象/11-继承（直接继承prototype）.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170801-面向对象/12-继承（利用空对象作为中介）.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170801-面向对象/13-继承函数封装.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170801-面向对象/14-拷贝继承.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170801/01-旋转木马.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170801/02-照片墙.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170801/04-闭包选项卡.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170801/my.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170802/01-节流.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170802/02-节流选项卡.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170802/03-闭包理解.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170802/04-this.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170802/05-工厂模式.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170802/06-构造函数.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170802/07-弹框.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170802/08-显示和隐藏.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170802/09-选项卡（构造函数）.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170802/10-banner.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170802/自动执行函数.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20170804/ajax.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Eastwill/css/index.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Eastwill/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Eastwill/js/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/动态生成页面图片 马彬涛/demo2.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/01/01_JavaScript的书写位置.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/01/02_alert警告框.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/01/03_注释.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/01/04_认识数值和字符串.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/01/06 鼠标展示/demo css部分.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/01/06 鼠标展示/demo js部分.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/01/06 鼠标展示/images/01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/01/06 鼠标展示/images/01big.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/01/06 鼠标展示/images/02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/01/06 鼠标展示/images/02big.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/01/06 鼠标展示/images/03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/01/06 鼠标展示/images/03big.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/01/06 鼠标展示/images/04.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/01/06 鼠标展示/images/04big.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/01/06 鼠标展示/images/05.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/01/06 鼠标展示/images/05big.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/01/06 鼠标展示/images/尺寸参考.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/01/06_变量.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/01/07_变量的命名规范.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/01/08 百度换肤/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/01/08 百度换肤/images/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/01/08 百度换肤/images/2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/01/08 百度换肤/images/3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/01/08 百度换肤/images/4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/01/08 百度换肤/images/5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/01/08 百度换肤/images/百度换肤.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/01/08_变量的定义和赋值.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/01/09_认识变量.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/01/10_变量的类型.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/01/11_数值型.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/01/12_字符串型.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/01/13_连字符和加号.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/01/14_连字符和加号-小练习.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/01/15_连字符和加号-小练习.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/01/16_变量值的传递.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/01/17_运算符有计算顺序.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/01/18_取余数.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/01/22_parseInt.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/01/23_小小计算器.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/01/images/01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/01/images/01big.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/01/images/02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/01/images/02big.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/01/images/03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/01/images/03big.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/01/images/04.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/01/images/04big.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/01/images/05.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/01/images/05big.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/01/images/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/01/images/2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/01/images/3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/01/images/4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/01/images/5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/01/images/jd1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/01/images/jd2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/01/images/尺寸参考.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/01/images/百度换肤.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/01/体会js三要素.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/01/改变盒子宽度.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/01/鼠标经过切换图片.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/02/01 函数声明.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/02/02 变量提升.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/02/03 函数的参数.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/02/04 判断函数参数匹配.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/02/05 函数传参控制盒子.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/02/05 隔行变色 js.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/02/06 鼠标展示/demo css部分.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/02/06 鼠标展示/demo js部分.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/02/06 鼠标展示/images/01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/02/06 鼠标展示/images/01big.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/02/06 鼠标展示/images/02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/02/06 鼠标展示/images/02big.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/02/06 鼠标展示/images/03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/02/06 鼠标展示/images/03big.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/02/06 鼠标展示/images/04.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/02/06 鼠标展示/images/04big.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/02/06 鼠标展示/images/05.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/02/06 鼠标展示/images/05big.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/02/06 鼠标展示/images/尺寸参考.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/02/07_布尔值.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/02/08_关系运算符.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/02/09_用户输入成绩告诉他及格没有.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/02/10_逻辑运算符.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/02/11_运算符小测试.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/02/12-作用域.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/02/12_连比的写法.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/02/13_输入年龄，得到能否考驾照.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/02/14_if语句.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/02/15_输入成绩，判断是否及格.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/02/16_输入年龄，判断是否能考驾照.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/02/17_输入密码，判断密码是否正确.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/02/18_多分支的if语句.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/02/23_else可以省略.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/02/24_单行if语句.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/02/25_for循环语句.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/02/26 两个表单小方法.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/02/作用域.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/02/作用域1.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/02/作用域2练习题.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/02/作用域3练习题.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/02/作用域4练习.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/02/作用域5练习.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/02/全选.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/02/巩固提高/.idea/encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/02/巩固提高/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/02/巩固提高/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/02/巩固提高/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/02/巩固提高/.idea/课余练习.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/02/巩固提高/01-定时器.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/02/巩固提高/02-10秒后返回URL.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/02/巩固提高/03-offset.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/02/巩固提高/04-缓冲运动.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/02/巩固提高/滚动.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/02/弹出框.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/02/日历.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/02/选项卡1.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/02/选项卡2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/02/隔行变色 js.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/03/1-JS的数据类型.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/03/1.1a入门.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/03/1.1a自动轮播.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/03/1.1扩展.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/03/1.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/03/2-JS数据类型转换.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/03/3-隐式类型转换.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/03/4-NaN.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/03/5-isNaN().html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/03/images/a1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/03/images/a2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/03/images/a3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/03/images/a4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/03/index3.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/03/作业1-找到合适的值.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/03/作业2-QQ号码.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/03/定时器巩固/.idea/encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/03/定时器巩固/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/03/定时器巩固/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/03/定时器巩固/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/03/定时器巩固/.idea/课余练习.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/03/定时器巩固/01-定时器.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/03/定时器巩固/02-10秒后返回URL.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/03/定时器巩固/03-offset.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/03/定时器巩固/04-缓冲运动.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/03/定时器巩固/0复习定时器.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/03/定时器巩固/滚动.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/03/定时器巩固/百度分享2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/03/定时器巩固/缓冲.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/03/定时器巩固/缓冲运动.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/03/数组排列.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/05/01 前端基本功-js 第五天.doc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/05/02 动态生成小圆点/demo js.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/05/02 动态生成小圆点/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/05/02 动态生成小圆点/images/11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/05/02 动态生成小圆点/images/22.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/05/02 动态生成小圆点/images/33.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/05/02 动态生成小圆点/images/44.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/05/02 动态生成小圆点/images/55.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/05/02 动态生成小圆点/images/66.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/05/02.1创建LI.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/05/02.1生成节点.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/05/03 微博发布.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/05/03 设置节点属性.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/05/04 日期函数.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/05/05 日历.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/05/05 日历js.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/05/06 分时问候/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/05/06 分时问候/images/1.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/05/06 分时问候/images/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/05/06 分时问候/images/11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/05/06 分时问候/images/2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/05/06 分时问候/images/22.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/05/06 分时问候/images/3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/05/06 分时问候/images/33.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/05/06 分时问候/images/4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/05/06 分时问候/images/44.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/05/06 分时问候/images/5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/05/06 分时问候/images/55.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/05/06 分时问候/images/6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/05/06 分时问候/images/66.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/05/07 定时器.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/05/08 定义自己时间.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/05/09 倒计时.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/05/1.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/05/~$ 前端基本功-js 第五天.doc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/05/封装className.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/05/封装className2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/06/01 复习定时器.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/06/02 时钟效果/demo - 副本.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/06/02 时钟效果/demo js.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/06/02 时钟效果/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/06/02 时钟效果/images/clock.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/06/02 时钟效果/images/hour.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/06/02 时钟效果/images/minute.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/06/02 时钟效果/images/second.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/06/03 点击倒计时.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/06/04 5秒钟之后自动关闭的广告/1.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/06/04 5秒钟之后自动关闭的广告/2.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/06/04 5秒钟之后自动关闭的广告/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/06/04 demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/06/05 5秒钟之后返回首页.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/06/06 小米手机/demo css.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/06/06 小米手机/demo js.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/06/06 小米手机/mi.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/06/07 定时器面试题.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/06/08 几个面试题.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/06/09 缓动动画.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/06/09 转换为字符串.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/06/10 字符串的位置.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/06/11 检测字符串长度.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/07/01 返回字符位置.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/07/02 url网址编码.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/07/03 操作字符串 - 副本.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/07/03 操作字符串.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/07/04 保留小数位数.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/07/05 转换大小写.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/07/06 上传正确格式的文件.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/07/07  $的符号封装.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/07/08 匀速运动.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/07/08 无缝滚动/demo Js.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/07/08 无缝滚动/demo Js1.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/07/08 无缝滚动/demo css.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/07/08 无缝滚动/images/01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/07/08 无缝滚动/images/02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/07/08 无缝滚动/images/03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/07/08 无缝滚动/images/04.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/07/09 缓动动画.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/07/10 焦点图/demo css.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/07/10 焦点图/demo css1.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/07/10 焦点图/demo css2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/07/10 焦点图/demo js.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/07/10 焦点图/images/01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/07/10 焦点图/images/02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/07/10 焦点图/images/03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/07/10 焦点图/images/04.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/07/10 焦点图/images/05.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/07/10 焦点图/焦点图.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/07/11 左右轮播图/images/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/07/11 左右轮播图/images/2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/07/11 左右轮播图/images/3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/07/11 左右轮播图/images/4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/07/11 左右轮播图/images/5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/07/11 左右轮播图/左右焦点图 js部分.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/07/11 左右轮播图/左右焦点图.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效1/01 offsetWidth.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效1/01 前端基本功-js 第八天.doc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效1/02 offsetLeft.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效1/04 offsetParent.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效1/05 offsetleft 和 style.left区别.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效1/05 体会事件对象.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效1/06 点击跟随鼠标/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效1/06 点击跟随鼠标/img.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效1/07 在一个盒子内的坐标.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效1/09 拖动水平条 js.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效1/09 拖动水平条++.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效1/09 拖动水平条.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效1/自定义右键菜单.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效2/.idea/.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效2/.idea/encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效2/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效2/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效2/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效2/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效2/.idea/案例.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效2/01 拖拽案例l另外写法.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效2/02 模拟垂直滚动条.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效2/03 html结构的访问.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效2/04 窗口滚动效果.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效2/05 json.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效2/06 封装自己的scrollTop left-1.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效2/06 封装自己的scrollTop left.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效2/07 固定导航栏/demo css部分.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效2/07 固定导航栏/images/main.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效2/07 固定导航栏/images/nav.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效2/07 固定导航栏/images/top.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效2/07 固定导航栏/my.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效2/08 两侧跟随的广告/demo css.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效2/08 两侧跟随的广告/images/aside.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效2/08 两侧跟随的广告/my.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效2/09 返回头部的小火箭/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效2/09 返回头部的小火箭/images/Top.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效2/09 返回头部的小火箭/my.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效2/10 屏幕滑动效果.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效2/11 屏幕滑动效果.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效2/my.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效2/页面滚动事件.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效3/01 前端基本功-js 第十天.doc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效3/01 对比三个宽度.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效3/02 封装可视区域大小的函数.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效3/03 onresize事件.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效3/04  改变页面颜色.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效3/05 区别函数调用.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效3/06 小米手机/demo css.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效3/06 小米手机/mi.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效3/06 检测分辨率.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效3/7 选定文字弹出层.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效4/.idea/.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效4/.idea/encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效4/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效4/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效4/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效4/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效4/.idea/案例.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效4/01 三个取整函数.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效4/01 前端基本功-js 第十一天.doc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效4/04 访问css属性.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效4/05 得到css样式.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效4/06 返回当前样式的函数.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效4/07  封装运动框架基本函数(单个属性).html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效4/08  封装运动框架基本函数(多个属性).html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效4/08 json遍历.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效4/09  封装运动框架基本函数(添加停止定时器).html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效4/10  封装运动框架基本函数 (回调函数).html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效4/12 in 运算符.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效4/13  封装运动框架基本函数 (透明度).html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效4/14 仿360 开机效果.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效4/14 手风琴效果/animate.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效4/14 手风琴效果/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效4/14 手风琴效果/images/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效4/14 手风琴效果/images/2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效4/14 手风琴效果/images/3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效4/14 手风琴效果/images/4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效4/14 手风琴效果/images/5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效4/15 手风琴效果.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效4/images/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效4/images/2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效4/images/3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效4/images/4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效4/images/5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效4/images/b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效4/images/t.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效5/.idea/.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效5/.idea/encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效5/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效5/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效5/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效5/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效5/.idea/案例.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效5/01  封装运动框架基本函数 (更改完毕兼容性).html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效5/02 demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效5/03 for in.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效5/03 仿网易轮播图/css/css.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效5/03 仿网易轮播图/demo css.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效5/03 仿网易轮播图/demo js.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效5/03 仿网易轮播图/images/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效5/03 仿网易轮播图/images/2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效5/03 仿网易轮播图/images/3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效5/03 仿网易轮播图/images/4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效5/03 仿网易轮播图/images/5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效5/03 仿网易轮播图/images/6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效5/03 仿网易轮播图/images/7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效5/03 仿网易轮播图/images/icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效5/03 仿网易轮播图/js/animate.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效5/03 仿网易轮播图/js/slider.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效5/04 json 数组.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效5/04 旋转木马轮播图/css/css.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效5/04 旋转木马轮播图/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效5/04 旋转木马轮播图/demo1.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效5/04 旋转木马轮播图/images/next.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效5/04 旋转木马轮播图/images/next_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效5/04 旋转木马轮播图/images/prev.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效5/04 旋转木马轮播图/images/prev_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效5/04 旋转木马轮播图/images/slidepic1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效5/04 旋转木马轮播图/images/slidepic2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效5/04 旋转木马轮播图/images/slidepic3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效5/04 旋转木马轮播图/images/slidepic4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效5/04 旋转木马轮播图/images/slidepic5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效5/04 旋转木马轮播图/images/slidepic6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效5/04 旋转木马轮播图/images/slidepic7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效5/04 旋转木马轮播图/images/slidepic8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效5/04 旋转木马轮播图/images/slidepic9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效5/04 旋转木马轮播图/js/animate.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效5/animate.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效5/css3.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效5/常用正则表达式汇总.docx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效6/.idea/.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效6/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效6/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效6/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效6/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效6/.idea/案例.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效6/01-闭包人作用链域.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效6/02-闭包常用写法.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效6/03-闭包的传递参数.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效6/04-事件传递参数.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效6/05-立即执行函数.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效6/06-屏幕缩放事件.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效6/07-屏幕缩放事件-函数节流.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效6/08-多个tab切换.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效6/09-多个tab切换-函数节流.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效6/10-面向对像.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效6/11-this.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效6/12-new-关键字来声明.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效6/13-原型.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效6/14-构造函数.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效6/15-自定trim.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效6/16-选项卡1.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效6/17-this巩固提高.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20170206/javascript总/网页特效6/18-this2巩固提高.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/20170718/11-百度导航条.html" afterPath="$PROJECT_DIR$/20170718/11-百度导航条.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/20170719/08-百度轮播.html" afterPath="$PROJECT_DIR$/20170719/08-百度轮播.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/20170720/02-旋转木马轮播图.html" afterPath="$PROJECT_DIR$/20170720/02-旋转木马轮播图.html" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -15,27 +564,31 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="02-旋转木马轮播图.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/20170720/02-旋转木马轮播图.html">
+      <file leaf-file-name="09-购物车.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/20170803/09-购物车.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="32" column="9" lean-forward="true" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
-              <folding>
-                <element signature="e#588#733#0" expanded="false" />
-                <element signature="e#743#888#0" expanded="false" />
-                <element signature="e#898#1045#0" expanded="false" />
-                <element signature="e#1055#1198#0" expanded="false" />
-                <element signature="e#1209#1353#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="299">
+              <caret line="140" column="0" lean-forward="false" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Css_02.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/20170720/css/Css_02.css">
+      <file leaf-file-name="01-AJax.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/20170804/01-AJax.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="470">
-              <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ajax.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/20170804/ajax.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -46,45 +599,77 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
         <option value="JavaScript File" />
         <option value="HTML File" />
-        <option value="CSS File" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>h1</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>span</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/20170718/02-scroll.html" />
-        <option value="$PROJECT_DIR$/20170718/03-文字滚动.html" />
-        <option value="$PROJECT_DIR$/20170718/05-文字滚动2.html" />
-        <option value="$PROJECT_DIR$/20170718/06-封装可视区狂度.html" />
-        <option value="$PROJECT_DIR$/20170718/06-封装可视区宽度.html" />
-        <option value="$PROJECT_DIR$/20170718/08-鼠标.html" />
-        <option value="C:/Program Files (x86)/gakataka/Student/recv/20170206false/20170206false/04-文字滚动2.html" />
-        <option value="$PROJECT_DIR$/20170718/07-选定文字弹出层.html" />
-        <option value="$PROJECT_DIR$/20170718/09-访问css属性.html" />
-        <option value="$PROJECT_DIR$/20170718/10-封装运动框架的基本函数（单个属性）.html" />
-        <option value="$USER_HOME$/Documents/WeChat Files/D370380757/Files/导航触摸滑动.html" />
-        <option value="$PROJECT_DIR$/20170718/01-屏幕滑动.html" />
-        <option value="$USER_HOME$/Desktop/导航触摸滑动(1).html" />
-        <option value="$PROJECT_DIR$/20170719/01-json遍历.html" />
-        <option value="$PROJECT_DIR$/20170719/03-多物体运动.html" />
-        <option value="$PROJECT_DIR$/20170719/02-封装运动框架的基本函数（多个属性）.html" />
-        <option value="$PROJECT_DIR$/20170719/my.js" />
-        <option value="$PROJECT_DIR$/20170718/11-作业.html" />
-        <option value="$PROJECT_DIR$/20170719/04-仿360开机效果.html" />
-        <option value="$PROJECT_DIR$/20170719/05-手风琴效果.html" />
-        <option value="$PROJECT_DIR$/20170719/images/06-响应式.html" />
-        <option value="$PROJECT_DIR$/20170719/06-响应式.html" />
-        <option value="$PROJECT_DIR$/20170719/images/07-轮播.html" />
-        <option value="$PROJECT_DIR$/20170719/07-轮播.html" />
+        <option value="$PROJECT_DIR$/20170729-CSS3/04-2D转换 scale放大缩小.html" />
+        <option value="$PROJECT_DIR$/20170729-CSS3/05-2D转换 skew倾斜.html" />
+        <option value="$PROJECT_DIR$/20170729-CSS3/06-3D转换 rotateX.html" />
+        <option value="$PROJECT_DIR$/20170729-CSS3/07-3D转换 rotateY.html" />
+        <option value="$PROJECT_DIR$/20170729-CSS3/08-过渡 transition.html" />
+        <option value="$PROJECT_DIR$/Eastwill/js/my.js" />
+        <option value="$PROJECT_DIR$/20170731/01-点击跳转导航栏.html" />
+        <option value="C:/Program Files (x86)/gakataka/Student/recv/08-轮播.html" />
+        <option value="$PROJECT_DIR$/20170731/02-轮播.html" />
+        <option value="$PROJECT_DIR$/Eastwill/js/index.js" />
+        <option value="$PROJECT_DIR$/Eastwill/index.html" />
+        <option value="$PROJECT_DIR$/Eastwill/css/index.css" />
+        <option value="$PROJECT_DIR$/20170731/03-动态显示数据.html" />
+        <option value="$PROJECT_DIR$/20170731/my.js" />
+        <option value="$PROJECT_DIR$/20170801/01-旋转木马.html" />
+        <option value="$PROJECT_DIR$/20170801/images/03-闭包.html" />
+        <option value="$PROJECT_DIR$/20170801/04-闭包选项卡.html" />
+        <option value="$PROJECT_DIR$/20170801/03-闭包.html" />
+        <option value="$PROJECT_DIR$/20170801/02-照片墙.html" />
+        <option value="C:/Program Files (x86)/gakataka/Student/recv/10/10/03-照片墙01.html" />
+        <option value="$PROJECT_DIR$/20170801-面向对象/01-封装.html" />
+        <option value="$PROJECT_DIR$/20170801-面向对象/02-原形优化01.html" />
+        <option value="$PROJECT_DIR$/20170801-面向对象/03-原形优化02.html" />
+        <option value="$PROJECT_DIR$/20170801-面向对象/05-Prototype模式.html" />
+        <option value="$PROJECT_DIR$/20170801-面向对象/04-构造函数弊端.html" />
+        <option value="$PROJECT_DIR$/20170801-面向对象/05-原形优化（Prototype模式）.html" />
+        <option value="$PROJECT_DIR$/20170801-面向对象/06-isPrototypeOf().html" />
+        <option value="$PROJECT_DIR$/20170801-面向对象/07-hasOwnProperty().html" />
+        <option value="$PROJECT_DIR$/20170801-面向对象/08-in运算符.html" />
+        <option value="$PROJECT_DIR$/20170801-面向对象/09-继承.html" />
+        <option value="$PROJECT_DIR$/20170801-面向对象/09-继承（构造函数绑定）.html" />
+        <option value="$PROJECT_DIR$/20170801-面向对象/10-继承（prototype模式）.html" />
+        <option value="$PROJECT_DIR$/20170801-面向对象/11-继承（直接继承prototype）.html" />
+        <option value="$PROJECT_DIR$/20170801-面向对象/12-继承（利用空对象作为中介）.html" />
+        <option value="$PROJECT_DIR$/20170801-面向对象/13-继承函数封装.html" />
+        <option value="$PROJECT_DIR$/20170801-面向对象/14-拷贝继承.html" />
+        <option value="$PROJECT_DIR$/20170802/01-节流.html" />
+        <option value="$PROJECT_DIR$/20170802/03-闭包理解.html" />
+        <option value="$PROJECT_DIR$/20170802/04-this.html" />
+        <option value="$PROJECT_DIR$/20170802/05-工厂模式.html" />
+        <option value="$PROJECT_DIR$/20170802/06-构造函数.html" />
+        <option value="$PROJECT_DIR$/20170802/07-弹框.html" />
+        <option value="$PROJECT_DIR$/20170802/08-显示和隐藏.html" />
+        <option value="$PROJECT_DIR$/20170802/09-选项卡（构造函数）.html" />
+        <option value="$PROJECT_DIR$/20170802/02-节流选项卡.html" />
+        <option value="$PROJECT_DIR$/20170802/test.html" />
+        <option value="$PROJECT_DIR$/20170725/拖拽.html" />
+        <option value="$PROJECT_DIR$/20170802/10-banner.html" />
+        <option value="$PROJECT_DIR$/20170803/02-product.html" />
         <option value="$PROJECT_DIR$/20170719/08-百度轮播.html" />
-        <option value="$PROJECT_DIR$/20170720/css/Css_01.css" />
-        <option value="$PROJECT_DIR$/20170720/01-模仿网易轮播.html" />
-        <option value="$PROJECT_DIR$/20170720/js/my.js" />
-        <option value="$PROJECT_DIR$/20170720/css/Css_02.css" />
-        <option value="$PROJECT_DIR$/20170720/02-旋转木马轮播图.html" />
+        <option value="$PROJECT_DIR$/20170803/09-购物车.html" />
       </list>
     </option>
   </component>
@@ -98,7 +683,10 @@
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1320" />
-    <option name="height" value="784" />
+    <option name="height" value="780" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -115,90 +703,36 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="2017Sunmmer" />
+              <option name="myItemId" value="2017_07" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="2017Sunmmer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="20170720" />
+              <option name="myItemId" value="2017_07" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="2017Sunmmer" />
+              <option name="myItemId" value="2017_07" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="2017Sunmmer" />
+              <option name="myItemId" value="2017_07" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="20170720" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="2017Sunmmer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="2017Sunmmer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="20170720" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="imgs_02" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="2017Sunmmer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="2017Sunmmer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="20170720" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="2017Sunmmer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="2017Sunmmer" />
+              <option name="myItemId" value="20170804" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -206,20 +740,23 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\2017Sunmmer\20170720\js" />
-      <recent name="E:\2017Sunmmer\20170719\images" />
-      <recent name="E:\2017Sunmmer\20170719" />
-      <recent name="E:\2017Sunmmer\20170718\images" />
-      <recent name="E:\2017Sunmmer\20170718" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\2017Sunmmer\20170720\imgs_02" />
-      <recent name="E:\2017Sunmmer\20170720\imgs_01" />
-      <recent name="E:\2017Sunmmer\20170719\images" />
-      <recent name="E:\2017Sunmmer\20170718" />
+      <recent name="E:\2017Sunmmer\20170802\images" />
+      <recent name="E:\2017Sunmmer\20170802" />
+      <recent name="E:\2017Sunmmer\20170801-面向对象" />
+      <recent name="E:\2017Sunmmer\20170801\images" />
+      <recent name="E:\2017Sunmmer\20170801" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\2017_07\20170804" />
+      <recent name="E:\2017Sunmmer\20170802" />
+      <recent name="E:\2017Sunmmer\20170801" />
+      <recent name="E:\2017Sunmmer\20170731" />
+      <recent name="E:\2017Sunmmer\Eastwill\images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -320,24 +857,69 @@
       <workItem from="1500427370104" duration="8901000" />
       <workItem from="1500439325377" duration="25441000" />
       <workItem from="1500471307518" duration="3814000" />
-      <workItem from="1500516502230" duration="22233000" />
+      <workItem from="1500516502230" duration="24869000" />
+      <workItem from="1500552280236" duration="4797000" />
+      <workItem from="1500605314441" duration="9180000" />
+      <workItem from="1500861892616" duration="1420000" />
+      <workItem from="1500865580565" duration="709000" />
+      <workItem from="1500879911055" duration="35000" />
+      <workItem from="1500947437377" duration="893000" />
+      <workItem from="1500952967174" duration="6248000" />
+      <workItem from="1500993008800" duration="8120000" />
+      <workItem from="1501037144066" duration="16000" />
+      <workItem from="1501037170880" duration="2516000" />
+      <workItem from="1501045125135" duration="7842000" />
+      <workItem from="1501063570723" duration="9715000" />
+      <workItem from="1501078350625" duration="5975000" />
+      <workItem from="1501118738583" duration="9823000" />
+      <workItem from="1501135658637" duration="15641000" />
+      <workItem from="1501155701022" duration="1854000" />
+      <workItem from="1501157623010" duration="3630000" />
+      <workItem from="1501165940197" duration="5277000" />
+      <workItem from="1501202931823" duration="9697000" />
+      <workItem from="1501224481934" duration="5961000" />
+      <workItem from="1501258340649" duration="5190000" />
+      <workItem from="1501290608581" duration="18841000" />
+      <workItem from="1501341764146" duration="38074000" />
+      <workItem from="1501424586834" duration="5768000" />
+      <workItem from="1501464580364" duration="634000" />
+      <workItem from="1501466807625" duration="994000" />
+      <workItem from="1501468191108" duration="3487000" />
+      <workItem from="1501472616139" duration="12037000" />
+      <workItem from="1501496659394" duration="155000" />
+      <workItem from="1501496859353" duration="379000" />
+      <workItem from="1501497628353" duration="4064000" />
+      <workItem from="1501550603855" duration="28954000" />
+      <workItem from="1501635795181" duration="9047000" />
+      <workItem from="1501655878825" duration="7225000" />
+      <workItem from="1501666237869" duration="740000" />
+      <workItem from="1501668298972" duration="4891000" />
+      <workItem from="1501673603059" duration="1048000" />
+      <workItem from="1501728919485" duration="116000" />
+      <workItem from="1501733077443" duration="2044000" />
+      <workItem from="1501737245055" duration="1834000" />
+      <workItem from="1501756087707" duration="36000" />
+      <workItem from="1501759205018" duration="203000" />
+      <workItem from="1501760058990" duration="1016000" />
+      <workItem from="1501761431144" duration="129000" />
+      <workItem from="1501768351622" duration="823000" />
+      <workItem from="1501830592828" duration="919000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96951000" />
+    <option name="totallyTimeSpent" value="357584000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1320" height="784" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1320" height="780" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19188768" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20046802" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24960998" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.74806803" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -345,7 +927,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872504" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -378,351 +960,372 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/20170720/02-旋转木马轮播图.html</url>
-          <line>50</line>
-          <properties />
+          <line>51</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="6" />
+      <option name="time" value="14" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/20170718/08-鼠标.html">
+    <entry file="file://$PROJECT_DIR$/20170802/10-banner.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state relative-caret-position="4536">
+          <caret line="216" column="55" lean-forward="false" selection-start-line="216" selection-start-column="55" selection-end-line="216" selection-end-column="55" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/20170206/javascript总/网页特效4/04 访问css属性.html">
+    <entry file="file://$PROJECT_DIR$/20170803/02-product.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-189">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="525">
+          <caret line="25" column="28" lean-forward="false" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/20170718/09-访问css属性.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="45" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/20170206/javascript总/网页特效4/06 返回当前样式的函数.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="32" column="12" lean-forward="false" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/WeChat Files/D370380757/Files/导航触摸滑动.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-63">
-          <caret line="99" column="8" lean-forward="false" selection-start-line="99" selection-start-column="8" selection-end-line="99" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/20170718/03-文字滚动.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="58" column="11" lean-forward="false" selection-start-line="58" selection-start-column="11" selection-end-line="58" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/20170718/02-scroll.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="18" column="16" lean-forward="false" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/20170718/01-屏幕滑动.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="71" column="45" lean-forward="false" selection-start-line="71" selection-start-column="45" selection-end-line="71" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/导航触摸滑动(1).html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="38" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/20170206/javascript总/网页特效5/02 demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/20170206/javascript总/网页特效5/03 for in.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/20170206/javascript总/网页特效5/04 json 数组.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/20170719/01-json遍历.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" column="5" lean-forward="false" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/20170719/03-多物体运动.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="36" column="16" lean-forward="false" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/20170718/04-文字滚动2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="75" column="21" lean-forward="false" selection-start-line="75" selection-start-column="21" selection-end-line="75" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files (x86)/gakataka/Student/recv/08  封装运动框架基本函数(多个属性).html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="73" column="16" lean-forward="false" selection-start-line="73" selection-start-column="16" selection-end-line="75" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/20170206/javascript总/网页特效2/my.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="26" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/20170719/02-封装运动框架的基本函数（多个属性）.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="90" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/20170719/images/t.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/20170719/04-仿360开机效果.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="26" lean-forward="false" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/20170719/06-响应式.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="88" column="48" lean-forward="true" selection-start-line="88" selection-start-column="48" selection-end-line="88" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/20170719/05-手风琴效果.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="35" column="29" lean-forward="false" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/20170719/images/1.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/20170719/images/2.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/20170719/images/3.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/20170719/images/4.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/20170719/images/b.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/20170719/images/5.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/20170719/images/7.jpg" />
-    <entry file="file://$PROJECT_DIR$/20170719/images/6.jpg" />
-    <entry file="file://$PROJECT_DIR$/20170719/images/timg.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/20170718/11-百度导航条.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" column="32" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="90" selection-end-column="7" />
-          <folding />
+        <state relative-caret-position="1701">
+          <caret line="81" column="22" lean-forward="false" selection-start-line="81" selection-start-column="22" selection-end-line="81" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/20170719/08-百度轮播.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="151" column="29" lean-forward="false" selection-start-line="151" selection-start-column="29" selection-end-line="151" selection-end-column="29" />
-          <folding>
-            <element signature="e#1735#2155#0" expanded="false" />
-            <element signature="e#2302#2779#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="2142">
+          <caret line="102" column="37" lean-forward="true" selection-start-line="102" selection-start-column="37" selection-end-line="102" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/20170206/javascript总/网页特效5/03 仿网易轮播图/css/css.css">
+    <entry file="file://$PROJECT_DIR$/20170802/10-banner.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="52" column="4" lean-forward="false" selection-start-line="52" selection-start-column="4" selection-end-line="54" selection-end-column="17" />
-          <folding />
+        <state relative-caret-position="4536">
+          <caret line="216" column="55" lean-forward="false" selection-start-line="216" selection-start-column="55" selection-end-line="216" selection-end-column="55" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/20170206/javascript总/网页特效5/03 仿网易轮播图/demo js.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="21" column="21" lean-forward="false" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/20170206/javascript总/网页特效5/03 仿网易轮播图/js/animate.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-252">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/20170206/javascript总/网页特效5/03 仿网易轮播图/js/slider.js">
+    <entry file="file://$PROJECT_DIR$/20170718/11-百度导航条.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/20170720/css/Css_01.css">
+    <entry file="file://$PROJECT_DIR$/20170719/08-百度轮播.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="70" column="58" lean-forward="false" selection-start-line="70" selection-start-column="58" selection-end-line="70" selection-end-column="58" />
-          <folding />
+        <state relative-caret-position="1554">
+          <caret line="74" column="102" lean-forward="true" selection-start-line="74" selection-start-column="28" selection-end-line="74" selection-end-column="102" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/20170719/07-轮播.html">
+    <entry file="file://$PROJECT_DIR$/20170803/02-product.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="68" column="35" lean-forward="true" selection-start-line="68" selection-start-column="35" selection-end-line="68" selection-end-column="35" />
-          <folding />
+        <state relative-caret-position="378">
+          <caret line="18" column="27" lean-forward="true" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/20170720/imgs_02/slidepic3.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/20170720/imgs_02/slidepic2.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/20170720/imgs_02/slidepic1.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/20170720/imgs_02/slidepic4.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/20170720/imgs_02/slidepic5.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/20170720/imgs_02/slidepic6.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/20170720/imgs_02/slidepic7.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/20170720/imgs_02/slidepic9.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/20170720/01-模仿网易轮播.html">
+    <entry file="file://$PROJECT_DIR$/20170802/10-banner.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="42" column="19" lean-forward="true" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
-          <folding>
-            <element signature="e#2263#3031#0" expanded="false" />
-          </folding>
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/20170720/js/my.js">
+    <entry file="file://$PROJECT_DIR$/20170802/10-banner.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="752">
-          <caret line="60" column="9" lean-forward="true" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="9" />
-          <folding>
-            <element signature="n#!!doc;n#$#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/20170720/css/Css_02.css">
+    <entry file="file://$PROJECT_DIR$/20170802/10-banner.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20170802/08-显示和隐藏.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="35" column="9" lean-forward="false" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20170802/01-节流.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="8" lean-forward="false" selection-start-line="9" selection-start-column="8" selection-end-line="13" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20170802/02-节流选项卡.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="26" column="53" lean-forward="false" selection-start-line="26" selection-start-column="53" selection-end-line="26" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20170802/09-选项卡（构造函数）.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="58" lean-forward="false" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20170725/焦点图.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1596">
+          <caret line="76" column="15" lean-forward="false" selection-start-line="76" selection-start-column="15" selection-end-line="76" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20170802/10-banner.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2016">
+          <caret line="122" column="26" lean-forward="false" selection-start-line="122" selection-start-column="26" selection-end-line="122" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20170802/08-显示和隐藏.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="35" column="9" lean-forward="false" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20170802/01-节流.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="8" lean-forward="false" selection-start-line="9" selection-start-column="8" selection-end-line="13" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20170802/02-节流选项卡.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="26" column="53" lean-forward="false" selection-start-line="26" selection-start-column="53" selection-end-line="26" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20170802/09-选项卡（构造函数）.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="58" lean-forward="false" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20170725/焦点图.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1596">
+          <caret line="76" column="15" lean-forward="true" selection-start-line="76" selection-start-column="15" selection-end-line="76" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20170802/10-banner.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1764">
+          <caret line="84" column="40" lean-forward="false" selection-start-line="84" selection-start-column="40" selection-end-line="84" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20170802/08-显示和隐藏.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20170802/01-节流.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="13" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20170802/02-节流选项卡.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="26" column="53" lean-forward="true" selection-start-line="26" selection-start-column="53" selection-end-line="26" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20170801-面向对象/13-继承函数封装.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="17" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20170801-面向对象/14-拷贝继承.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="28" column="26" lean-forward="false" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20170801-面向对象/13-继承函数封装.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="17" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20170801-面向对象/14-拷贝继承.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="28" column="26" lean-forward="false" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20170801/04-闭包选项卡.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="50" column="7" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20170802/05-工厂模式.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="12" column="12" lean-forward="false" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20170802/04-this.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20170802/03-闭包理解.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="47" column="1" lean-forward="false" selection-start-line="47" selection-start-column="1" selection-end-line="49" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20170802/06-构造函数.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="34" lean-forward="false" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20170802/07-弹框.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" column="37" lean-forward="false" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20170802/09-选项卡（构造函数）.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="58" lean-forward="false" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20170725/焦点图.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1596">
+          <caret line="76" column="15" lean-forward="false" selection-start-line="76" selection-start-column="15" selection-end-line="76" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20170802/08-显示和隐藏.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="35" column="9" lean-forward="false" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20170802/01-节流.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="8" lean-forward="false" selection-start-line="9" selection-start-column="8" selection-end-line="13" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20170802/02-节流选项卡.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="33" column="21" lean-forward="false" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20170802/自动执行函数.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="12" lean-forward="false" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20170725/拖拽.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="49" column="117" lean-forward="false" selection-start-line="49" selection-start-column="117" selection-end-line="49" selection-end-column="117" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20170725/水平条.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="58" column="117" lean-forward="true" selection-start-line="58" selection-start-column="14" selection-end-line="58" selection-end-column="117" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20170803/02-product.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="25" column="28" lean-forward="false" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20170718/11-百度导航条.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1701">
+          <caret line="81" column="22" lean-forward="false" selection-start-line="81" selection-start-column="22" selection-end-line="81" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20170802/10-banner.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2982">
+          <caret line="204" column="40" lean-forward="false" selection-start-line="204" selection-start-column="40" selection-end-line="204" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20170719/08-百度轮播.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="149" column="31" lean-forward="false" selection-start-line="149" selection-start-column="31" selection-end-line="149" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20170803/09-购物车.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="140" column="0" lean-forward="false" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/20170720/02-旋转木马轮播图.html">
+    <entry file="file://$PROJECT_DIR$/20170804/01-AJax.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="32" column="9" lean-forward="true" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
-          <folding>
-            <element signature="e#588#733#0" expanded="false" />
-            <element signature="e#743#888#0" expanded="false" />
-            <element signature="e#898#1045#0" expanded="false" />
-            <element signature="e#1055#1198#0" expanded="false" />
-            <element signature="e#1209#1353#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20170804/ajax.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>

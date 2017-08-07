@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="my.js"></script>
+<script>
+    window.onresize=jieliu(function () {
+        if(client().width>750){
+            $("html body").style.background="red";
+        }else {
+            $("html body").style.background="pink";
+        }
+    },30)
+
+    function jieliu(fn,time) {
+        var timer = null;
+        return function () {
+            clearTimeout(timer);
+            timer=setTimeout(fn,time);
+        }
+
+    }
+</script>
+</body>
+</html>

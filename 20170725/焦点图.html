@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+        }
+        img{
+            display: block;
+        }
+        .box{
+            width: 490px;
+            margin: 50px auto;
+            padding: 10px;
+            border: 1px solid #ccc;
+            position: relative;
+
+        }
+        .box .pic{
+            overflow: hidden;
+            position: relative;
+        }
+        ul{
+            width: 500%;
+            overflow: hidden;
+            position: relative;
+        }
+        ul li{
+            float: left;
+            height: 170px;
+        }
+        .btn{
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            margin-left: -80px;
+        }
+        .btn li{
+            width: 20px;
+            height: 20px;
+            margin-left: 10px;
+            background: #fff;
+            float: left;
+            line-height: 20px;
+            text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .btn .cur{
+            background: #E97305;
+            color: white;
+            border: 1px solid #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="pic">
+            <ul>
+            </ul>
+        </div>
+
+        <ol class="btn">
+        </ol>
+
+    </div>
+
+    <script>
+        var oBox = document.querySelector(".pic");
+        var oul = document.querySelector("ul");
+        var oBtn = document.querySelector(".btn");
+        init();
+        var aBtn = document.querySelectorAll("ol li");
+        var key = 0;
+        clickChange();
+        var timer = null,timer2=null,speed=0,iTarget=0;
+        autoPlay();
+
+        function autoPlay() {
+            clearInterval(timer2);
+            timer2 = setInterval(function () {
+                key++;
+                key>=aBtn.length?key=0:key=key;
+                iTarget = -key*oBox.offsetWidth;
+                buff(iTarget);
+                changeStyle(key);
+            },2000)
+        }
+        
+        function clickChange() {
+            for(var i=0; i<aBtn.length; i++){
+                aBtn[i].index=i;
+                aBtn[i].onclick=function () {
+                    key=this.index;
+                    iTarget = -key*oBox.offsetWidth;
+                    buff(iTarget);
+                    changeStyle(key);
+                }
+            }
+        }
+
+        function buff(iTarget) {
+            clearInterval(timer);
+            timer=setInterval(function () {
+                speed = (iTarget - oul.offsetLeft)/10;
+                speed = speed>=0? Math.ceil(speed):Math.floor(speed);
+                oul.style.left = oul.offsetLeft + speed + "px";
+                if(speed==0){
+                    clearInterval(timer)
+                }
+            },30)
+        }
+
+        function changeStyle(key) {
+            for(var i=0; i<aBtn.length; i++){
+                aBtn[i].className="";
+            }
+            aBtn[key].className="cur";
+        }
+
+        function init() {
+            var aImg = ["images/01.jpg","images/02.jpg","images/03.jpg","images/04.jpg","images/05.jpg"];
+            for(var i=0; i<aImg.length; i++){
+                var ulli = document.createElement("li");
+                var oImg = document.createElement("img");
+                var olli = document.createElement("li");
+                olli.innerText=i+1;
+                oImg.src=aImg[i];
+                ulli.appendChild(oImg);
+                oul.appendChild(ulli);
+                oBtn.appendChild(olli);
+                if(i==0){
+                    olli.className="cur";
+                }
+            }
+        }
+
+        
+    </script>
+</body>
+</html>

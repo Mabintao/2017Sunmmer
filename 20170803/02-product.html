@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.box{
+			margin: 10px
+		}
+	</style>
+</head>
+<body>
+	<div class="content"></div>
+
+	<script>
+		function Product (data) {
+			this.data=data;
+			this.content = document.querySelector(".content");
+			this.abtn = document.getElementsByTagName("button");
+		}
+		Product.prototype={
+			//绑定数据
+			insertData:function(data){
+				var str = 	'<div class="box" id="box">'+
+								'<h4>'+data.price+'</h4>'+
+								'<h1>'+data.name+'</h1>'+
+								'<p>'+data.comment+'</p>'+
+								'<button>加入购物车</button>'+
+							'</div>'
+				return str;
+			},
+
+			//生成HTML
+			createDom:function(){
+				var str="";
+				for(var i=0; i<this.data.length; i++){
+					str += this.insertData(this.data[i]);
+				}
+				this.content.innerHTML=str;
+			},
+
+			//加入购物车
+			cart:function(){
+				for(var i=0; i<this.abtn.length; i++){
+					this.abtn[i].onclick=function(){
+						alert("加入购物车成功");
+					}
+				}
+			},
+				
+			//事件绑定
+			bindEvent:function(){
+				this.createDom();
+				this.cart();
+			}
+		}
+		
+		var data=[
+			{price:"1500元",name:"LZ",comment:"LZ很便宜"},
+			{price:"15001元",name:"LZ1",comment:"LZ很便宜1"},
+			{price:"15002元",name:"LZ2",comment:"LZ很便宜2"},
+			{price:"15003元",name:"LZ3",comment:"LZ很便宜3"},
+			{price:"15004元",name:"LZ4",comment:"LZ很便宜4"}
+		]
+
+		var product = new Product(data);
+		console.log(product)
+		product.bindEvent();
+	</script>
+</body>
+</html>

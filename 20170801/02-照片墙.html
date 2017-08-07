@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        ul{
+            width: 620px;
+            margin: 50px auto;
+            font-size: 0;
+            position: relative;
+        }
+        ul li{
+            width: 200px;
+            height: 150px;
+            float: left;
+            border: 1px dashed transparent;
+            margin-bottom: 10px;
+            margin-right: 10px;
+            box-sizing: border-box;
+        }
+        ul li:nth-child(3n){
+            margin-right: 0px;
+        }
+        ul .cur{
+            border: 1px dashed red;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li><img src="images/1.jpg" alt=""></li>
+    <li><img src="images/2.jpg" alt=""></li>
+    <li><img src="images/3.jpg" alt=""></li>
+    <li><img src="images/4.jpg" alt=""></li>
+    <li><img src="images/5.jpg" alt=""></li>
+    <li><img src="images/1.jpg" alt=""></li>
+    <li><img src="images/2.jpg" alt=""></li>
+    <li><img src="images/3.jpg" alt=""></li>
+    <li><img src="images/4.jpg" alt=""></li>
+</ul>
+<script src="my.js"></script>
+<script>
+
+    var aLi = $("ul li",true);
+    var aPoint = [];
+    var Zindex = 1;
+
+    for(var i=0; i<aLi.length; i++){
+        aPoint[i] = {left:aLi[i].offsetLeft,top:aLi[i].offsetTop};
+    }
+
+    for(var i=0; i<aLi.length; i++){
+        aLi[i].style.position = "absolute";
+        animate(aLi[i],aPoint[i]);
+    }
+
+    for(var i=0; i<aLi.length; i++){
+        aLi[i].index=i;
+        startDar(aLi[i]);
+    }
+
+    function startDar(obj) {
+        obj.onmousedown=function (ev) {
+            console.log(1)
+            Zindex++;
+            var oEvent = ev||event;
+            var x = oEvent.clientX - obj.offsetLeft;
+            var y = oEvent.clientY - obj.offsetTop;
+            var oNear = null;
+            document.onmousemove=function (ev) {
+                var oEvent = ev||event;
+                obj.style.left = oEvent.clientX - x +"px";
+                obj.style.top = oEvent.clientY - y +"px";
+                obj.style.zIndex = Zindex;
+                for(var j=0; j<aLi.length;j++){
+                    aLi[j].className=""
+                }
+                oNear=findNearSet(obj);
+                if (oNear){
+                    oNear.className="cur";
+                }
+
+            }
+            document.onmouseup=function () {
+                document.onmousemove=null;
+                if(oNear==null){
+                    animate(obj,aPoint[obj.index]);
+                }else {
+                    oNear.className="";
+                    oNear.style.zIndex=Zindex++;
+                    obj.style.zIndex=Zindex++;
+                    animate(obj,aPoint[oNear.index]);
+                    animate(oNear,aPoint[obj.index]);
+                    var temp=0;
+                    temp = obj.index;
+                    obj.index = oNear.index;
+                    oNear.index = temp;
+                }
+            }
+            clearInterval(obj.timer)
+            return false;
+        }
+    }
+    
+    function into(obj1,obj2) {
+        var l1 = obj1.offsetLeft+obj1.offsetWidth;
+        var r1 = obj1.offsetLeft;
+        var t1 = obj1.offsetTop+obj1.offsetHeight;
+        var b1 = obj1.offsetTop;
+
+        var l2 = obj2.offsetLeft+obj2.offsetWidth;
+        var r2 = obj2.offsetLeft;
+        var t2 = obj2.offsetTop+obj2.offsetHeight;
+        var b2 = obj2.offsetTop;
+
+        if(l1<r2 || r1>l2 || t1<b2 || b1>t2){
+            return false; //没碰撞
+        }else {
+            return true;
+        }
+    }
+    function Dis(obj1,obj2) {
+        var a = obj1.offsetTop - obj2.offsetTop;
+        var b = obj1.offsetLeft - obj2.offsetLeft;
+        return(a*a+b*b);
+    }
+    //找到最近的 并且碰到的
+    function findNearSet(obj) {
+        var min = 9999999;
+        var mIndex = -1;
+        for(var i=0; i<aLi.length; i++){
+            if(obj==aLi[i]) continue;
+            if(into(obj,aLi[i])){
+                var dis = Dis(obj,aLi[i]);
+                if(min>dis){
+                    min = dis;
+                    mIndex = i;
+                }
+            }
+        }
+        if(mIndex==-1){
+            return null;
+        }else{
+            return aLi[mIndex];
+        }
+    }
+</script>
+</body>
+</html>

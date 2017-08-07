@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    function Cat(name,color) {
+        this.color = color;
+        this.name = name;
+    }
+    Cat.prototype.type = "猫仔";
+    var poki = new Cat("poki","yellow");
+
+    //in运算符可以用来判断，某个实例是否含有某个属性，不管是不是本地属性。
+
+    console.log("name" in poki);  //true
+
+    //in运算符还可以用来遍历某个对象的所有属性
+
+    for(var prop in poki){
+        console.log("poki["+prop+"]:"+poki[prop]);
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>$Title$</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .box {
+        width: 1000px;
+        margin: 50px auto 0px;
+    }
+    .box ul{
+        width: calc(25% - 15px);
+        float: left;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+    .box ul+ul{
+        margin-left: 20px;
+    }
+    .box ul li{
+        background: #ccc;
+        height: 100%;
+    }
+    .box ul li+li{
+        margin-top: 20px;
+    }
+    .box ul .H200{
+        height: 200px;
+    }
+    .box ul .H300{
+        height: 300px;
+    }
+    .box ul .H150{
+        height: 150px;
+    }
+    .box ul .H180{
+        height: 180px;
+    }
+</style>
+<body>
+    <div class="box">
+        <ul>
+            <!--<li class="H200"></li>-->
+            <!--<li class="H300"></li>-->
+            <!--<li class="H150"></li>-->
+            <!--<li class="H180"></li>-->
+        </ul>
+        <ul></ul>
+        <ul></ul>
+        <ul></ul>
+    </div>
+    <script>
+        var aul = document.querySelectorAll(".box ul");
+        //创建li
+        function appendli() {
+            var ul_1 = aul[0].offsetHeight;
+            var ul_2 = aul[1].offsetHeight;
+            var ul_3 = aul[2].offsetHeight;
+            var ul_4 = aul[3].offsetHeight;
+
+            var minUlHeight = Math.min(ul_1,ul_2,ul_3,ul_4);
+            console.log(minUlHeight)
+            var classnum = ["H200","H300","H150","H180"];
+
+            for(var i=0; i<aul.length; i++){
+                if (aul[i].offsetHeight == minUlHeight){
+                    var aLi=document.createElement("li");
+                    aLi.className=classnum[getRandomNum()];
+                    aul[i].appendChild(aLi);
+                };
+            };
+
+        }
+
+        //获取随机数
+        function getRandomNum() {
+            return Math.floor(Math.random()*4);
+        }
+
+        //生成多个li
+        function creatMoreLi() {
+            for(var i=0; i<20; i++){
+                appendli();
+            }
+        }
+        creatMoreLi();
+
+        window.onscroll=function () {
+
+            //文档高度 - 屏幕高度 == scrollTop 到达底部
+            var a = document.documentElement.offsetHeight - document.documentElement.clientHeight;
+            var b = document.body.scrollTop || document.documentElement.scrollTop;
+            if(a==b){
+                appendli();
+                window.scrollTo(0,a-50);
+            }
+        }
+    </script>
+</body>
+</html>

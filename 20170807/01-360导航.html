@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		*{padding: 0;margin: 0;list-style: none}
+		.box{width: 800px;margin: 50px auto;border:1px solid #ccc;overflow: hidden;padding: 10px}
+		.box ul{width: 100%}
+		.box ul li{width: calc(25% - 10px);height:125px;float: left;position: relative;margin-bottom: 10px;overflow: hidden;box-sizing: border-box;text-align: center;}
+		.box ul li+li{margin-left: 13px}
+		.box ul li:nth-child(5n){margin-left: 0}
+		.box ul li p{position: absolute;bottom: -50px;left: 0;width: 100%;text-align: left;background: rgba(0,0,0,.5); color: #fff;font-size: 14px;transition: all 1s}
+		.box ul li p i{display: block;width: 16px;height: 16px;background: url(images/bg.png);float: left;background-position-y:-4px;margin-top: 3px}
+		.box ul li:hover p{bottom: 0px}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<ul>
+		</ul>
+	</div>
+
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript">
+		var imgPath = ["01.jpg","02.jpg","03.jpg","04.jpg","05.jpg","06.jpg","07.jpg","08.jpg"];
+		var text = [11111,2222,3333333,444444,5555555,66666666,777777,888888]
+		var $box = $(".box ul");
+		$.each(imgPath,function(index,val){
+			var str = '<li><img src="images/'+val+'" alt=""><p><i class="icon" style="background-position-y:'+(-4-index*25)+'px"></i>'+text[index]+'</p></li>'
+			$box.append(str);
+		})
+	</script>
+</body>
+</html>

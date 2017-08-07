@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var arr = new Array(1,2,3,4,5);
+		var arr1 = [1,2,3,4,5];
+
+		Array.prototype.sum=function(){
+			var result=0;
+			for(var i=0; i<this.length; i++){
+				result+=this[i];
+			}
+			return result;
+		}
+
+		console.log(arr.sum());
+		console.log(arr1.sum());
+	</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //如果"猫"的prototype对象，指向一个Animal的实例，那么所有"猫"的实例，就能继承Animal了
+
+    function Animal(){
+        this.species = "动物";
+    }
+
+    function Cat(name,color){
+        this.name = name;
+        this.color = color;
+    }
+
+    /*
+     将Cat的prototype对象指向一个Animal的实例,相当于完全删除了prototype 对象原先的值，然后赋予一个新值。
+     任何一个prototype对象都有一个constructor属性，指向它的构造函数
+     如果没有"Cat.prototype = new Animal();"这一行，Cat.prototype.constructor是指向Cat的；
+     加了这一行以后，Cat.prototype.constructor指向Animal。
+
+     每一个实例也有一个constructor属性，默认调用prototype对象的constructor属性。
+     在运行"Cat.prototype = new Animal();"这一行之后，cat1.constructor也指向Animal！
+
+     导致继承链的紊乱（cat1明明是用构造函数Cat生成的,因此需要手动纠正
+     将Cat.prototype.constructor = Cat;
+
+    */
+
+    Cat.prototype = new Animal();
+    Cat.prototype.constructor = Cat;
+    var cat1 = new Cat("大毛","黄色");
+    console.log(cat1.species); // 动物
+</script>
+</body>
+</html>

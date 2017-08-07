@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        /*json对象*/
+        var json1 = {
+            username:"xiaoma",
+            heihei:"poki",
+            arr:[1,2,3],
+            json:{
+                username:"poki"
+            }
+        }
+
+        console.log(json1); //输出一个json对象
+        console.log(json1.username);  //获取json对应属性的值
+        console.log(json1.arr);
+        console.log(json1["arr"]); //获取json对应属性的值
+        console.log(json1["arr"][0]);
+        console.log(json1["json"]["username"]);
+
+        /*json字符串*/
+        var json01={
+            'arr':'[1,2,3,4]',
+            "off":"true",
+        }
+        console.log(json01)
+        console.log(json01['arr']) //只能通过这种方式获取
+        console.log(eval(json01)) //eval将json字符串解析成json对象
+        console.log(eval(json01).arr);
+    </script>
+</body>
+</html>

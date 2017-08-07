@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		textarea{
+			width: 400px;
+			height: 300px
+		}
+	</style>
+</head>
+<body>
+	<textarea class="input1"></textarea>
+	<button class="input2">过滤</button>
+	<textarea class="input3"></textarea>
+	<script>
+		var input1 = document.getElementsByClassName("input1")[0];
+		var input2 = document.getElementsByClassName("input2")[0];
+		var input3 = document.getElementsByClassName("input3")[0];
+		var re = /<[^>]*>/g
+		input2.onclick=function(){
+			var str = input1.value;
+			input3.value = str.replace(re,"");
+		}
+
+	</script>
+</body>
+</html>

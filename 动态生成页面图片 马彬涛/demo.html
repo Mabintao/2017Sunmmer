@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Title</title>
+    <style>
+        *{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        html,body{
+            font-size: 20px;
+        }
+        ul li{
+            display: inline-block;
+        }
+        img{
+            width: 100%;
+        }
+        .container{
+            width: 94%;
+            margin: 0 auto;
+        }
+    </style>
+
+</head>
+<body>
+    <div>
+        <ul class="container">
+
+        </ul>
+    </div>
+    <script>
+        var data = [
+            ["1.jpg"],
+            ["2.jpg","3.jpg"],
+            ["4.jpg","5.jpg","6.jpg"],
+            ["7.jpg","8.jpg","9.jpg"],
+            ["7.jpg","8.jpg","9.jpg","5.jpg","6.jpg"],
+            ["7.jpg","8.jpg","9.jpg","5.jpg","6.jpg","7.jpg","8.jpg","9.jpg","5.jpg"],
+            ["7.jpg","9.jpg","5.jpg","6.jpg","7.jpg","8.jpg","9.jpg","5.jpg"]
+        ]
+
+        var num = 0;
+        var oul = document.querySelector("ul");
+        console.log(oul.offsetWidth)
+        for(var i=0; i<data.length; i++){
+            num = data[i].length;
+            for(var j=0; j<num; j++){
+                var oli = document.createElement("li");
+                var oImg = document.createElement("img");
+                oImg.src = "images1/"+data[i][j];
+                oul.appendChild(oli);
+                oli.appendChild(oImg);
+                if(num>5){
+                    if(num%5==1 && j==num-1){
+                        oli.style.width=Math.floor(oul.offsetWidth/1)+ "px";
+                    }else if(num%5==2 && j>=num-2){
+                        oli.style.width=Math.floor(oul.offsetWidth/2)+ "px";
+                    }else if(num%5==3 && j>=num-3){
+                        oli.style.width=Math.floor(oul.offsetWidth/3)+ "px";
+                    }else if(num%5==4 && j>=num-4){
+                        oli.style.width=Math.floor(oul.offsetWidth/4)+ "px";
+                    }else {
+                        oli.style.width= Math.floor(oul.offsetWidth/5)+ "px";
+                    }
+                }else{
+                    oli.style.width= Math.floor(oul.offsetWidth/num)+ "px";
+                }
+            }
+        }
+    </script>
+</body>
+</html>

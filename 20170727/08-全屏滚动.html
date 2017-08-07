@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    html, body, ul {.
+        width: 100%;
+        height: 100%;
+    }
+
+    ul li {
+        width: 100%;
+        height: 100%;
+    }
+
+    ol {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+    }
+
+    ol li {
+        width: 40px;
+        height: 40px;
+        border: 1px solid #ccc;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+</style>
+<body>
+<ul>
+    <li>第一屏</li>
+    <li>第二屏</li>
+    <li>第三屏</li>
+    <li>第四屏</li>
+    <li>第五屏</li>
+</ul>
+<ol>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ol>
+
+<script src="../20170728/my.js"></script>
+<script>
+    var ali = $("ul li", true);
+    var aBtn = $("ol li", true);
+    var timer = null, speed = 0, iTarget = 0;
+    var key=0;
+    init();
+
+    //初始化
+    function init() {
+        var bgColor = ["pink", "#eec0ff", "#c0ffd5", "#c0dad5", "#ffd5c0"];
+        for (var i = 0; i < ali.length; i++) {
+            ali[i].style.background = bgColor[i];
+            aBtn[i].style.background = bgColor[i];
+        }
+    }
+
+    //鼠标点击事件
+    for (var i = 0; i < aBtn.length; i++) {
+        aBtn[i].index = i;
+        aBtn[i].onclick = function () {
+            iTarget = ali[this.index].offsetTop;
+            key = this.index;
+            buff();
+        }
+    }
+
+    //缓冲运动
+    function buff() {
+        clearInterval(timer);
+        timer = setInterval(function () {
+            var scrollTop = scroll().top;
+            speed = (iTarget - scrollTop) / 10;
+            speed = speed >= 0 ? Math.ceil(speed) : Math.floor(speed);
+            window.scrollTo(0, scrollTop + speed);
+            if (speed == 0) {
+                clearInterval(timer)
+            }
+        }, 30)
+    }
+
+   var timer1 = null;
+    document.onmousewheel=function (ev) {
+        clearTimeout(timer1);
+        timer1=setTimeout(function () {
+            var oEvent=ev||event;
+            if(oEvent.wheelDelta<0){
+                //滑轮向下滚
+                key++;
+            }else {
+                key--;
+            }
+            iTarget = key*window.innerHeight;
+            buff();
+        },200)
+    }
+
+</script>
+</body>
+</html>

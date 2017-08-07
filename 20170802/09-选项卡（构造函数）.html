@@ -1,0 +1,64 @@
+<!doctype html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>无标题文档</title>
+    <style>
+
+        div div{ width:200px; height:200px; background:#999; display:none;}
+        .cur{ background:red;}
+    </style>
+
+    <script type="text/javascript">
+        window.onload=function(){
+            function Tab(box,obj) {
+                this.obj = obj;
+                this.box = document.querySelector(box);
+                this.aBtn = document.querySelectorAll("input");
+                this.aDiv = this.box.querySelectorAll("div");
+                this.show();
+            }
+            Tab.prototype.show=function () {
+                var that = this;
+                console.log(this)
+                console.log(this.aBtn)
+                for(var i=0; i<this.aBtn.length; i++){
+                    this.aBtn[i].index=i;
+                    this.aBtn[i].onclick=function () {
+                        for(var j=0; j<that.aBtn.length; j++){
+                            that.aBtn[j].className="";
+                            that.aDiv[j].style.display="none";
+                        }
+                        this.className="cur";
+                        that.aDiv[this.index].style.display="block";
+                    }
+                }
+            }
+            var tab = new Tab("#div1",{autoPlay:true});
+            var tab2 = new Tab("#div2",{autoPlay:true});
+        };
+
+    </script>
+</head>
+<body>
+<div id="div1">
+    <input type="button"  value="变宽" class="cur">
+    <input type="button"  value="变高"  >
+    <input type="button"  value="变红" >
+    <input type="button" value="还原" >
+    <div style="display:block;">111</div>
+    <div>222</div>
+    <div>333</div>
+    <div>444</div>
+</div>
+<div id="div2">
+    <input type="button"  value="变宽" class="cur">
+    <input type="button"  value="变高"  >
+    <input type="button"  value="变红" >
+    <input type="button" value="还原" >
+    <div style="display:block;">111</div>
+    <div>222</div>
+    <div>333</div>
+    <div>444</div>
+</div>
+</body>
+</html>

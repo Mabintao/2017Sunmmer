@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #grad {
+            width:200px;
+            height: 200px;
+            background: -webkit-linear-gradient(white, blue); /* Safari 5.1 - 6.0 */
+            background: -o-linear-gradient(white, blue); /* Opera 11.1 - 12.0 */
+            background: -moz-linear-gradient(white, blue); /* Firefox 3.6 - 15 */
+            background: linear-gradient(white, blue); /* 标准的语法 */
+        }
+        #grad1 {
+            width:200px;
+            height: 200px;
+            background: -webkit-linear-gradient(left, red , blue); /* Safari 5.1 - 6.0 */
+            background: -o-linear-gradient(right, red, blue); /* Opera 11.1 - 12.0 */
+            background: -moz-linear-gradient(right, red, blue); /* Firefox 3.6 - 15 */
+            background: linear-gradient(to right, red , blue); /* 标准的语法 */
+        }
+    </style>
+</head>
+<body>
+    <!--
+        存在线性渐变和径向渐变
+        线性渐变（Linear Gradients）- 向下/向上/向左/向右/对角方向
+        径向渐变（Radial Gradients）- 由它们的中心定义
+
+        默认方向为从上到下渐变
+     -->
+    <div id="grad"></div>
+    <br>
+    <div id="grad1"></div>
+</body>
+</html>

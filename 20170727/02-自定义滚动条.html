@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{
+            width: 360px;
+            height: 360px;
+            margin: 50px auto;
+            border: 1px solid #333333;
+            overflow: hidden;
+        }
+        .box .left{
+            float: left;
+            width: calc(100% - 20px);
+            text-align: justify;
+            position: relative;
+        }
+        .box .right{
+            float: right;
+            width: 20px;
+            position: relative;
+            height: 100%;
+            background: #CCCCCC;
+        }
+        .box .right .bar{
+            width: 100%;
+            height: 80px;
+            background: red;
+            cursor: pointer;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="left">
+            其实，世间，根本就永远不可能存在完美的人和事物，每一个人，都有你所不知道的缺点，只是，人们展现在别人眼中的自己，都是优点的呈现，而缺点只是被深深的埋藏在心里的，每一个人都是“魔鬼和天使的化身”，只是，我们所做的，都想把美丽光彩的一面，暴露在公众的视野，而内心不好的一面，你也许永远都不会知道。
+
+            　　 这，就是人性的弱点，也应该是人性的优点吧。你想想，谁愿意把自己的缺点统统都摆放在别人的面前呢？这样的一种赤裸裸的展现，自己的自尊无法承受，别人也不愿意看到吧！
+
+            　　 你看：那园中开放的玫瑰，是多么的鲜艳美丽，可是，如果你要想去摘取它，就会有隐藏在花叶后面的尖尖的刺把你深深的划伤。那丰盈的秋天的背后，也会流露出无可奈何花落去的叹息！
+
+            　　 生命，总是充满遗憾……
+
+            　　 因为遗憾，我们才会去向往更加美丽的事物，才会去追求一些希望中的美丽。这样的想法，也是一种人之常情吧。 幸福的人，不是拥有的多，而是计较得少。幸福的人，不会这山望着那山高。他们，只是默默的耕耘着属于自己的那一块“婚姻和生活的责任田”，在这样的家园里，去享受春的百花吐蕊；夏的荷叶田田；秋的多情浪漫；冬的厚重温暖……在生命走过的四季里，在自己温馨的家园里，耕种着一种叫“幸福与知足”的东西。在美丽的清晨，他们一起笑迎朝阳；在忙碌的中午，他们各自安排；在温馨的黄昏，他们牵手共赏夕阳的美好。
+        </div>
+        <div class="right">
+            <div class="bar"></div>
+        </div>
+    </div>
+    <script>
+        function $(ele) {return document.querySelector(ele);}
+
+        var oBox = $(".box");
+        var oText = $(".left")
+        var oBar = $(".bar");
+        oBar.style.height = oBox.offsetHeight / oText.offsetHeight * oBox.offsetHeight +"px";
+        oBar.onmousedown=function (ev) {
+            var oEvent = ev||event;
+            var y = oEvent.clientY - oBar.offsetTop;
+            console.log(oBar.offsetTop)
+            document.onmousemove=function (ev) {
+                var oEvent = ev||event;
+                var move = oEvent.clientY-y;
+                if(move<=0){
+                    move=0;
+                }else if(move>=oBox.offsetHeight - oBar.offsetHeight ){
+                    move = oBox.offsetHeight- oBar.offsetHeight
+                }
+                oBar.style.top = move +"px";
+                oText.style.top = -(oText.offsetHeight - oBox.offsetHeight)/(oBox.offsetHeight - oBar.offsetHeight)*move + "px";
+                window.getSelection ? window.getSelection().removeAllRanges() : document.selection.empty(); //清除选择的文字
+
+            }
+            document.onmouseup=function () {
+                document.onmousemove=null;
+            }
+
+
+        }
+
+    </script>
+</body>
+</html>

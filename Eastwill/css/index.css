@@ -1,0 +1,488 @@
+/*--------------------公共样式---------------------*/
+html,body,div,img,span,ul,ol,li,h1,h3,h4,h6,p{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-weight: normal;
+}
+::selection {
+    background:#a7443a;
+    color:#fff;
+}
+html,body{
+    font-size: 12px;
+    color: #333333;
+    width: 100%;
+}
+h3{
+    font-size: 18px;
+    letter-spacing: 9px;
+}
+a{
+    color: #6B6B6B;
+    text-decoration: none;
+
+}
+ul li{
+    list-style: none;
+}
+img{
+    vertical-align: middle;
+    width: 100%;
+}
+html,body{
+    width: 100%;
+}
+.LF{float: left}
+.RF{float: right}
+ol li{
+    height: 3px;
+    background: #fff;
+    float: left;
+    cursor: pointer;
+}
+ol li .bar{
+    width: 0px;
+    height: 100%;
+    background: red;
+}
+ol li+li{
+    margin-left: 20px;
+}
+.title h1{
+    font-size: 40px;
+    margin-top: 80px;
+    margin-bottom: 42px;
+    font-weight: normal;
+}
+.title h6{
+    font-size: 9px;
+    color: #6B6B6B;
+    margin-bottom: 44px;
+}
+.title p{
+    font-size: 12px;
+    line-height: 24px;
+    color: #6B6B6B;
+    margin-bottom: 12px;
+}
+.title .CN{
+    letter-spacing: 9px;
+    color: #333;
+}
+.link{
+    margin-bottom: 115px;
+}
+.link a{
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    transition: all 1s ease-in 0s;
+}
+.link a:hover{
+    cursor: pointer;
+    transform: rotate(360deg);
+}
+.link img{
+     width: 60px;
+     height: 60px;
+ }
+/*--------------------公共样式---------------------*/
+.header{
+    width: 100%;
+    background: #fff;
+    height: 100px;
+    position: fixed;
+    z-index: 100;
+}
+.header .box{
+    width: 62%;
+    height: 100%;
+    margin: 0 auto;
+}
+.header .box .logo{
+    margin-top: 38px;
+}
+.header .box .navBtn .line{
+    margin-top: 38px;
+    cursor: pointer;
+}
+.header .box .navBtn .line span{
+    display: block;
+    width: 42px;
+    height: 2px;
+    background: #333333;
+    transition:all 0.5s ease 0s;
+    -moz-transition:all 0.5s ease 0s; /* Firefox 4 */
+    -webkit-transition:all 0.5s ease 0s; /* Safari and Chrome */
+    -o-transition:all 0.5s ease 0s; /* Opera */
+}
+.header .box .navBtn .line span{
+    margin-top: 4px;
+}
+.header .box .navBtn .line:hover .line01{
+    transform:translateY(-3px);
+}
+.header .box .navBtn .line:hover .line03{
+    transform:translateY(3px);
+}
+.show{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,.5);
+    z-index: 999;
+    display: none;
+    position: fixed;
+}
+.show .btn{
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    position: absolute;
+    cursor: pointer;
+    right: 0;
+}
+.show ul{
+    width: 150px;
+    margin:250px auto 0;
+    overflow: hidden;
+}
+.show ul li{
+    position: relative;
+    width: 200%;
+}
+.show ul li:hover{
+    animation: myfirst 1s;
+    -webkit-animation: myfirst 1s; /* Safari 与 Chrome */
+    left: -135px;
+}
+@keyframes myfirst
+{
+    0%   { left:0px}
+    100%   { left:-135px}
+}
+
+@-webkit-keyframes myfirst /* Safari 与 Chrome */
+{
+    0%   { left:0px}
+    100%   { left:-135px}
+}
+.show ul li+li{
+    margin-top: 30px;
+}
+.show ul li a{
+    text-align: center;
+    display: inline-block;
+    width: 45%;
+    font-size: 18px;
+    color: #fff;
+}
+.slice{
+    width: 1920px;
+    position: fixed;
+    left: 50%;
+    margin-left: -960px;
+    z-index: -2;
+}
+.slice ul{
+    width: 400%;
+    position: relative;
+}
+.slice ul li{
+    width: 25%;
+    float: left;
+}
+.slice ol{
+    position: fixed;
+    width: 45%;
+    overflow: hidden;
+    bottom: 34px;
+    margin: auto;
+    left: 300px;
+    z-index: 2;
+    cursor: pointer;
+}
+.slice ol li{
+    width: calc(25% - 15px);
+}
+
+.content{
+    position: relative;
+
+}
+.future{
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    background: url("../images/grid_bg.png");
+}
+.future h1{
+    width: 890px;
+    font-size: 90px;
+    margin: 283px auto 0;
+    padding: 25px 57px;
+    border: 2px solid #fff;
+    color: #fff;
+}
+.future h3{
+    font-size: 18px;
+    letter-spacing: 9px;
+    margin-top: 30px;
+    color: #fff;
+    font-weight: normal;
+}
+.future p{
+    width: 370px;
+    margin:30px auto 300px;
+    color: #fff;
+}
+.about{
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    background: #fff;
+    border-bottom: 1px solid #D3D3D3;
+}
+.about .link{
+    margin-top: 38px;
+}
+.works{
+    background: #f6f6f6;
+}
+.works .pic{
+    width: 80%;
+    margin:auto;
+    overflow: hidden;
+    position: relative;
+}
+.works .pic ol{
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    width: 20%;
+    overflow: hidden;
+}
+.works .pic ol li{
+    width: calc(33% - 14px);
+}
+.works .pic ul{
+    width: 300%;
+    overflow: hidden;
+    position: relative;
+}
+.works .pic ul li{
+    width: calc(10.95% - 14px);
+    float: left;
+    margin-top: 30px;
+    background: #fff;
+}
+.works .pic ul li+li{
+    margin-left: 20px;
+}
+.works .pic ul li a{
+    display: block;
+    overflow: hidden;
+    border-bottom: 3px solid #fff;
+}
+.works .pic ul li a:hover{
+    border-bottom: 3px solid red;
+}
+.works .pic ul li h4{
+    font-size: 12px;
+    margin-top: 32px;
+    font-weight: bold;
+}
+.works .pic ul li span{
+    display: block;
+    margin-top: 16px;
+    font-size: 10px;
+    color: #bfbfbf;
+    margin-bottom: 38px;
+}
+.works .link{
+    margin-top: 100px;
+}
+.brand .pic{
+    margin-top: 70px;
+}
+.brand .pic .pic_01{
+    width: 70%;
+    margin: auto;
+    overflow: hidden;
+}
+.brand .pic .picAll a{
+    display: block;
+    width: 150px;
+    height: 150px;
+    transform: rotate(45deg);
+    margin-top: 40px;
+    margin-left: 62px;
+    margin-bottom: 62px;
+    position: relative;
+    float: left;
+    overflow: hidden;
+}
+.brand .pic .picAll a img{
+    display: block;
+    position: relative;
+    top: -37px;
+    left: -69px;
+    width: 200%;
+    height: 145%;
+    transform: rotate(-45deg);
+}
+.brand .pic .pic_02{
+    width: 60%;
+    position: relative;
+    top:-145px;
+    left: 42px;
+    margin: auto;
+    overflow: hidden;
+}
+.brand .pic .pic_03{
+    width: 40%;
+    position: relative;
+    top:-290px;
+    left: 19px;
+    margin: auto;
+    overflow: hidden;
+}
+.brand .pic .text{
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    transition: all 1s ease-in 0s;
+    left: 7px;
+    top: 8px;
+    transform: scale(0);
+    background: rgba(255,255,255,0.7);
+}
+.brand .pic a:hover .text{
+    transform: scale(1);
+}
+.brand .pic a:hover p{
+    display: block;
+}
+.brand .pic .text p{
+    transform: rotate(-45deg);
+    display: none;
+    font-size: 18px;
+    position: relative;
+    top: 58px;
+    left: 0px;
+}
+.brand .link{
+    margin-top: -300px;
+}
+.mobile .pic{
+    margin-top: 70px;
+    position: relative;
+    width: 100%;
+}
+.mobile .pic .box{
+    position: relative;
+    width: 50%;
+    margin: auto;
+    overflow: hidden;
+    height: 350px;
+}
+.mobile .pic .box .diannao{
+    width: 65%;
+    position: absolute;
+    left: -450px;
+    overflow: hidden;
+}
+.mobile .pic .bijiben{
+    width: 40%;
+    position: absolute;
+    right: -270px;
+    top: 150px;
+}
+.mobile .pic .pingban{
+    width: 20%;
+    position: absolute;
+    left: 50%;
+    top: -150px;
+}
+.mobile .pic .shouji{
+    width: 8%;
+    position: absolute;
+    left: 60%;
+    top: -150px;
+}
+.clients .pic{
+    width: 85%;
+    margin: 70px auto 40px;
+    overflow: hidden;
+}
+.clients .pic .picAll{
+    width: 100%;
+    overflow: hidden;
+}
+.clients .pic .pic_01{
+    border-bottom: 1px solid #ccc;
+}
+.clients .pic .picAll li:last-child{
+    border-right: none;
+}
+.clients .pic .picAll li{
+    width: 19%;
+    float: left;
+    padding: 40px 5px;
+    border-right: 1px solid #ccc;
+}
+.clients .pic .picAll li img{
+    width: 60%;
+}
+.footer{
+    width: 100%;
+    overflow: hidden;
+}
+.footer .toTop{
+    width: 100%;
+    height: 40px;
+    background: #333333;
+    cursor: pointer;
+}
+.footer .toTop:hover{
+    background: #999;
+}
+.footer .main{
+    width: 100%;
+    height: 447px;
+    background: url("../images/foot.png");
+}
+.footer .main .LF{
+    margin: 40px;
+
+}
+.footer .main .LF img{
+    width: 98px;
+    height: 98px;
+}
+.footer .main .LF p{
+    color: #CCCCCC;
+    line-height: 20px;
+    margin-left: 20px;
+}
+.footer .main .LF p img{
+    width: 16px;height: 16px;
+    padding-right: 10px;
+}
+.footer .main .RF{
+    margin: 80px;
+}
+.footer .main .RF img{
+    width: 26px;
+    height: 22px;
+    margin-left: 10px;
+}
+.footer .last{
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background: #333;
+    color: #CCCCCC;
+}

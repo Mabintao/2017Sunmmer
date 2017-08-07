@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+        }
+        img{
+            display: block;
+        }
+        .box{
+            width: 490px;
+            margin: 50px auto;
+            padding: 10px;
+            border: 1px solid #ccc;
+            position: relative;
+        }
+        .box .pic{
+            overflow: hidden;
+            position: relative;
+        }
+        ul{
+            width: 500%;
+            overflow: hidden;
+            position: relative;
+        }
+        ul li{
+            float: left;
+            height: 170px;
+        }
+        .btn{
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            margin-left: -80px;
+        }
+        .btn li{
+            width: 20px;
+            height: 20px;
+            margin-left: 10px;
+            background: #fff;
+            float: left;
+            line-height: 20px;
+            text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .btn .cur{
+            background: #E97305;
+            color: white;
+            border: 1px solid #fff;
+        }
+        a{
+            text-decoration: none;
+            color: #333333;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body ondragstart="return false">
+<div class="box">
+    <div class="pic"><ul></ul></div>
+    <ol class="btn"></ol>
+</div>
+<a href="javascript:" id="prev">上一张</a>
+<a href="javascript:" id="next">下一张</a>
+<script>
+   function Banner() {
+       this.key = 0;
+       this.timer = null;
+       this.iTarget = 0;
+       this.doms={
+           oBox:document.querySelector(".pic"),
+           oul:document.querySelector(".pic ul"),
+           oBtn:document.querySelector(".btn"),
+           next:document.querySelector("#next"),
+           prev:document.querySelector("#prev"),
+       }
+       this.init();
+       this.aBtn = document.querySelectorAll("ol li");
+
+   }
+   Banner.prototype={
+       //初始化
+       init:function () {
+           var aImg = ["images/01.jpg","images/02.jpg","images/03.jpg","images/04.jpg","images/05.jpg"];
+           for(var i=0; i<aImg.length; i++){
+               var ulli = document.createElement("li");
+               var oImg = document.createElement("img");
+               var olli = document.createElement("li");
+               olli.innerText=i+1;
+               oImg.src=aImg[i];
+               ulli.appendChild(oImg);
+               this.doms.oul.appendChild(ulli);
+               this.doms.oBtn.appendChild(olli);
+               if(i==0){
+                   olli.className="cur";
+               }
+           }
+       },
+       //tab 切换
+       tab:function () {
+           var that = this;
+           for(var i=0; i<this.aBtn.length; i++){
+               this.aBtn[i].index=i;
+               this.aBtn[i].onclick=function () {
+                   that.clear(this.index);
+                   that.key=this.index;
+                   that.iTarget = -490*this.index;
+                   that.buff(that.doms.oul);
+               }
+           }
+       },
+       //样式清除
+       clear:function (key) {
+           var that = this;
+           for(var j=0; j<that.aBtn.length; j++){
+               that.aBtn[j].className="";
+           };
+           that.aBtn[key].className="cur";
+       },
+       //缓冲运动
+       buff:function (obj) {
+           var that=this;
+           clearTimeout(this.timer);
+           this.timer=setInterval(function () {
+                var speed = (that.iTarget - obj.offsetLeft)/10;
+                speed=speed>0?Math.ceil(speed):Math.floor(speed);
+                obj.style.left=obj.offsetLeft + speed +"px";
+                if(speed==0){
+                    clearInterval(that.timer);
+                }
+           },30);
+       },
+       toNext:function () {
+           var that = this;
+           that.key++;
+           that.key= that.key>=that.aBtn.length? 0 : that.key;
+           that.iTarget=-490 * that.key;
+           that.clear(that.key);
+           that.buff(that.doms.oul);
+       },
+       //下一张
+       next:function () {
+           var that = this;
+           this.doms.next.onclick=function () {
+                that.toNext();
+           }
+       },
+       //上一张
+       prev:function () {
+            var that=this;
+            this.doms.prev.onclick=function () {
+                that.key--;
+                that.key<0?that.key=that.aBtn.length-1:that.key;
+                that.iTarget=-490 * that.key;
+                that.clear(that.key);
+                that.buff(that.doms.oul);
+            }
+       },
+       //自动轮播
+       autoPlay:function () {
+           var that = this;
+           clearInterval(this.doms.oBtn.timer);
+           this.doms.oBtn.timer=setInterval(function () {
+                that.toNext();
+           },2000)
+       },
+       //鼠标移入停止轮播
+       mouseIn:function () {
+           var that = this;
+            this.doms.oBox.onmouseover=function () {
+                clearInterval(that.doms.oBtn.timer);
+            }
+       },
+       //鼠标移出开启轮播
+       mouseOut:function () {
+           var that = this;
+           this.doms.oBox.onmouseout=function () {
+                that.autoPlay()
+           }
+       },
+       //拖拽
+       drag:function () {
+           var that = this
+            this.doms.oul.onmousedown=function(ev) {
+                var oEvent=ev||event;
+                var startX = oEvent.clientX;
+                var endX= 0;
+                var x = startX - that.doms.oul.offsetLeft;
+                document.onmousemove=function(ev) {
+                    var oEvent = ev||event;
+                    that.doms.oul.style.left=oEvent.clientX-x+"px";
+                    if(that.doms.oul.offsetLeft>0){
+                        that.doms.oul.style.left=0+"px";
+                    }else if(that.doms.oul.offsetLeft < -490*4){
+                        that.doms.oul.style.left=-490*4+"px";
+                    }
+                }
+                document.onmouseup=function(ev) {
+                    document.onmousemove=null;
+                    var oEvent = ev||event;
+                    var dis = that.doms.oul.offsetLeft;;
+                    endX = oEvent.clientX;
+                    if(endX<startX){
+                        that.key = Math.ceil(dis/-490);
+                        that.key= that.key>=that.aBtn.length? 0 : that.key;
+                        that.iTarget=that.key*-490;
+                        that.clear(that.key);
+                        that.buff(that.doms.oul);
+                    }else {
+                        that.key = Math.ceil(dis/-490)-1;
+                        that.key<0?that.key=0:that.key;
+                        that.iTarget=that.key*-490;
+                        that.clear(that.key);
+                        that.buff(that.doms.oul);
+                    }
+                }
+            }
+       },
+       //绑定事件
+       bindEvent:function () {
+           this.tab();
+           this.next();
+           this.prev();
+           this.autoPlay();
+           this.mouseIn();
+           this.mouseOut();
+           this.drag()
+       }
+
+   }
+   var banner = new Banner();
+   banner.bindEvent();
+</script>
+</body>
+</html>

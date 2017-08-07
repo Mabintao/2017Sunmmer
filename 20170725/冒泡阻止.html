@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <a href="http://www.baidu.com" target="_black">百度</a>
+    <br><br><br>
+    <div id="c1" onclick="alert(1)">
+        <div id="c2" onclick="alert(2)">
+            <input type="button" id="c3" value="点击" onclick="alert(3)">
+        </div>
+    </div>
+</body>
+<script>
+    var samp = document.getElementsByTagName("a")[0];
+    samp.addEventListener("click",function(e){e.preventDefault()},false);
+    document.getElementById('c3').addEventListener('click',function(e){e.stopPropagation()},false);
+</script>
+</html>

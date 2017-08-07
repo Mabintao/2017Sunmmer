@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		*{margin: 0;padding: 0;list-style: none}
+		html,body,.fullpage{
+			width: 100%;height: 100%;overflow-y: hidden;
+		}
+		.fullpage{
+			position: relative;
+		}
+		.fullpage .section{
+			width: 100%;height: 100%;position:absolute;left: 0;top: 0;
+		}
+		.fullpage .barBox{
+			position: fixed;top: 50%;right: 20px;
+		}
+		.fullpage .bar{
+			width: 8px;height: 8px;background: #fff;border-radius: 50%;cursor: pointer;
+		}
+		.fullpage .bar.cur{background: red}
+		.fullpage .bar+.bar{margin-top: 8px}
+	</style>
+</head>
+<body>
+	<div class="fullpage">
+		<div class="section">第一屏</div>
+		<div class="section">
+			<div class="section">第二屏</div>
+			<div class="section">第三屏</div>
+			<div class="section">第三屏</div>
+			<div class="section">第三屏</div>
+		</div>
+		<div class="section">第三屏</div>
+		<div class="section">第四屏</div>
+		<div class="barBox"></div>
+	</div>
+	<script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
+	<script type="text/javascript">
+		function Fullpage(obj){
+			this.params = obj;
+			this.key = 0;
+			this.$fullpage = $(".fullpage");
+			this.$section = $(".fullpage>.section");
+			this.$barBox = $(".fullpage .barBox");
+			this.height = this.$section.height();
+		}
+
+		Fullpage.prototype={
+			//设置每一页的颜色
+			setPageColor:function(){
+				var that = this;
+				this.$section.each(function(index,element){
+					$(element).css({
+						background:that.params.pagescolor[index]
+					})
+				})
+			},
+
+			//初始化
+			init:function(){
+				var that = this;
+				var H = this.section
+				this.$section.each(function(index,element){
+					$(element).css({
+						top:that.height
+					})
+					if(index==that.key){
+						$(element).css({
+							top:0
+						})
+						that.changeStyle(index);
+					}
+				})
+			},
+
+			//窗口尺寸改变自动初始化
+			resize:function(){
+				var that = this;
+				window.onresize=function(){
+					that.init();
+				}
+			},
+
+			//动态生成小圆点
+			createPoints:function(){
+				var that = this;
+				this.$section.each(function(index,element){
+					that.$barBox.append('<div class="bar"></div>');
+				})
+				this.$barBox.css({
+					marginTop:-this.$barBox.height()/2+"px"
+				})
+			},
+
+			//小圆点样式更改
+			changeStyle:function(key){
+				if(this.params.navPoint){
+					this.$barBox.find(".bar").eq(key).addClass("cur").siblings().removeClass("cur");
+				}
+			},
+
+			//点击小圆点跳转
+			clickSlice:function(){
+				var that = this;
+				this.$barBox.find(".bar").each(function(index,element){
+					$(element).click(function(){
+						if(that.key!=0 || index!=0){
+							that.$section.eq(that.key).animate({
+								top:-that.height
+							},400)
+							that.key = index;
+							that.changeStyle(that.key);
+							that.$section.eq(index).css({
+								top:that.height
+							})
+							that.$section.eq(index).animate({
+								top:0
+							},400)
+						}	
+					})
+				})
+			},
+
+			//下一页
+			next:function(){
+				var that = this;
+				that.$section.eq(that.key).stop().animate({
+					top:-that.height
+				},700)
+				that.key++;
+				that.key>=that.$section.length?that.key=0:that.key=that.key;
+				that.changeStyle(that.key);
+				that.$section.eq(that.key).css({
+					top:that.height
+				})
+				that.$section.eq(that.key).stop().animate({
+					top:0
+				},700)
+			},
+
+			//上一页
+			prev:function(){
+				var that = this;
+				that.$section.eq(that.key).stop().animate({
+					top:that.height
+				},700)
+				that.key--;
+				that.key<0?that.key=that.$section.length-1:that.key=that.key;
+				that.changeStyle(that.key);
+				that.$section.eq(that.key).css({
+					top:-that.height
+				})
+				that.$section.eq(that.key).stop().animate({
+					top:0
+				},700)
+			},
+
+			//滑轮滚动跳转
+			mouseWheelSlice:function(){
+				var that=this;
+				var timer = null;
+				document.body.onmousewheel=function(ev){
+					clearInterval(timer);
+					timer = setTimeout(function(){
+						var oEvent = ev || event;
+						if(oEvent.wheelDelta<0){
+							if(that.params.loop){
+								that.next();
+							}else{
+								if(that.key<that.$section.length-1){
+									that.next();
+								}
+							}
+						}else{
+							if(that.params.loop){
+								that.prev();
+							}else{
+								if(that.key>0){
+									that.prev();
+								}
+							}
+						}
+					},400);
+				};
+			},
+
+			//键盘按下跳转
+			keySlice:function(){
+				var that = this;
+				$(document).keydown(function(ev){
+					var oEvent = ev || event;
+					switch(oEvent.keyCode) {
+						case 40:
+							if(that.params.loop){
+								that.next();
+							}else{
+								if(that.key<that.$section.length-1){
+									that.next();
+								}
+							}
+							break;
+						case 38:
+							if(that.params.loop){
+								that.prev();
+							}else{
+								if(that.key>0){
+									that.prev();
+								}
+							}
+							break;
+					}
+				})
+			},
+
+			//绑定事件
+			bindEvent:function(){
+				this.setPageColor();
+				if(this.params.navPoint){
+					this.createPoints();
+				}
+				this.init();
+				this.clickSlice();
+				this.mouseWheelSlice();
+				if(this.params.keySlice){
+					this.keySlice();
+				}
+				this.resize();
+			}
+
+		}
+
+		new Fullpage({
+			pagescolor:['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],	//自定义每一页的背景颜色
+			navPoint:false, //是否需要小圆点
+			loop:false,		//是否循环
+			keySlice:false, //是否通过键盘滚动
+
+		}).bindEvent();
+	</script>
+</body>
+</html>

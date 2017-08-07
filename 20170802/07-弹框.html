@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="button" value="弹框" id="btn">
+    <script>
+        function showValue() {
+            this.btn = document.querySelector("#btn");
+            this.text="hello";
+            var that=this;
+//          this.btn.onclick=this.show;
+            this.btn.onclick=function () {
+                that.show();
+            }
+        }
+        showValue.prototype.show=function () {
+                console.log(this.text);
+
+        }
+        new showValue();
+    </script>
+</body>
+</html>

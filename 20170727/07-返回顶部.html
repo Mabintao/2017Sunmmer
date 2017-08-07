@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .toTop{
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            cursor: pointer;
+            display: none;
+        }
+    </style>
+</head>
+<body style="height: 5000px">
+    <div class="toTop"><img src="images/Top.jpg" alt=""></div>
+</body>
+<script src="../20170728/my.js"></script>
+<script>
+    var btn = $(".toTop");
+    var iTarget=0, timer=null, speed=0;
+    window.onscroll=function () {
+        H = scroll().top;
+        if(scroll().top>0){
+            show(btn);
+        }else {
+            hide(btn);
+        }
+    }
+    btn.onclick=function () {
+        buff()
+    }
+
+    //缓冲运动
+    function buff() {
+        clearInterval(timer);
+        timer=setInterval(function () {
+            speed = (iTarget - H)/10;
+            speed = speed>0?Math.ceil(speed):Math.floor(speed);
+            window.scrollTo(H,speed+H);
+            if(speed==0){
+                clearInterval(timer);
+            }
+        },20)
+    }
+</script>
+</html>

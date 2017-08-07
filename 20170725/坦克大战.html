@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .HZ{
+        width: 100px;
+        height:100px;
+        background: #E97305;
+        color: yellow;
+        line-height: 100px;
+        text-align: center;
+        position: relative;
+    }
+    .DJ{
+        width: 80px;
+        height: 80px;
+        color: #fff;
+        position: absolute;
+        background: pink;
+        text-align: center;
+        line-height: 80px;
+        right: 0;
+        top:50%;
+        margin-top: -40px;
+    }
+    .zd{
+        width: 20px;
+        height: 20px;
+        background: red;
+        position: absolute;
+        right: 0px;
+        top: 50%;
+        margin-top: -10px;
+        z-index: -1;
+    }
+</style>
+<body>
+    <div class="HZ">黄忠</div>
+    <div class="DJ">妲己</div>
+    <script>
+        var hz = document.querySelector(".HZ");
+        var dj = document.querySelector(".DJ");
+        var speed = 2;
+        document.onkeydown=function (ev) {
+            var oEvent = ev||event;
+            switch (oEvent.keyCode){
+                case 37:
+                    hz.style.left = hz.offsetLeft - speed + "px";
+                    break;
+                case 38:
+                    console.log(1)
+                    hz.style.top = hz.offsetTop - speed + "px";
+                    break;
+                case 39:
+                    hz.style.left = hz.offsetLeft + speed + "px";
+                    break;
+                case 40:
+                    hz.style.top = hz.offsetTop + speed + "px";
+                    break;
+                case 13:
+                    var zd = document.createElement("div");
+                    zd.className = "zd";
+                    hz.appendChild(zd);
+                    
+            }
+
+        }
+    </script>
+</body>
+</html>

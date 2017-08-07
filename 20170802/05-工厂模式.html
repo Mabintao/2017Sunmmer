@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function Movie(name,time) {
+
+        var obj={};   //原料
+
+        //加工
+        obj.name=name;
+        obj.time=time;
+        obj.showName=function () {
+            console.log(this.name);
+        }
+
+        return obj;  //出厂
+    }
+
+    var movie = Movie("战狼","2017");
+    console.log(movie)
+    console.log(movie.showName());
+</script>
+</body>
+</html>

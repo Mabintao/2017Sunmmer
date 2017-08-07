@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+		.btn{
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div class="content"></div>
+<!-- 	<div class="box">
+		<strong>书名:</strong><span>javascript</span>
+		<strong>价格:</strong><span>￥115</span>
+	</div> -->
+	<span class="btn">第一页</span>
+	<span class="btn">第二页</span>
+	<span class="btn">第三页</span>
+	<script type="text/javascript" src="ajax.js"></script>
+	<script type="text/javascript">
+		var aBtn = document.querySelectorAll(".btn");
+		var content = document.querySelector(".content");
+		for(var i=0; i<aBtn.length; i++){
+			aBtn[i].index = i;
+			aBtn[i].onclick=function(){
+				ajax("page0"+(this.index+1)+".json",function(str){
+					// var arr = eval(str);  不推荐 此种方法转换安全性能差 效率低
+					var arr = JSON.parse(str);
+					var str = "";
+					for(var i=0; i<arr.length; i++){
+						str+= '<div class="box"><strong>书名:</strong><span>'+arr[i].name+'</span><strong>价格:</strong><span>￥'+arr[i].price+'</span></div>'
+					}
+					content.innerHTML = str;
+				})
+			}
+		}
+	</script>
+</body>
+</html>

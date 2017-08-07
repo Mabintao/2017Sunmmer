@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        div{
+            position: relative;
+            width: 27px;
+            height: 20px;
+            background: url("images/img.jpg");
+            background-size: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <script>
+        var box = document.querySelector(".box");
+        var timer1 = null,timer2=null,speed1=0,speed2=0;
+        onclick=function (ev) {
+            var oEvent = ev || event;
+            var x = oEvent.clientX;
+            var y = oEvent.clientY;
+            x -= box.offsetWidth/2;
+            y -= box.offsetHeight/2;
+            console.log(box.offsetLeft);
+            buff1(x);
+            buff2(y);
+        }
+
+        function buff1(iTarget) {
+            clearInterval(timer1);
+            timer1 = setInterval(function () {
+                speed1 = (iTarget - box.offsetLeft)/10;
+                speed1>=0?speed1=Math.ceil(speed1):speed1=Math.floor(speed1);
+                box.style.left = speed1　+ box.offsetLeft +"px";
+            },30)
+        }
+
+        function buff2(iTarget) {
+            clearInterval(timer2);
+            timer2 = setInterval(function () {
+                speed2 = (iTarget - box.offsetTop)/10;
+                speed2>=0?speed1=Math.ceil(speed2):speed2=Math.floor(speed2);
+                box.style.top = speed2　+ box.offsetTop +"px";
+            },30)
+        }
+
+
+    </script>
+</body>
+</html>

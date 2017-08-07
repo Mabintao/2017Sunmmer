@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style type="text/css">
+	*{
+		margin: 0;padding: 0;list-style: none;
+	}
+	.nav{
+		width: 960px;margin: auto;height: 50px;background: #ccc;
+	}
+	.nav .list{
+		width: 120px; height: 50px;line-height: 50px;text-align: center;color: #fff;float: left;cursor: pointer;
+	}
+	.nav .list .nav_list{
+		position: absolute; top: 51px;color: #fff; background: #333;width: 120px;display: none;
+	}
+</style>
+<body>
+	<ul class="nav">
+		<li class="list">
+			<span>首页</span>
+			<ul class="nav_list">
+				<li>poki</li>
+				<li>poki</li>
+				<li>poki</li>
+				<li>poki</li>
+				<li>poki</li>
+			</ul>
+		</li>
+		<li class="list">
+			<span>首页</span>
+			<ul class="nav_list">
+				<li>poki</li>
+				<li>poki</li>
+				<li>poki</li>
+				<li>poki</li>
+				<li>poki</li>
+			</ul>
+		</li>
+		<li class="list">
+			<span>首页</span>
+			<ul class="nav_list">
+				<li>poki</li>
+				<li>poki</li>
+				<li>poki</li>
+				<li>poki</li>
+				<li>poki</li>
+			</ul>
+		</li>
+		<li class="list">
+			<span>首页</span>
+			<ul class="nav_list">
+				<li>poki</li>
+				<li>poki</li>
+				<li>poki</li>
+				<li>poki</li>
+				<li>poki</li>
+			</ul>
+		</li>
+		<li class="list">
+			<span>首页</span>
+			<ul class="nav_list">
+				<li>poki</li>
+				<li>poki</li>
+				<li>poki</li>
+				<li>poki</li>
+				<li>poki</li>
+			</ul>
+		</li>
+		<li class="list">
+			<span>首页</span>
+			<ul class="nav_list">
+				<li>poki</li>
+				<li>poki</li>
+				<li>poki</li>
+				<li>poki</li>
+				<li>poki</li>
+			</ul>
+		</li>
+		<li class="list">
+			<span>首页</span>
+			<ul class="nav_list">
+				<li>poki</li>
+				<li>poki</li>
+				<li>poki</li>
+				<li>poki</li>
+				<li>poki</li>
+			</ul>
+		</li>
+		<li class="list">
+			<span>首页</span>
+			<ul class="nav_list">
+				<li>poki</li>
+				<li>poki</li>
+				<li>poki</li>
+				<li>poki</li>
+				<li>poki</li>
+			</ul>
+		</li>
+	</ul>
+
+	<script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$(".list").hover(function(){
+				$(this).find(".nav_list").slideToggle(300);
+			})
+		})
+	</script>
+</body>
+</html>

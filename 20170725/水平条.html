@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .box{
+            width: 450px;
+            height: 10px;
+            background: #CCCCCC;
+            margin: 100px auto;
+            position: relative;
+        }
+        .on{
+            width:0px;
+            height: 100%;
+            background: #007aff;
+
+        }
+        .bar{
+            width: 10px;
+            height: 40px;
+            background: #007aff;
+            position: absolute;
+            top:50%;
+            margin-top: -20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="on"></div>
+        <div class="bar"></div>
+    </div>
+    <span>你滚动到0%</span>
+    <script>
+        var oBox = document.querySelector(".box");
+        var on = document.querySelector(".on");
+        var bar = document.querySelector(".bar");
+        var oSpan = document.querySelector("span");
+        bar.onmousedown=function (ev) {
+            var oEvent = ev || event;
+            var x = oEvent.clientX - bar.offsetLeft;
+            document.onmousemove=function (ev) {
+                var oEvent = ev || event;
+                var tip = oEvent.clientX-x;
+                if(tip<=0){
+                    tip = 0
+                }else if(tip>=oBox.offsetWidth){
+                    tip=oBox.offsetWidth;
+                }
+                on.style.width=tip+"px";
+                bar.style.left=tip+"px";
+                window.getSelection ? window.getSelection().removeAllRanges() : document.selection.empty(); //清除选择的文字
+                oSpan.innerText = "你滚动到"+parseInt(on.offsetWidth/oBox.offsetWidth *100)+"%"
+            }
+            document.onmouseup=function () {
+                document.onmousemove=null;
+            }
+        }
+
+    </script>
+</body>
+</html>

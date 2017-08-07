@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Title</title>
+    <style>
+        *{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        html,body{
+            font-size: 20px;
+        }
+        ul li{
+            display: inline-block;
+        }
+        img{
+            width: 100%;
+        }
+        .container{
+            width: 94%;
+            margin: 0 auto;
+        }
+    </style>
+
+</head>
+<body>
+    <div>
+        <ul class="container">
+
+        </ul>
+    </div>
+    <script>
+        var data = [
+            ["7.jpg","8.jpg","9.jpg","5.jpg","6.jpg","7.jpg","8.jpg","9.jpg","5.jpg"],
+            ["7.jpg","9.jpg","5.jpg","6.jpg","7.jpg","8.jpg","9.jpg","5.jpg"],
+            ["7.jpg","9.jpg","5.jpg","6.jpg","7.jpg","8.jpg","9.jpg","5.jpg",
+                "7.jpg","9.jpg","5.jpg","6.jpg","7.jpg","8.jpg","9.jpg","5.jpg"]
+        ]
+
+        var num = 0;
+        var oul = document.querySelector("ul");
+        var width=0;
+        for(var i=0; i<data.length; i++){
+            num = data[i].length;
+            if(num<=5){
+                for(var j=0; j<num; j++){
+                    width= Math.floor(oul.offsetWidth/num);
+                    createNode(i,j,width)
+                }
+            }else {
+                while (num>=5){
+                    var randomnum = Math.ceil(Math.random()*5);
+                    for(var j=0; j<randomnum; j++){
+                        width= Math.floor(oul.offsetWidth/randomnum);
+                        createNode(i,j,width);
+                    }
+                    num-=randomnum;
+                }
+                if(num!=0){
+                    for(var j=0; j<num; j++){
+                        console.log(i);
+                        width= Math.floor(oul.offsetWidth/num);
+                        createNode(i,data[i].length-1-num+j,width)
+                    }
+                }
+            }
+        }
+
+
+        function createNode(i,j,width) {
+            var oli = document.createElement("li");
+            var oImg = document.createElement("img");
+            oImg.src = "images1/"+data[i][j];
+            oul.appendChild(oli);
+            oli.appendChild(oImg);
+            oli.style.width= width+ "px";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .box{
+            position: relative;
+            margin: 150px;
+        }
+        .small{
+            width: 350px;
+            height: 350px;
+            border: 1px solid #ccc;
+        }
+        .big{
+            width: 500px;
+            height: 500px;
+            position: absolute;
+            border: 1px solid #ccc;
+            left: 400px;
+            top: 0;
+            display: none;
+            overflow: hidden;
+        }
+        .bar{
+            width: 100px;
+            height: 100px;
+            background: yellow;
+            position: absolute;
+            display: none;
+            opacity: 0.5;
+            top: 0;
+            left: 0;
+            cursor: pointer;
+        }
+        .big img{
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="small">
+            <img src="images/001.jpg" alt="">
+            <div class="bar"></div>
+        </div>
+        <div class="big"><img src="images/0001.jpg" alt=""></div>
+    </div>
+    <script>
+        function $(ele) {return document.querySelector(ele)};
+        var oBox = $(".box");
+        var oSmall =$(".small");
+        var oBar = $(".bar");
+        var oBig = $(".big");
+        oSmall.onmouseout = function () {
+            oBig.style.display = "none";
+            oBar.style.display = "none";
+        }
+        oSmall.onmouseover = function () {
+            oBig.style.display = "block";
+            oBar.style.display = "block";
+        }
+        oSmall.onmousemove=function (ev) {
+            var oEvent = ev||event;
+            var that = this;
+            var x = oEvent.clientX - that.parentNode.offsetLeft - oBar.offsetWidth/2 ;
+            var y = oEvent.clientY - that.parentNode.offsetTop - oBar.offsetHeight/2;
+            if(x<=0){
+                x=0;
+            }else if(x>oSmall.offsetWidth - oBar.offsetWidth){
+                x= oSmall.offsetWidth - oBar.offsetWidth
+            }
+            if(y<=0){
+                y=0;
+            }else if(y>oSmall.offsetWidth - oBar.offsetWidth){
+                y= oSmall.offsetHeight - oBar.offsetHeight;
+            }
+            oBar.style.left= x + "px";
+            oBar.style.top= y + "px";
+            oBig.children[0].style.left = oSmall.offsetWidth / oBig.offsetWidth * -x + "px";
+            oBig.children[0].style.top = oSmall.offsetHeight / oBig.offsetHeight * -y + "px";
+       }
+
+    </script>
+</body>
+</html>

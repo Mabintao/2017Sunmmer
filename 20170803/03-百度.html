@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Document</title>
+	<style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        body{
+            width: 100%;
+            overflow: hidden;
+        }
+        img{
+            width: 100%;
+            vertical-align: 
+            center;font-size: 0
+        }
+        .myNav{
+            width: 100%;
+            height: 60px;
+        }
+        .myNav ul{
+            background: #3e98f0;
+            height: 60px;
+            overflow: hidden;
+            position: absolute;
+        }
+        .myNav ul li{
+        	background: #3e98f0;
+            line-height: 60px;
+            overflow: hidden;
+       
+          
+            padding: 0px 10px;
+            
+            float: left;
+        }
+        .myNav ul li a{
+            line-height: 60px;
+            text-decoration: none;
+            color: #ffffff;
+            text-align: center;
+        }
+        .myBanner{
+        	width: 100%;
+        	overflow: hidden;
+        }
+        .myBanner ol{
+            width: 100%;
+            height: 200px;
+            position: relative;
+            overflow: hidden;
+        }
+        .myBanner ol li{
+            position: absolute;
+            width: 100%;
+            height: 200px;
+        }
+        .myBanner ol li span{
+            position: absolute;
+            bottom: 0;
+            color: #fff;
+            font-size: 12px;
+            padding: 10px;
+            left: 0
+        }
+    </style>
+</head>
+<body>
+	<div class="myNav">
+	    <ul class="myNav_ul">
+	    </ul>
+	</div>
+	<div class="myBanner">
+		<ol class="myBanner_ol">
+		</ol>
+	</div>
+	<script src="Nav.js"></script>
+    <script src="Banner.js"></script>
+	<script src="my.js"></script>
+	<script>
+		function News (data) {
+			this.data = data;
+		}
+		News.prototype={
+			//绑定事件
+			bindEvent(){
+				var nav = new Nav(data.nav);
+				nav.bindEvent();
+
+               var banner = new Banner(data.banner);
+               banner.bindEvent();
+			}
+		}
+
+
+
+		var data = {
+			nav:["推荐","百家","本地","图片","娱乐","社会","军事","互联网","科技","女人","搞笑","生活","国际","国内","体育"],
+			banner:[
+				{imgPath:'timg.jpg',text:'HEllO1'},
+				{imgPath:'timg2.jpg',text:'HEllO2'},
+				{imgPath:'timg1.jpg',text:'HEllO3'}
+			]
+		}
+
+		var news = new News(data);
+		news.bindEvent();
+
+
+	</script>
+</body>
+</html>

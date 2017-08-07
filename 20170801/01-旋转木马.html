@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .box{
+            width: 1200px;
+            height: 500px;
+            border: 1px solid #333333;
+            margin: 50px auto;
+            position: relative;
+        }
+        .box li{
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .box li img{
+            width: 100%;
+        }
+        .btn{
+            position: absolute;
+            top: 50%;
+            margin-top: -56px;
+            z-index: 3;
+            cursor: pointer;
+        }
+        .next{
+            right: 0;
+        }
+
+    </style>
+</head>
+<body>
+<ul class="box">
+    <li><img src="images/slidepic1.jpg" alt=""></li>
+    <li><img src="images/slidepic2.jpg" alt=""></li>
+    <li><img src="images/slidepic3.jpg" alt=""></li>
+    <li><img src="images/slidepic4.jpg" alt=""></li>
+    <li><img src="images/slidepic5.jpg" alt=""></li>
+    <div class="btn prev"><img src="images/prev.png" alt=""></div>
+    <div class="btn next"><img src="images/next.png" alt=""></div>
+</ul>
+<script src="my.js"></script>
+<script>
+    var ali = $(".box li",true);
+    var prev = $(".prev");
+    var next = $(".next");
+    var oBox = $(".box");
+    var timer = null;
+    var json = [
+        {width:400,height:250,top:20,left:50,opacity:50,zIndex:1},
+        {width:600,height:375,top:70,left:0,opacity:70,zIndex:2},
+        {width:800,height:500,top:100,left:200,opacity:100,zIndex:3},
+        {width:600,height:375,top:70,left:600,opacity:70,zIndex:2},
+        {width:400,height:250,top:20,left:750,opacity:50,zIndex:1}
+    ]
+    init();
+    autoPlay();
+    next.onclick=function () {
+        clickNext();
+    }
+    prev.onclick=function () {
+        clickPrev();
+    }
+    oBox.onmouseover=function () {
+        clearInterval(timer);
+    }
+    oBox.onmouseout=function () {
+        autoPlay();
+    }
+
+
+    function init() {
+        //下一张
+        for(var i=0; i<ali.length; i++){
+            animate(ali[i],json[i]);
+        }
+    }
+    function clickNext() {
+        //上一张
+        //push操作 再数组末尾添加元素  shift操作 移除数组中的第一个元素
+        json.push(json.shift());
+        init();
+    }
+    function clickPrev() {
+        //unshift操作 在数组前面添加元素  pop操作 移除数组中的最后一个元素
+        json.unshift(json.pop());
+        init();
+    }
+    function autoPlay() {
+        clearInterval(timer);
+        timer = setInterval(function () {
+            clickNext();
+        },1000)
+    }
+
+</script>
+</body>
+</html>

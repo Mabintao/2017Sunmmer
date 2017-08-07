@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    //isPrototypeOf() 这个方法用来判断，某个proptotype对象和某个实例之间的关系。
+
+    function Cat(name,color) {
+        this.color = color;
+        this.name = name;
+    }
+    Cat.prototype.type = "猫仔";
+
+    function Dog(name,color) {
+        this.color = color;
+        this.name = name;
+    }
+    Cat.prototype.type = "狗仔";
+
+    var xiaoma = new Dog("xiaoma","black");
+    var poki = new Cat("poki","yellow");
+
+    console.log(Cat.prototype.isPrototypeOf(xiaoma));  //false
+    console.log(Cat.prototype.isPrototypeOf(poki)); //true
+
+</script>
+</body>
+</html>

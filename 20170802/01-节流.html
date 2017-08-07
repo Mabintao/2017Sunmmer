@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function jieliu(fn,time) {
+        var timer = null;
+        return function () {
+            clearTimeout(timer);
+            timer = setTimeout(fn,time);
+        }
+    }
+    window.onresize=jieliu(function () {
+        console.log(window.innerWidth);
+    },300);
+
+    document.onclick=test;   //事件绑定 函数会自动执行 不需要加括号执行
+    //document.onclick=test();    //加括号 就算没有点击事件 函数也会执行 且只执行一次
+    function test() {
+        console.log(111)
+    }
+</script>
+</body>
+</html>

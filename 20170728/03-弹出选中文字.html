@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    .box{
+        width: 400px;
+        margin: 50px auto;
+    }
+    .small{
+        background: pink;
+        max-width: 150px;
+        overflow: hidden;
+        position: absolute;
+        display: none;
+    }
+</style>
+<body>
+    <div class="box">
+        <p class="text">您的意思是，通过鼠标拖动，在网页上留下痕迹，并且可以一直存在直到你按下F5的那种么？
+
+            我觉得可以修改下Chrome Gestures来实现这一点，为了不让这个插件和鼠标手势冲突，我觉得可以指定一个按键，譬如说ctrl,按下这个键，然后鼠标右键就可以当记号笔使用了。
+
+            并且在网页上涂画之后，还可以将这张网页保存为.jpeg的图片或者PDF之类的。您的意思是，通过鼠标拖动，在网页上留下痕迹，并且可以一直存在直到你按下F5的那种么？
+
+            我觉得可以修改下Chrome Gestures来实现这一点，为了不让这个插件和鼠标手势冲突，我觉得可以指定一个按键，譬如说ctrl,按下这个键，然后鼠标右键就可以当记号笔使用了。
+
+            并且在网页上涂画之后，还可以将这张网页保存为.jpeg的图片或者PDF之类的。您的意思是，通过鼠标拖动，在网页上留下痕迹，并且可以一直存在直到你按下F5的那种么？
+
+            我觉得可以修改下Chrome Gestures来实现这一点，为了不让这个插件和鼠标手势冲突，我觉得可以指定一个按键，譬如说ctrl,按下这个键，然后鼠标右键就可以当记号笔使用了。
+
+            并且在网页上涂画之后，还可以将这张网页保存为.jpeg的图片或者PDF之类的。
+        </p>
+        <div class="small"></div>
+    </div>
+    <script>
+        var oP = document.querySelector(".text");
+        var oSmall = document.querySelector(".small");
+        //鼠标松开事件
+        oP.onmouseup=function (ev) {
+            var oEvent = ev||event;
+            var x =  oEvent.clientX;
+            var y = oEvent.clientY;
+            var text = null;
+            var text;
+            if(window.getSelection) // 获取我们选中的文字
+            {
+                text=window.getSelection().toString();  // 转换为字符串
+            }
+            else
+            {
+                text=document.selection.createRange().text;  //ie的写法
+            };
+            if(text){
+                show(x,y,text);
+            }
+
+        }
+
+        //盒子显示隐藏
+        function show(x,y,text) {
+            oSmall.style.display = "block";
+            oSmall.style.left = x +"px";
+            oSmall.style.top = y +"px";
+            oSmall.innerText = text;
+        }
+        
+        document.onmousedown=function () {
+            oSmall.style.display = "none";
+        }
+    </script>
+</body>
+</html>

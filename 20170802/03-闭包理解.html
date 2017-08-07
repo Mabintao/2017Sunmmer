@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+
+<script>
+/*    var name = "The Window";
+    var object = {
+        name : "My Object",
+        getNameFunc : function(){
+            return function(){
+                return this.name;
+            };
+        }
+    };
+    alert(object.getNameFunc()());*/
+
+/*var name = "The Window";
+var object = {
+    name : "My Object",
+    getNameFunc : function(){
+        var that = this;
+        console.log(this);
+        return function(){
+            return that.name;
+        };
+    }
+};
+alert(object.getNameFunc()());*/
+
+/*function fn1() {
+    alert(this)
+}
+fn1()
+    */
+
+/*alert(this)
+    setTimeout(function () {
+        alert(this)
+    },100)*/
+
+var object = {
+    a:function(){
+        console.log(this)
+    }
+}
+console.log(object.a());
+
+    //定时器，函数  this  是window
+    //对象里面的方法  和 点击事件  this是对像
+
+</script>
+
+</body>
+</html>

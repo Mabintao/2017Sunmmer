@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function Student(name,gender) {
+        this.name=name;
+        this.gender=gender;
+        this.show=function () {
+            console.log(this.name)
+        }
+    }
+
+    var poki = new Student("poki","1");
+    console.log(poki);
+    console.log(poki.name);
+</script>
+</body>
+</html>

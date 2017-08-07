@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    //hasOwnProperty()方法，用来判断某一个属性到底是本地属性，还是继承自prototype对象的属性。
+    //继承的属性返回false 本地属性为true
+
+    function Cat(name,color) {
+        this.color = color;
+        this.name = name;
+    }
+    Cat.prototype.type = "猫仔";
+    var poki = new Cat("poki","yellow");
+
+    console.log(poki.hasOwnProperty("color"));  //true
+    console.log(poki.hasOwnProperty("type")); //false
+
+</script>
+</body>
+</html>

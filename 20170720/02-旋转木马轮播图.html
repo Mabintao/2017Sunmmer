@@ -20,6 +20,7 @@
 </body>
 <script src="js/my.js"></script>
 <script>
+    var oBox = document.querySelector(".box");
     var aLi = document.querySelectorAll("ul li");
     var aBg = new Array("slidepic1.jpg", "slidepic2.jpg", "slidepic9.jpg","slidepic4.jpg", "slidepic5.jpg");
     var aPoint = new Array(
@@ -40,10 +41,10 @@
             zIndex:2
         }
         ,{
-            width:800,
-            height:500,
+            width:700,
+            height:440,
             top:100,
-            left:100,
+            left:150,
             opacity:100,
             zIndex:3
         }
@@ -55,7 +56,7 @@
             opacity:70,
             zIndex:2
         }
-        , {
+        ,{
             width:400,
             height:250,
             top:20,
@@ -66,7 +67,13 @@
     var oPrev = document.querySelector("#prev");
     var oNext = document.querySelector("#next");
     var key = 0;
+    var timer=null;
+
     init();
+    autoplay();
+
+
+
     function init() {
         for(var i=0; i<aLi.length; i++){
             aLi[i].style.background="url('imgs_02/"+aBg[i]+"')";
@@ -76,8 +83,12 @@
 
     //上一张
     oPrev.onmousedown=function () {
+        key++;
+        if(key>=aLi.length){
+            key=0;
+        }
         oPrev.style.background="url(imgs_02/prev.png)";
-        /''
+        move();
     }
     oPrev.onmouseup=function () {
         oPrev.style.background="url(imgs_02/prev_1.png)";
@@ -86,10 +97,46 @@
     //下一张
     oNext.onmousedown=function () {
         oNext.style.background="url(imgs_02/next_1.png)";
+        if(key<=0){
+            key=aLi.length;
+        }
+        key--;
+        move();
     }
     oNext.onmouseup=function () {
         oNext.style.background="url(imgs_02/next.png)";
     }
 
+    function move() {
+        var index1=0;
+        for(var i=key; i<aLi.length; i++){
+            animate(aLi[i],aPoint[index1]);
+            index1++;
+        }
+        var index2 = aPoint.length-1;
+        for(var i=key-1; i>=0; i--){
+            animate(aLi[i],aPoint[index2]);
+            index2--;
+        }
+    }
+
+    function autoplay() {
+        clearInterval(timer);
+        timer = setInterval(function () {
+            if(key<=0){
+                key=aLi.length;
+            }
+            key--;
+            move();
+        },1200)
+    }
+
+    oBox.onmouseover=function () {
+        clearInterval(timer);
+    }
+
+    oBox.onmouseout=function () {
+        autoplay();
+    }
 </script>
 </html>

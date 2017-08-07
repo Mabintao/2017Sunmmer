@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+<style type="text/css">
+#d1{ width:100%; height:850px; background:#069;overflow:hidden;}
+#d2{ width:100%; height:850px; background:#933;overflow:hidden;}
+#d3{ width:100%; height:850px; background:#060;overflow:hidden;}
+#d4{ position:fixed; top:50%; right:0;}
+#d4 a{ display:block; width:100px; height:100px;}
+#d4 .hover{ background:#063;}
+.duoyu{ width:100%; height:500px;}
+</style>
+<body>
+<div id="d4">
+    <ul>
+        <li class="hover"><a href="javascript:void(0);">1</a></li>
+        <li><a href="javascript:void(0);">2</a></li>
+        <li><a href="javascript:void(0);">3</a></li>
+    </ul>
+</div>
+<div id="d1"></div>
+<div id="d2"></div>
+<div id="d3"></div>
+<div class="duoyu"></div><!--底部要加留底，否则在滚到最后一个已经到底了的时候位置永远到不了设置的滚动高度，就会一直执行死循环-->
+<script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
+<script type="text/javascript">
+$(function(){
+    var num=0,timer,num_max=2,dheight=850,//num_max是滚动个数减1;dheight是每个滚动元素的高度；
+        nid=$("#d4 li"),
+        d3=document.getElementById("d3"),
+        d2=document.getElementById("d2"),
+        d1=document.getElementById("d1");
+        function getScrollTop(e){
+            var scrollTop=0;
+            if(document.documentElement&&document.documentElement.scrollTop){
+                return document.documentElement.scrollTop;
+                }
+            else if(document.body.scrollTop){
+                return document.body.scrollTop;
+                }
+            else{return scrollTop}//滚到最上方的是就是自己设置的scrollTop变量
+            }
+        function setScrollTop(x){
+            if(document.documentElement&&document.documentElement.scrollTop){
+                document.documentElement.scrollTop=x;
+                }
+            else if(document.body.scrollTop){
+                document.body.scrollTop=x;
+                }
+            else{window.scrollTo(0,x)}//滚到最上方时时没有上面2个属性的只有window.scrollTo(0,x)
+            }
+        
+        function throttle(method,context){//函数节流，method是要执行的函数，context是作用域函数
+                clearTimeout(method.tId);//先清除之前设置的定时器，定时器ID存储在函数的tId属性中
+                method.tId=setTimeout(function(){method.call(context)},100)//使用call（）来确保方法在适当的环境运行，如果没第2个参数就在全局执行
+            }
+            
+        function gun(e){
+            e=e||window.event;
+            var top=getScrollTop();
+            num=Math.ceil((top+10)/dheight)-1;
+            //留空10个像素防止零界点和滚动事件冲突；
+            nid.eq(num).addClass("hover").siblings().removeClass();
+            }
+        window.onscroll=function(e){
+            throttle(gun);
+            };
+            
+            nid.click(function(){//我很懒~！这里和下面的class切换用了JQ,不用也可以的
+                $(this).addClass("hover").siblings().removeClass();
+                num=nid.index($("#d4 li.hover"));
+                //console.log(num);
+                //(document.documentElement.scrollTop!=null)?scrollTOPl=document.documentElement.scrollTop:scrollTOPl=document.body.scrollTop;
+            settimer(num*dheight);
+                })
+            //$("a").index($("a.hover"))
+            function settimer(num){    
+                clearInterval(timer);
+                timer=setInterval(function(){
+                    var newss=getScrollTop();
+                    var speed=(num-newss)/8;
+                    speed=speed>0?Math.ceil(speed):Math.floor(speed);//如果newss等于0，（num-newss）/8那么speed也一直等于0，因为去整数了
+                    if(newss==num){clearInterval(timer);
+                        if(document.addEventListener){//重新添加事件监听
+                            document.addEventListener('DOMMouseScroll',scrollFunc,false);
+                        }//W3C
+                        window.onmousewheel=document.onmousewheel=scrollFunc;//IE/Opera/Chrome
+                        }
+                    else{
+                        //if(speed==0){speed=num*dheight/8};
+                        setScrollTop(newss+speed);
+                        }
+                    },30)};
+
+            function scrollFunc(e){
+                 e=e || window.event;
+                     if(e.preventDefault) {
+                    // Firefox
+                      e.preventDefault();
+                    } else{
+                      // IE
+                     window.event.returnValue = false;
+                  }
+                if(document.removeEventListener){//去除事件监听，让程序不能连续执行，要先执行完再添加事件监听
+                    document.removeEventListener('DOMMouseScroll',scrollFunc,false);
+                }//W3C
+                window.onmousewheel=document.onmousewheel=function(){return false};//使他等于NULL居然无效，不知道什么原因
+                    
+                     if(e.wheelDelta){//IE/Opera/Chrome
+                         if(e.wheelDelta<0){
+                             //alert("向下")
+                             if(num<num_max){
+                             num++;
+                             nid.eq(num).addClass("hover").siblings().removeClass();}
+                             settimer(num*dheight);//要放到外面要不没有绑定到滚轮的事件监听
+                             }
+                         else{
+                             //alert("向上")
+                             if(num>0){
+                             num--;
+                             nid.eq(num).addClass("hover").siblings().removeClass();}
+                             settimer(num*dheight);
+                             }
+                     }else if(e.detail){//Firefox
+                         if(e.detail>0){
+                             //alert("向下")
+                              if(num<num_max){
+                             num++; 
+                             nid.eq(num).addClass("hover").siblings().removeClass();}
+                             settimer(num*dheight);
+                             }
+                             else{
+                            //alert("向上")
+                             if(num>0){
+                             num--;
+                             nid.eq(num).addClass("hover").siblings().removeClass();}
+                             settimer(num*dheight);
+                             }
+                     }
+                }
+        /*注册鼠标滚轮事件*/
+        if(document.addEventListener){
+            document.addEventListener('DOMMouseScroll',scrollFunc,false);
+        }//W3C
+        window.onmousewheel=document.onmousewheel=scrollFunc;//IE/Opera/Chrome
+        })
+</script>
+</body>
+</html>
