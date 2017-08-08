@@ -1,0 +1,22 @@
+{
+  "name": "2017summer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mabintao/2017Sunmmer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mabintao/2017Sunmmer/issues"
+  },
+  "homepage": "https://github.com/Mabintao/2017Sunmmer#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}

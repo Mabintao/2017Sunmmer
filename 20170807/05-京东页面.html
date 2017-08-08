@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		*{margin: 0;padding: 0;list-style: none}
+		html,body,ul{width: 100%;height: 100%}
+		ul li{width: 80%;height: 100%;margin:auto;background: #666;color: #fff;text-align: center;}
+		ul li+li{margin-top: 10px}
+		ol{position: fixed;right: 0;top: 50%;margin-top: -70px}
+		ol li{width: 40px;height: 40px;background: #333;cursor: pointer;text-align: center;color: #fff;line-height: 40px;font-size: 12px}
+		ol li+li{margin-top: 10px}
+		ol li.cur{background: #000}
+		a{display: block; width: 40px;height: 40px;background: #333;cursor: pointer;position: fixed;bottom: 20px;right: 0;text-decoration: none;color: #fff;text-align: center;line-height: 40px;font-size: 12px}
+	</style>
+</head>
+<body>
+	<ul>
+		<li>一楼</li>
+		<li>二楼</li>
+		<li>三楼</li>
+	</ul>
+	<ol>
+		<li class="cur">一楼</li>
+		<li>二楼</li>
+		<li>三楼</li>
+	</ol>
+	<a href="javascript:">top</a>
+	
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript">
+		var $box = $("ul li");
+		var $btn = $("ol li");
+		var $top = $("a")
+		$(window).scroll(function(){
+			var top = $(window).scrollTop();
+			$box.each(function(index,ele){
+				if(top>=$(ele).offset().top){
+					$btn.eq(index).addClass("cur").siblings().removeClass("cur");
+				}
+			})
+		})
+
+		$btn.each(function(index,ele){
+			$(ele).click(function(){
+				$(this).addClass("cur").siblings().removeClass("cur");
+				$("html body").animate({
+					scrollTop:$box.eq(index).offset().top
+				},500)
+			})
+		})
+
+		$top.click(function(){
+			$("html body").animate({
+				scrollTop:0
+			},500)
+		})
+	</script>
+</body>
+</html>
